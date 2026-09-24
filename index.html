@@ -62,10 +62,6 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
 .leaderboard-name a:hover { text-decoration:underline; }
 .leaderboard-value { font-size:22px; font-weight:900; color:#059669; }
 .alert-banner { background:linear-gradient(135deg, rgba(59,130,246,.12), rgba(96,165,250,.08)); border:1px solid rgba(59,130,246,.25); border-radius:12px; padding:12px 16px; margin-bottom:16px; display:flex; align-items:center; gap:10px; font-size:13px; color:#1e40af; }
-.snapshot-row { display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:10px; margin:14px 0 18px; }
-.snapshot-pill { background:linear-gradient(180deg, rgba(255,255,255,.9), rgba(248,250,252,.95)); border:1px solid rgba(148,163,184,.18); border-radius:999px; padding:12px 14px; box-shadow:0 6px 18px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:space-between; gap:10px; }
-.snapshot-pill span { font-size:11px; color:#475569; font-weight:700; }
-.snapshot-pill b { font-size:15px; color:#0f172a; }
 .empty-state { text-align:center; padding:40px 20px; color:#94a3b8; font-size:14px; border:2px dashed #e2e8f0; border-radius:12px; margin-top:16px; }
 .status-tag { display:inline-block; padding:2px 8px; border-radius:999px; font-size:11px; font-weight:700; }
 .status-tag-green { background:#dcfce7; color:#047857; }
@@ -76,46 +72,46 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
 <body>
 <div class="header">
   <h1>🇵🇭 菲律宾 CAMON Slim 5G 声量监控看板 / PH SOV Dashboard</h1>
-  <p>Google Trends + TikTok Video View + TikTok Search + Spend Progress + Exposure Progress + Leaderboard · Updated 2026-09-22</p>
+  <p>Google Trends + TikTok Video View + TikTok Search + Spend Progress + Exposure Progress + Leaderboard · Updated 2026-09-23</p>
 </div>
 <div class="container">
   <div class="alert-banner">
     <span style="font-size:18px;">📢</span>
-    <span>Google Brand/Product SOV, TT VV SOV, TT Search SOV, Spend & Exposure targets configured. / Google 品牌/产品 SOV、TT VV SOV、TT Search SOV、消耗与曝光目标均已按当前数据表配置。</span>
+    <span>数据已更新至 9/23。Google Product SOV 35.00%，TT VV SOV 5.86%，TT Search SOV 10.20%，Consideration 3.37M。/ Data updated to 9/23. Google Product SOV 35.00%, TT VV SOV 5.86%, TT Search SOV 10.20%, Consideration 3.37M.</span>
   </div>
 
   <!-- 1. 整体战报摘要 / Executive Summary -->
   <div class="hero">
     <h3>📊 整体战报摘要 / Executive Summary</h3>
-    <p style="margin:0;opacity:.95;font-size:13px;">Google Product SOV 33.33%, Consideration Total pending update, Total Impressions 4.95M, Engagement Rate Rank pending. / Google 产品 SOV 33.33%，Consideration 总量待更新，全网总曝光 4.95M，互动率行业排名待更新。</p>
+    <p style="margin:0;opacity:.95;font-size:13px;">Google Product SOV 35.00% (9/23), Consideration 3.37M (9/20), 全网总曝光 5.31M, 互动量行业排名 #5. / Google 产品 SOV 35.00%，Consideration 总量 3.37M，全网总曝光 5.31M，互动量行业排名 #5。</p>
     <div class="hero-stats">
       <div class="hero-stat">
         <div class="hero-stat-label">Google 产品 SOV / Product SOV</div>
-        <div class="hero-stat-value">33.33%</div>
+        <div class="hero-stat-value">35.00%</div>
       </div>
       <div class="hero-stat">
         <div class="hero-stat-label">Consideration 总量 / Total</div>
-        <div class="hero-stat-value">Pending / 待更新</div>
+        <div class="hero-stat-value">3.37M</div>
       </div>
       <div class="hero-stat">
         <div class="hero-stat-label">全网总曝光 / Total Impressions</div>
-        <div class="hero-stat-value">4.95M</div>
+        <div class="hero-stat-value">5.31M</div>
       </div>
       <div class="hero-stat">
-        <div class="hero-stat-label">互动率行业排名 / Engagement Rank</div>
-        <div class="hero-stat-value">Pending / 待更新</div>
+        <div class="hero-stat-label">互动量行业排名 / Engagement Rank</div>
+        <div class="hero-stat-value">#5</div>
       </div>
     </div>
   </div>
 
   <!-- 2. KPI小卡 / KPI Cards -->
   <div class="grid kpis">
-    <div class="card kpi"><div class="label">TikTok Video View SOV <span class="status-dot status-yellow"></span></div><div class="value">2.27% <span class="trend-arrow trend-down">↓</span></div><div class="sub">Target / 目标 20% · As of / 截至 9/19</div></div>
-    <div class="card kpi"><div class="label">TikTok Search SOV <span class="status-dot status-yellow"></span></div><div class="value">10.16% <span class="trend-arrow trend-up">↑</span></div><div class="sub">Target / 目标 13% · As of / 截至 9/19</div></div>
-    <div class="card kpi" style="border-left:4px solid #3b82f6;"><div class="label">TikTok曝光量 / TikTok Impressions <span class="status-dot status-green"></span></div><div class="value" style="color:#3b82f6;">4.95M</div><div class="sub">Target / 目标 700M · Progress / 进度 0.71%</div></div>
-    <div class="card kpi" style="border-left:4px solid #ef4444;"><div class="label">Meta曝光量 / Meta Impressions <span class="status-dot status-yellow"></span></div><div class="value" style="color:#ef4444;">—</div><div class="sub">Pending / 待更新</div></div>
+    <div class="card kpi"><div class="label">TikTok Video View SOV <span class="status-dot status-red"></span></div><div class="value">5.86% <span class="trend-arrow trend-down">↓</span></div><div class="sub">Target / 目标 20% · As of / 截至 9/20</div></div>
+    <div class="card kpi"><div class="label">TikTok Search SOV <span class="status-dot status-yellow"></span></div><div class="value">10.20% <span class="trend-arrow trend-down">↓</span></div><div class="sub">Target / 目标 13% · As of / 截至 9/21</div></div>
+    <div class="card kpi" style="border-left:4px solid #3b82f6;"><div class="label">TikTok曝光量 / TikTok Impressions <span class="status-dot status-red"></span></div><div class="value" style="color:#3b82f6;">5.06M</div><div class="sub">Target / 目标 700M · Progress / 进度 0.72%</div></div>
+    <div class="card kpi" style="border-left:4px solid #ef4444;"><div class="label">Meta曝光量 / Meta Impressions <span class="status-dot status-yellow"></span></div><div class="value" style="color:#ef4444;">247K</div><div class="sub">As of / 截至 9/23</div></div>
     <div class="card kpi" style="border-left:4px solid #f59e0b;"><div class="label">Google曝光量 / Google Impressions <span class="status-dot status-yellow"></span></div><div class="value" style="color:#f59e0b;">—</div><div class="sub">Pending / 待更新</div></div>
-    <div class="card kpi" style="border-left:4px solid #ec4899;"><div class="label">互动量 / Engagement <span class="status-dot status-yellow"></span></div><div class="value" style="color:#ec4899;">—</div><div class="sub">Industry share / 行业占比：Pending / 待补充</div></div>
+    <div class="card kpi" style="border-left:4px solid #ec4899;"><div class="label">互动量 / Engagement <span class="status-dot status-yellow"></span></div><div class="value" style="color:#ec4899;">823K</div><div class="sub">Industry share / 行业占比：7.18% · Rank / 排名 #5</div></div>
   </div>
 
   <!-- 3. 一页总览 / Overview -->
@@ -126,18 +122,19 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
         <tr><th>Status / 状态</th><th>Metric / 指标</th><th>Current / 当前值</th><th>Target / 目标</th><th>Date / 日期</th></tr>
       </thead>
       <tbody>
-        <tr><td><span class="status-tag status-tag-green">●</span></td><td>Google 品牌 SOV / Brand SOV</td><td>15.32%</td><td>—</td><td>9/22</td></tr>
-        <tr><td><span class="status-tag status-tag-green">●</span></td><td>Google 产品 SOV / Product SOV</td><td>33.33%</td><td>—</td><td>9/22</td></tr>
-        <tr><td><span class="status-tag status-tag-red">●</span></td><td>TikTok VV SOV</td><td>2.27%</td><td>20%</td><td>9/19</td></tr>
-        <tr><td><span class="status-tag status-tag-yellow">●</span></td><td>TikTok Search SOV</td><td>10.16%</td><td>13%</td><td>9/19</td></tr>
-        <tr><td><span class="status-tag status-tag-red">●</span></td><td>TikTok曝光量 / Impressions</td><td>4.95M</td><td>700M</td><td>9/19</td></tr>
-        <tr><td><span class="status-tag status-tag-red">●</span></td><td>Meta曝光量 / Impressions</td><td>—</td><td>—</td><td>—</td></tr>
+        <tr><td><span class="status-tag status-tag-green">●</span></td><td>Google 品牌 SOV / Brand SOV</td><td>15.24%</td><td>—</td><td>9/23</td></tr>
+        <tr><td><span class="status-tag status-tag-green">●</span></td><td>Google 产品 SOV / Product SOV</td><td>35.00%</td><td>—</td><td>9/23</td></tr>
+        <tr><td><span class="status-tag status-tag-red">●</span></td><td>TikTok VV SOV</td><td>5.86%</td><td>20%</td><td>9/20</td></tr>
+        <tr><td><span class="status-tag status-tag-yellow">●</span></td><td>TikTok Search SOV</td><td>10.20%</td><td>13%</td><td>9/21</td></tr>
+        <tr><td><span class="status-tag status-tag-red">●</span></td><td>TikTok曝光量 / Impressions</td><td>5.06M</td><td>700M</td><td>9/20</td></tr>
+        <tr><td><span class="status-tag status-tag-yellow">●</span></td><td>Meta曝光量 / Impressions</td><td>247K</td><td>—</td><td>9/23</td></tr>
         <tr><td><span class="status-tag status-tag-red">●</span></td><td>Google曝光量 / Impressions</td><td>—</td><td>—</td><td>—</td></tr>
-        <tr><td><span class="status-tag status-tag-red">●</span></td><td>全网总曝光 / Total Impressions</td><td>4.95M</td><td>1000M+</td><td>—</td></tr>
-        <tr><td><span class="status-tag status-tag-red">●</span></td><td>互动量 / Engagement</td><td>—</td><td>—</td><td>—</td></tr>
-        <tr><td><span class="status-tag status-tag-red">●</span></td><td>互动率行业排名 / Engagement Rank</td><td>—</td><td>Top 3</td><td>—</td></tr>
-        <tr><td><span class="status-tag status-tag-red">●</span></td><td>Consideration 总量 / Total</td><td>—</td><td>7M</td><td>—</td></tr>
-        <tr><td><span class="status-tag status-tag-yellow">●</span></td><td>消耗进度 / Spend Progress</td><td>0.14%</td><td>—</td><td>9/21</td></tr>
+        <tr><td><span class="status-tag status-tag-red">●</span></td><td>全网总曝光 / Total Impressions</td><td>5.31M</td><td>1000M+</td><td>—</td></tr>
+        <tr><td><span class="status-tag status-tag-yellow">●</span></td><td>互动量 / Engagement</td><td>823K</td><td>—</td><td>9/20</td></tr>
+        <tr><td><span class="status-tag status-tag-red">●</span></td><td>互动率行业排名 / Engagement Rank</td><td>#5</td><td>Top 3</td><td>9/20</td></tr>
+        <tr><td><span class="status-tag status-tag-red">●</span></td><td>Consideration 总量 / Total</td><td>3.37M</td><td>7M</td><td>9/20</td></tr>
+        <tr><td><span class="status-tag status-tag-red">●</span></td><td>消耗进度 / Spend Progress</td><td>0.19%</td><td>—</td><td>9/23</td></tr>
+        <tr><td><span class="status-tag status-tag-red">●</span></td><td>曝光完成进度 / Exposure Progress</td><td>1.43%</td><td>—</td><td>9/20</td></tr>
       </tbody>
     </table>
     <div class="note">Data source: Feishu Wiki Sheet / 数据源：飞书知识库表格 · <span class="status-tag status-tag-green">●</span> On track / 达标 <span class="status-tag status-tag-yellow">●</span> Near target / 接近目标 <span class="status-tag status-tag-red">●</span> Gap / pending / 差距较大/待更新</div>
@@ -215,11 +212,11 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
     <div class="two-col" style="margin-top:12px;">
       <div>
         <div class="chart"><canvas id="googleBrandChart"></canvas></div>
-        <div class="note">Brand SOV latest 15.32% (9/22) / 品牌 SOV 最新 15.32%（9/22）</div>
+        <div class="note">Brand SOV latest 15.24% (9/23) / 品牌 SOV 最新 15.24%（9/23）</div>
       </div>
       <div>
         <div class="chart"><canvas id="googleProductChart"></canvas></div>
-        <div class="note">Product SOV latest 33.33% (9/22) / 产品 SOV 最新 33.33%（9/22）</div>
+        <div class="note">Product SOV latest 35.00% (9/23) / 产品 SOV 最新 35.00%（9/23）</div>
       </div>
     </div>
   </div>
@@ -228,14 +225,14 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
   <div class="section section-tiktok">
     <h2><span class="badge badge-tiktok">TikTok</span>Video View & Search SOV 趋势 / Trend</h2>
     <div class="chart"><canvas id="ttSovChart"></canvas></div>
-    <div class="note">VV SOV latest 2.27% (9/19); Search SOV latest 10.16% (9/19) / VV SOV 最新 2.27%（9/19）；Search SOV 最新 10.16%（9/19）</div>
+    <div class="note">VV SOV latest 5.86% (9/20); Search SOV latest 10.20% (9/21) / VV SOV 最新 5.86%（9/20）；Search SOV 最新 10.20%（9/21）</div>
   </div>
 
   <!-- 8. Consideration Trend -->
   <div class="section">
     <h2><span class="badge badge-green">Consideration</span>趋势 / Trend</h2>
     <div class="chart"><canvas id="considerationChart"></canvas></div>
-    <div class="note">Brand Consideration total, last 7 days; shows balance between new additions and churn. / 本品牌 Consideration 总量近7日走势，可快速看出新增与流失的平衡关系。</div>
+    <div class="note">Brand Consideration 9/1~9/20, peak 3.82M (9/18), latest 3.37M (9/20). / 本品牌 Consideration 9/1~9/20，峰值 3.82M（9/18），最新 3.37M（9/20）。</div>
   </div>
 
   <!-- 9. Spend & Progress -->
@@ -307,19 +304,19 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
 </div>
 <script>
 // Google Brand SOV
-new Chart(document.getElementById('googleBrandChart'),{type:'line',data:{labels:['9/22'],datasets:[{label:'Brand SOV / 品牌 SOV',data:[15.32],borderColor:'#2563eb',backgroundColor:'rgba(37,99,235,.1)',fill:true,tension:.3,pointRadius:5,pointBackgroundColor:'#2563eb'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#475569'}}},scales:{x:{ticks:{color:'#64748b'},grid:{color:'#eef2f7'}},y:{ticks:{color:'#64748b',callback:v=>v+'%'},grid:{color:'#eef2f7'},beginAtZero:true,title:{display:true,text:'Brand SOV %'}}}}});
+new Chart(document.getElementById('googleBrandChart'),{type:'line',data:{labels:['9/22','9/23'],datasets:[{label:'Brand SOV / 品牌 SOV',data:[15.32,15.24],borderColor:'#2563eb',backgroundColor:'rgba(37,99,235,.1)',fill:true,tension:.3,pointRadius:5,pointBackgroundColor:'#2563eb'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#475569'}}},scales:{x:{ticks:{color:'#64748b'},grid:{color:'#eef2f7'}},y:{ticks:{color:'#64748b',callback:v=>v+'%'},grid:{color:'#eef2f7'},beginAtZero:true,title:{display:true,text:'Brand SOV %'}}}}});
 
 // Google Product SOV
-new Chart(document.getElementById('googleProductChart'),{type:'line',data:{labels:['9/22'],datasets:[{label:'Product SOV / 产品 SOV',data:[33.33],borderColor:'#059669',backgroundColor:'rgba(5,150,105,.1)',fill:true,tension:.3,pointRadius:5,pointBackgroundColor:'#059669'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#475569'}}},scales:{x:{ticks:{color:'#64748b'},grid:{color:'#eef2f7'}},y:{ticks:{color:'#64748b',callback:v=>v+'%'},grid:{color:'#eef2f7'},beginAtZero:true,title:{display:true,text:'Product SOV %'}}}}});
+new Chart(document.getElementById('googleProductChart'),{type:'line',data:{labels:['9/22','9/23'],datasets:[{label:'Product SOV / 产品 SOV',data:[33.33,35.00],borderColor:'#059669',backgroundColor:'rgba(5,150,105,.1)',fill:true,tension:.3,pointRadius:5,pointBackgroundColor:'#059669'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#475569'}}},scales:{x:{ticks:{color:'#64748b'},grid:{color:'#eef2f7'}},y:{ticks:{color:'#64748b',callback:v=>v+'%'},grid:{color:'#eef2f7'},beginAtZero:true,title:{display:true,text:'Product SOV %'}}}}});
 
 // TikTok SOV
-new Chart(document.getElementById('ttSovChart'),{type:'line',data:{labels:['9/19'],datasets:[{label:'TT VV SOV',data:[2.27],borderColor:'#7c3aed',backgroundColor:'rgba(124,58,237,.1)',fill:true,tension:.3,pointRadius:5,pointBackgroundColor:'#7c3aed',yAxisID:'y'},{label:'TT Search SOV',data:[10.16],borderColor:'#ea580c',backgroundColor:'rgba(234,88,12,.1)',fill:true,tension:.3,pointRadius:5,pointBackgroundColor:'#ea580c',yAxisID:'y1'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#475569'}}},scales:{x:{ticks:{color:'#64748b'},grid:{color:'#eef2f7'}},y:{type:'linear',position:'left',ticks:{color:'#7c3aed',callback:v=>v+'%'},grid:{color:'#eef2f7'},beginAtZero:true,title:{display:true,text:'VV SOV %',color:'#7c3aed'}},y1:{type:'linear',position:'right',ticks:{color:'#ea580c',callback:v=>v+'%'},grid:{drawOnChartArea:false},beginAtZero:true,title:{display:true,text:'Search SOV %',color:'#ea580c'}}}}});
+new Chart(document.getElementById('ttSovChart'),{type:'line',data:{labels:['9/19','9/20','9/21'],datasets:[{label:'TT VV SOV',data:[5.91,5.86,null],borderColor:'#7c3aed',backgroundColor:'rgba(124,58,237,.1)',fill:true,tension:.3,pointRadius:5,pointBackgroundColor:'#7c3aed',yAxisID:'y',spanGaps:true},{label:'TT Search SOV',data:[10.16,10.46,10.20],borderColor:'#ea580c',backgroundColor:'rgba(234,88,12,.1)',fill:true,tension:.3,pointRadius:5,pointBackgroundColor:'#ea580c',yAxisID:'y1'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#475569'}}},scales:{x:{ticks:{color:'#64748b'},grid:{color:'#eef2f7'}},y:{type:'linear',position:'left',ticks:{color:'#7c3aed',callback:v=>v+'%'},grid:{color:'#eef2f7'},beginAtZero:true,title:{display:true,text:'VV SOV %',color:'#7c3aed'}},y1:{type:'linear',position:'right',ticks:{color:'#ea580c',callback:v=>v+'%'},grid:{drawOnChartArea:false},beginAtZero:true,title:{display:true,text:'Search SOV %',color:'#ea580c'}}}}});
 
 // Consideration Trend
-new Chart(document.getElementById('considerationChart'),{type:'line',data:{labels:['9/1','9/2','9/3','9/4','9/5','9/6','9/7'],datasets:[{label:'Brand / 本品牌',data:[2089916,2046584,2039830,2092499,2277829,2624653,2771283],borderColor:'#059669',backgroundColor:'rgba(5,150,105,.12)',fill:true,tension:.35,pointRadius:4,pointBackgroundColor:'#059669'},{label:'Industry Avg / 行业均值',data:[2659331,2647541,2654025,2719212,2897390,3148738,3243339],borderColor:'#94a3b8',backgroundColor:'rgba(148,163,184,.08)',fill:false,tension:.35,pointRadius:3,borderDash:[6,4]}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#475569'}}},scales:{x:{ticks:{color:'#64748b'},grid:{color:'#eef2f7'}},y:{ticks:{color:'#64748b',callback:v=>Math.round(v/10000)+'万 / 10K'},grid:{color:'#eef2f7'},beginAtZero:false,title:{display:true,text:'Consideration',color:'#059669'}}}}});
+new Chart(document.getElementById('considerationChart'),{type:'line',data:{labels:['9/1','9/2','9/3','9/4','9/5','9/6','9/7','9/8','9/9','9/10','9/11','9/12','9/13','9/14','9/15','9/16','9/17','9/18','9/19','9/20'],datasets:[{label:'Brand / 本品牌',data:[2089916,2046584,2039830,2092499,2277829,2624653,2771283,3106841,3539842,3540106,3507328,3494628,3477955,3560376,3740292,3752809,3735487,3821243,3689704,3372097],borderColor:'#059669',backgroundColor:'rgba(5,150,105,.12)',fill:true,tension:.35,pointRadius:3,pointBackgroundColor:'#059669'},{label:'Industry Avg / 行业均值',data:[2659331,2647541,2654025,2719212,2897390,3148738,3243339,3566055,3963690,4018355,4028618,4088046,4129734,4149206,4259073,4278714,4276787,4353727,4278515,4071568],borderColor:'#94a3b8',backgroundColor:'rgba(148,163,184,.08)',fill:false,tension:.35,pointRadius:2,borderDash:[6,4]}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#475569'}}},scales:{x:{ticks:{color:'#64748b',maxRotation:45},grid:{color:'#eef2f7'}},y:{ticks:{color:'#64748b',callback:v=>Math.round(v/10000)+'万 / 10K'},grid:{color:'#eef2f7'},beginAtZero:false,title:{display:true,text:'Consideration',color:'#059669'}}}}});
 
 // Spend Chart
-new Chart(document.getElementById('spendChart'),{type:'bar',data:{labels:['9/19','9/20','9/21'],datasets:[{label:'Daily Spend / 日消耗金额',data:[0,0,250],backgroundColor:'rgba(251,191,36,.6)',borderColor:'#f59e0b',borderWidth:1,yAxisID:'y1',order:2},{label:'Spend Progress / 消耗进度',data:[0,0,0.14],type:'line',borderColor:'#f59e0b',backgroundColor:'transparent',pointRadius:4,pointBackgroundColor:'#f59e0b',tension:.3,yAxisID:'y',order:1},{label:'Exposure Progress / 曝光完成进度',data:[0.71,null,null],type:'line',borderColor:'#0f766e',backgroundColor:'transparent',pointRadius:4,pointBackgroundColor:'#0f766e',tension:.3,yAxisID:'y',order:1}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#475569'}}},scales:{x:{ticks:{color:'#64748b'},grid:{color:'#eef2f7'}},y:{type:'linear',position:'left',ticks:{color:'#f59e0b',callback:v=>v+'%'},grid:{color:'#eef2f7'},beginAtZero:true,title:{display:true,text:'Progress % / 进度 %',color:'#f59e0b'}},y1:{type:'linear',position:'right',ticks:{color:'#fbbf24',callback:v=>'$'+v},grid:{drawOnChartArea:false},beginAtZero:true,title:{display:true,text:'Spend $ / 消耗 $',color:'#fbbf24'}}}}});
+new Chart(document.getElementById('spendChart'),{type:'bar',data:{labels:['9/19','9/20','9/21','9/22','9/23'],datasets:[{label:'Daily Spend / 日消耗金额',data:[0,0,250,0,29.34],backgroundColor:'rgba(251,191,36,.6)',borderColor:'#f59e0b',borderWidth:1,yAxisID:'y1',order:2},{label:'Spend Progress / 消耗进度',data:[0,0,0.17,0.17,0.19],type:'line',borderColor:'#f59e0b',backgroundColor:'transparent',pointRadius:4,pointBackgroundColor:'#f59e0b',tension:.3,yAxisID:'y',order:1},{label:'Exposure Progress / 曝光完成进度',data:[0.71,1.43,null,null,null],type:'line',borderColor:'#0f766e',backgroundColor:'transparent',pointRadius:4,pointBackgroundColor:'#0f766e',tension:.3,yAxisID:'y',order:1}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#475569'}}},scales:{x:{ticks:{color:'#64748b'},grid:{color:'#eef2f7'}},y:{type:'linear',position:'left',ticks:{color:'#f59e0b',callback:v=>v+'%'},grid:{color:'#eef2f7'},beginAtZero:true,title:{display:true,text:'Progress % / 进度 %',color:'#f59e0b'}},y1:{type:'linear',position:'right',ticks:{color:'#fbbf24',callback:v=>'$'+v},grid:{drawOnChartArea:false},beginAtZero:true,title:{display:true,text:'Spend $ / 消耗 $',color:'#fbbf24'}}}}});
 </script>
 </body>
 </html>
