@@ -244,7 +244,63 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
   <!-- 10. Audience Insights -->
   <div class="section">
     <h2><span class="badge">受众洞察 / Audience Insights</span></h2>
-    <div class="empty-state">Pending — Audience Insights data to be added / 留空档 — 待补充受众洞察数据</div>
+    
+    <div style="margin-bottom:16px;">
+      <h3 style="margin:0 0 12px;font-size:15px;color:#0f172a;"> 平台表现对比 / Platform Performance</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;">
+        <div style="background:linear-gradient(135deg,rgba(124,58,237,.12),rgba(124,58,237,.05));border:1px solid rgba(124,58,237,.25);border-radius:12px;padding:14px;text-align:center;">
+          <div style="font-size:11px;color:#6d28d9;font-weight:700;margin-bottom:4px;">TikTok CPM</div>
+          <div style="font-size:22px;font-weight:900;color:#6d28d9;">$0.26</div>
+        </div>
+        <div style="background:linear-gradient(135deg,rgba(124,58,237,.12),rgba(124,58,237,.05));border:1px solid rgba(124,58,237,.25);border-radius:12px;padding:14px;text-align:center;">
+          <div style="font-size:11px;color:#6d28d9;font-weight:700;margin-bottom:4px;">TikTok CPE</div>
+          <div style="font-size:22px;font-weight:900;color:#6d28d9;">$0.05</div>
+        </div>
+        <div style="background:linear-gradient(135deg,rgba(59,130,246,.12),rgba(59,130,246,.05));border:1px solid rgba(59,130,246,.25);border-radius:12px;padding:14px;text-align:center;">
+          <div style="font-size:11px;color:#1d4ed8;font-weight:700;margin-bottom:4px;">FB&IG CPM</div>
+          <div style="font-size:22px;font-weight:900;color:#1d4ed8;">$0.17</div>
+        </div>
+        <div style="background:linear-gradient(135deg,rgba(59,130,246,.12),rgba(59,130,246,.05));border:1px solid rgba(59,130,246,.25);border-radius:12px;padding:14px;text-align:center;">
+          <div style="font-size:11px;color:#1d4ed8;font-weight:700;margin-bottom:4px;">FB&IG CPE</div>
+          <div style="font-size:22px;font-weight:900;color:#1d4ed8;">$0.025</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3 style="margin:0 0 12px;font-size:15px;color:#0f172a;">🎯 TikTok CPM 分人群 / By Audience</h3>
+      <table class="table">
+        <thead>
+          <tr><th>Audience / 人群</th><th>Cost ($)</th><th>CPM ($)</th><th>CPE ($)</th><th>VTR</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Core Converters / 核心转化层</td><td>719.68</td><td>0.29</td><td>0.13</td><td>97.9%</td></tr>
+          <tr><td>Beauty & Lifestyle / 爱美女性</td><td>412.00</td><td>0.28</td><td>0.13</td><td>97.4%</td></tr>
+          <tr><td>Moms / 妈妈群体</td><td>328.25</td><td>0.27</td><td>0.14</td><td>95.8%</td></tr>
+          <tr><td>High-income Women / 高收入女性</td><td>327.32</td><td>0.28</td><td>0.13</td><td>95.9%</td></tr>
+          <tr><td>Competitors / 竞品人群</td><td>314.85</td><td>0.24</td><td>0.13</td><td>98.5%</td></tr>
+          <tr><td>Tecno Fans & RMKT / 粉丝与再营销</td><td>313.24</td><td>0.22</td><td>0.10</td><td>97.6%</td></tr>
+          <tr><td>18-44 Female</td><td>250.00</td><td>0.26</td><td>0.11</td><td>96.6%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="margin-top:16px;">
+      <h3 style="margin:0 0 12px;font-size:15px;color:#0f172a;"> FB&IG CPM 分人群 / By Audience</h3>
+      <table class="table">
+        <thead>
+          <tr><th>Audience / 人群</th><th>Cost ($)</th><th>CPM ($)</th><th>CPE ($)</th><th>VTR</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Core Converters / 核心转化层</td><td>305.41</td><td>0.17</td><td>0.004</td><td>3.9%</td></tr>
+          <tr><td>Beauty & Lifestyle / 爱美女性</td><td>210.26</td><td>0.17</td><td>0.005</td><td>3.6%</td></tr>
+          <tr><td>Moms / 妈妈群体</td><td>145.57</td><td>0.17</td><td>0.005</td><td>3.4%</td></tr>
+          <tr><td>High-income Women / 高收入女性</td><td>144.50</td><td>0.16</td><td>0.004</td><td>4.5%</td></tr>
+          <tr><td>Competitor Switchers / 竞品截流</td><td>141.45</td><td>0.15</td><td>0.003</td><td>4.7%</td></tr>
+          <tr><td>TECNO Fans / 粉丝与老用户</td><td>121.72</td><td>0.17</td><td>0.004</td><td>4.7%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note" style="margin-top:12px;">Data source: Audience Insight (Weekly) / 数据源：受众洞察（周更）</div>
+
   </div>
 
   <!-- 11. Keyword Analysis -->
