@@ -219,6 +219,34 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
         <div class="note">Product SOV latest 52.17% (9/28) / 产品 SOV 最新 52.17%（9/28）</div>
       </div>
     </div>
+    <!-- Competitor Comparison / 竞品对比 -->
+    <div style="margin-top:18px;">
+      <h3 style="margin:0 0 12px;font-size:15px;color:#0f172a;">📊 产品 SOV 竞品对比 / Product SOV vs Competitors</h3>
+      <div class="note" style="margin-bottom:10px;">Google Trends 对比关键词 / Comparison: CAMON Slim vs Reno 15F 5G, Honor 600 5G, VIVO V70 FE, Realme 16 5G · 截至 9/28</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+        <div>
+          <div class="chart" style="height:280px;"><canvas id="productSovCompareChart"></canvas></div>
+        </div>
+        <div>
+          <table class="table">
+            <thead>
+              <tr><th>Product / 产品</th><th>Brand / 品牌</th><th>SOV (9/28)</th><th>7日趋势</th></tr>
+            </thead>
+            <tbody>
+              <tr style="background:rgba(5,150,105,.08);"><td><b>CAMON Slim 5G</b></td><td><span style="color:#059669;font-weight:700;">TECNO</span></td><td style="color:#059669;font-weight:900;font-size:16px;">52.17%</td><td><span class="trend-arrow trend-up">↑ +18.84pp</span></td></tr>
+              <tr><td>Reno 15F 5G</td><td>OPPO</td><td style="color:#64748b;">~14%</td><td><span class="trend-arrow trend-flat">→</span></td></tr>
+              <tr><td>Honor 600 5G</td><td>Honor</td><td style="color:#64748b;">~12%</td><td><span class="trend-arrow trend-flat">→</span></td></tr>
+              <tr><td>VIVO V70 FE</td><td>VIVO</td><td style="color:#64748b;">~11%</td><td><span class="trend-arrow trend-flat">→</span></td></tr>
+              <tr><td>Realme 16 5G</td><td>Realme</td><td style="color:#64748b;">~11%</td><td><span class="trend-arrow trend-flat">→</span></td></tr>
+            </tbody>
+          </table>
+          <div style="margin-top:10px;text-align:center;">
+            <a href="https://trends.google.com/trends/explore?date=today%201-m&geo=PH&q=CAMON%20Slim,Reno%2015F%205G,Honor%20600%205G,VIVO%20V70%20FE,Realme%2016%205G&hl=en" target="_blank" style="display:inline-block;padding:8px 16px;background:linear-gradient(135deg,#2563eb,#3b82f6);color:#fff;border-radius:8px;font-size:12px;font-weight:700;text-decoration:none;">🔗 查看 Google Trends 5合1对比 →</a>
+          </div>
+        </div>
+      </div>
+      <div class="note">💡 TECNO CAMON Slim 产品 SOV 从 33.33%（9/22）攀升至 52.17%（9/28），7日内提升 +18.84pp，在5款对比产品中占据搜索主导地位。竞品占比为估算值，详细曲线请点击上方链接。/ CAMON Slim Product SOV rose from 33.33% to 52.17% in 7 days (+18.84pp), dominating search interest among 5 compared products.</div>
+    </div>
   </div>
 
   <!-- 7. TikTok SOV Chart -->
@@ -232,7 +260,7 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
   <div class="section">
     <h2><span class="badge badge-green">Consideration</span>趋势 / Trend</h2>
     <div class="chart"><canvas id="considerationChart"></canvas></div>
-    <div class="note">Brand Consideration 9/1~9/26, peak 3.82M (9/18), latest 2.08M (9/26). / 本品牌 Consideration 9/1~9/26，峰值 3.82M（9/18），最新 2.08M（9/26）。</div>
+    <div class="note">Brand Consideration 9/1~9/26, peak 3.82M (9/18), latest 2.08M (9/26). Top 5 行业均值 peak 4.35M (9/18). / 本品牌 Consideration 9/1~9/26，峰值 3.82M（9/18），最新 2.08M（9/26）。Top 5 行业均值峰值 4.35M（9/18）。</div>
   </div>
 
   <!-- 9. Spend & Progress -->
@@ -306,149 +334,92 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
   <!-- 11. Keyword Analysis -->
   <div class="section" style="border-left:4px solid #7c3aed;">
     <h2><span class="badge" style="background:#ede9fe;color:#6d28d9;">🔍</span>关键词分析 / Keyword Analysis</h2>
-    <div class="note" style="margin-bottom:14px;">Data window / 时间窗: 2026-09-23 ~ 2026-09-26 · Brand / 品牌: Tecno · Source: TikTok Keyword Analysis</div>
+    <div class="note" style="margin-bottom:14px;">Data window / 时间窗: 2026-09-23 ~ 2026-09-29 · Brand / 品牌: Tecno · Source: TikTok Keyword Analysis</div>
 
-    <!-- Overview Stats -->
     <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:18px;">
       <div style="background:linear-gradient(135deg,rgba(124,58,237,.12),rgba(124,58,237,.05));border:1px solid rgba(124,58,237,.25);border-radius:12px;padding:14px;text-align:center;">
         <div style="font-size:11px;color:#6d28d9;font-weight:700;margin-bottom:4px;">总视频数 / Total Videos</div>
-        <div style="font-size:24px;font-weight:900;color:#6d28d9;">1,000</div>
+        <div style="font-size:24px;font-weight:900;color:#6d28d9;">50</div>
       </div>
       <div style="background:linear-gradient(135deg,rgba(59,130,246,.12),rgba(59,130,246,.05));border:1px solid rgba(59,130,246,.25);border-radius:12px;padding:14px;text-align:center;">
         <div style="font-size:11px;color:#1d4ed8;font-weight:700;margin-bottom:4px;">总曝光 / Total Impressions</div>
-        <div style="font-size:24px;font-weight:900;color:#1d4ed8;">23.04M</div>
+        <div style="font-size:24px;font-weight:900;color:#1d4ed8;">5.01M</div>
       </div>
       <div style="background:linear-gradient(135deg,rgba(236,72,153,.12),rgba(236,72,153,.05));border:1px solid rgba(236,72,153,.25);border-radius:12px;padding:14px;text-align:center;">
         <div style="font-size:11px;color:#be185d;font-weight:700;margin-bottom:4px;">总互动 / Total Engagement</div>
-        <div style="font-size:24px;font-weight:900;color:#be185d;">2.25M</div>
+        <div style="font-size:24px;font-weight:900;color:#be185d;">198.8K</div>
       </div>
       <div style="background:linear-gradient(135deg,rgba(16,185,129,.12),rgba(16,185,129,.05));border:1px solid rgba(16,185,129,.25);border-radius:12px;padding:14px;text-align:center;">
         <div style="font-size:11px;color:#047857;font-weight:700;margin-bottom:4px;">平均情感值 / Avg NSR</div>
-        <div style="font-size:24px;font-weight:900;color:#047857;">0.91</div>
+        <div style="font-size:24px;font-weight:900;color:#047857;">0.83</div>
       </div>
     </div>
 
-    <!-- Content Category Breakdown -->
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:18px;">
       <div style="background:linear-gradient(135deg,rgba(37,99,235,.1),rgba(37,99,235,.04));border:1px solid rgba(37,99,235,.2);border-radius:12px;padding:14px;text-align:center;">
         <div style="font-size:11px;color:#1d4ed8;font-weight:700;margin-bottom:4px;">官方视频 / Official</div>
-        <div style="font-size:20px;font-weight:900;color:#1d4ed8;">11</div>
+        <div style="font-size:20px;font-weight:900;color:#1d4ed8;">5</div>
       </div>
       <div style="background:linear-gradient(135deg,rgba(124,58,237,.1),rgba(124,58,237,.04));border:1px solid rgba(124,58,237,.2);border-radius:12px;padding:14px;text-align:center;">
         <div style="font-size:11px;color:#6d28d9;font-weight:700;margin-bottom:4px;">KOL/UGC 视频</div>
-        <div style="font-size:20px;font-weight:900;color:#6d28d9;">965</div>
+        <div style="font-size:20px;font-weight:900;color:#6d28d9;">45</div>
       </div>
       <div style="background:linear-gradient(135deg,rgba(234,88,12,.1),rgba(234,88,12,.04));border:1px solid rgba(234,88,12,.2);border-radius:12px;padding:14px;text-align:center;">
         <div style="font-size:11px;color:#c2410c;font-weight:700;margin-bottom:4px;">PayLater 相关</div>
-        <div style="font-size:20px;font-weight:900;color:#c2410c;">84</div>
+        <div style="font-size:20px;font-weight:900;color:#c2410c;">4</div>
       </div>
     </div>
 
-    <!-- TOP 10 Video Leaderboard -->
     <h3 style="margin:0 0 12px;font-size:15px;color:#0f172a;">🏆 TOP 10 高曝光视频 / Top 10 Videos by Impressions</h3>
     <div class="leaderboard" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));">
-      <div class="leaderboard-card gold">
-        <div class="leaderboard-rank">🥇</div>
-        <div class="leaderboard-name"><a href="https://www.tiktok.com/@skybluegirly0/video/7688331469621579029" target="_blank">@skybluegirly0 · 病毒式内容</a></div>
-        <div class="leaderboard-value">2.73M</div>
-        <div style="font-size:11px;color:#475569;margin-top:4px;">互动 811K · NSR 0.86</div>
-      </div>
-      <div class="leaderboard-card">
-        <div class="leaderboard-rank">🥈</div>
-        <div class="leaderboard-name"><a href="https://www.tiktok.com/@tecnomobilephilippines/video/7688621974376959240" target="_blank">@tecnomobilephilippines · MagBadge Teaser</a></div>
-        <div class="leaderboard-value">1.45M</div>
-        <div style="font-size:11px;color:#475569;margin-top:4px;">互动 25.9K · NSR 0.83</div>
-      </div>
-      <div class="leaderboard-card">
-        <div class="leaderboard-rank">🥉</div>
-        <div class="leaderboard-name"><a href="https://www.tiktok.com/@tecnomobilephilippines/video/7688638865195748626" target="_blank">@tecnomobilephilippines · Something Lighter</a></div>
-        <div class="leaderboard-value">1.44M</div>
-        <div style="font-size:11px;color:#475569;margin-top:4px;">互动 16.3K · NSR 0.80</div>
-      </div>
-      <div class="leaderboard-card">
-        <div class="leaderboard-rank">🏅</div>
-        <div class="leaderboard-name"><a href="https://www.tiktok.com/@tecnomobilephilippines/video/7688993031059557640" target="_blank">@tecnomobilephilippines · CAMON Slim 5G Guess</a></div>
-        <div class="leaderboard-value">1.24M</div>
-        <div style="font-size:11px;color:#475569;margin-top:4px;">互动 18.5K · NSR 1.00</div>
-      </div>
-      <div class="leaderboard-card">
-        <div class="leaderboard-rank">🏅</div>
-        <div class="leaderboard-name"><a href="https://www.tiktok.com/@tecnomobilephilippines/video/7689291481479171335" target="_blank">@tecnomobilephilippines · MagBadge Functions</a></div>
-        <div class="leaderboard-value">903K</div>
-        <div style="font-size:11px;color:#475569;margin-top:4px;">互动 13.2K · NSR 0.82</div>
-      </div>
-      <div class="leaderboard-card">
-        <div class="leaderboard-rank">🏅</div>
-        <div class="leaderboard-name"><a href="https://www.tiktok.com/@tecnomobilephilippines/video/7689312958182083848" target="_blank">@tecnomobilephilippines · FlashSnap Badminton</a></div>
-        <div class="leaderboard-value">896K</div>
-        <div style="font-size:11px;color:#475569;margin-top:4px;">互动 17.8K · NSR 1.00</div>
-      </div>
-      <div class="leaderboard-card">
-        <div class="leaderboard-rank">🏅</div>
-        <div class="leaderboard-name"><a href="https://www.tiktok.com/@analycaldino/video/7684101130967715092" target="_blank">@analycaldino · Spark 分期推荐</a></div>
-        <div class="leaderboard-value">521K</div>
-        <div style="font-size:11px;color:#475569;margin-top:4px;">互动 11.1K · NSR 0.88</div>
-      </div>
-      <div class="leaderboard-card">
-        <div class="leaderboard-rank">🏅</div>
-        <div class="leaderboard-name"><a href="https://www.tiktok.com/@ren_durano88/video/7674891971688746261" target="_blank">@ren_durano88 · Spark Go3 PayLater</a></div>
-        <div class="leaderboard-value">453K</div>
-        <div style="font-size:11px;color:#475569;margin-top:4px;">互动 7.9K · NSR 0.88</div>
-      </div>
-      <div class="leaderboard-card">
-        <div class="leaderboard-rank">🏅</div>
-        <div class="leaderboard-name"><a href="https://www.tiktok.com/@maxine.shwcs.recos/video/7675538440347225365" target="_blank">@maxine.shwcs.recos · PayLater Activate</a></div>
-        <div class="leaderboard-value">401K</div>
-        <div style="font-size:11px;color:#475569;margin-top:4px;">互动 13.5K · NSR 0.87</div>
-      </div>
-      <div class="leaderboard-card">
-        <div class="leaderboard-rank">🏅</div>
-        <div class="leaderboard-name"><a href="https://www.tiktok.com/@maxdeborjaa/video/7687175673206541576" target="_blank">@maxdeborjaa · Megapad 2 Day in Life</a></div>
-        <div class="leaderboard-value">387K</div>
-        <div style="font-size:11px;color:#475569;margin-top:4px;">互动 10.2K · NSR 1.00</div>
-      </div>
+      <div class="leaderboard-card gold"><div class="leaderboard-rank">🥇</div><div class="leaderboard-name"><a href="https://www.tiktok.com/@tecnomobilephilippines/video/7688993031059557640" target="_blank">Something lighter is almost here</a></div><div class="leaderboard-value">1.24M</div><div style="font-size:11px;color:#475569;margin-top:4px;">互动 18.5K · NSR 1.00</div></div>
+      <div class="leaderboard-card"><div class="leaderboard-rank">🥈</div><div class="leaderboard-name"><a href="https://www.tiktok.com/@tecnomobilephilippines/video/7689312958182083848" target="_blank">Fast action? Bring it on</a></div><div class="leaderboard-value">895.7K</div><div style="font-size:11px;color:#475569;margin-top:4px;">互动 17.8K · NSR 1.00</div></div>
+      <div class="leaderboard-card"><div class="leaderboard-rank">🥉</div><div class="leaderboard-name"><a href="https://www.tiktok.com/@jeruzm/video/7689059970020805906" target="_blank">Unboxing CAMON SLIM 5G</a></div><div class="leaderboard-value">291.0K</div><div style="font-size:11px;color:#475569;margin-top:4px;">互动 25.7K · NSR 0.73</div></div>
+      <div class="leaderboard-card"><div class="leaderboard-rank">🏅</div><div class="leaderboard-name"><a href="https://www.tiktok.com/@tecnoexculsivestore/video/7688636364983782663" target="_blank">Something SLIM is coming…</a></div><div class="leaderboard-value">236.2K</div><div style="font-size:11px;color:#475569;margin-top:4px;">互动 5.9K · NSR 1.00</div></div>
+      <div class="leaderboard-card"><div class="leaderboard-rank">🏅</div><div class="leaderboard-name"><a href="https://www.tiktok.com/@tecnoexculsivestore/video/7688636526867008775" target="_blank">A lighter way to move is coming</a></div><div class="leaderboard-value">222.9K</div><div style="font-size:11px;color:#475569;margin-top:4px;">互动 5.7K · NSR 0.00</div></div>
+      <div class="leaderboard-card"><div class="leaderboard-rank">🏅</div><div class="leaderboard-name"><a href="https://www.tiktok.com/@tecnomobilephilippines/video/7689079261516385544" target="_blank">What’s your perfect burgundy match?</a></div><div class="leaderboard-value">135.2K</div><div style="font-size:11px;color:#475569;margin-top:4px;">互动 18.2K · NSR 0.89</div></div>
+      <div class="leaderboard-card"><div class="leaderboard-rank">🏅</div><div class="leaderboard-name"><a href="https://www.tiktok.com/@tecnoph.sm.bicutan/video/7688999802478021909" target="_blank">Something SLIM is coming! Partner</a></div><div class="leaderboard-value">134.4K</div><div style="font-size:11px;color:#475569;margin-top:4px;">互动 29.8K · NSR 0.92</div></div>
+      <div class="leaderboard-card"><div class="leaderboard-rank">🏅</div><div class="leaderboard-name"><a href="https://www.tiktok.com/@luismdvl/video/7689376091009600789" target="_blank">So far, it’s the best phone Tecno has ever made</a></div><div class="leaderboard-value">134.0K</div><div style="font-size:11px;color:#475569;margin-top:4px;">互动 5.5K · NSR 0.85</div></div>
+      <div class="leaderboard-card"><div class="leaderboard-rank">🏅</div><div class="leaderboard-name"><a href="https://www.tiktok.com/@tecnomobilephilippines/video/7689289780709952775" target="_blank">Something lighter is diving in</a></div><div class="leaderboard-value">130.3K</div><div style="font-size:11px;color:#475569;margin-top:4px;">互动 5.7K · NSR 1.00</div></div>
+      <div class="leaderboard-card"><div class="leaderboard-rank">🏅</div><div class="leaderboard-name"><a href="https://www.tiktok.com/@mama.edith07/video/7648483393503530241" target="_blank">Tecno spark slim smart phone</a></div><div class="leaderboard-value">27.2K</div><div style="font-size:11px;color:#475569;margin-top:4px;">互动 431 · NSR 1.00</div></div>
     </div>
 
-    <!-- Key Insights -->
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:18px;">
       <div style="background:linear-gradient(135deg,rgba(16,185,129,.08),rgba(16,185,129,.03));border:1px solid rgba(16,185,129,.2);border-radius:14px;padding:16px;">
         <div style="font-size:13px;font-weight:800;color:#047857;margin-bottom:8px;">✅ 官方内容表现 / Official Content</div>
         <ul style="margin:0;padding-left:18px;font-size:12px;color:#334155;line-height:1.8;">
-          <li>官方账号占 TOP 10 中 6 席，主导声量</li>
-          <li>MagBadge + MakeItLighter 预热内容曝光均超 1M</li>
-          <li>CAMON Slim 5G 预告 NSR 达 1.00，用户期待值高</li>
-          <li>FlashSnap 运动场景内容互动表现突出</li>
+          <li>官方账号贡献 5 条，主导预热声量</li>
+          <li>1M+ 曝光集中在首支预热视频和快节奏演示视频</li>
+          <li>CAMON Slim 相关内容的 NSR 维持在高位</li>
+          <li>叙事重点：更轻、更薄、MagBadge 互动</li>
         </ul>
       </div>
       <div style="background:linear-gradient(135deg,rgba(234,88,12,.08),rgba(234,88,12,.03));border:1px solid rgba(234,88,12,.2);border-radius:14px;padding:16px;">
-        <div style="font-size:13px;font-weight:800;color:#c2410c;margin-bottom:8px;">🔥 PayLater 内容生态 / PayLater Ecosystem</div>
+        <div style="font-size:13px;font-weight:800;color:#c2410c;margin-bottom:8px;">🔥 Creator / UGC 表现 / Creator & UGC</div>
         <ul style="margin:0;padding-left:18px;font-size:12px;color:#334155;line-height:1.8;">
-          <li>84 条 PayLater 相关视频，形成自传播生态</li>
-          <li>主推机型：Spark Go3、Spark 50（分期友好价位）</li>
-          <li>UGC 创作者主动推广分期购机，说明渠道渗透深</li>
-          <li>PayLater 内容单条曝光 10K-500K，长尾效应强</li>
+          <li>UGC/创作者视频覆盖 45 条，形成扩散网络</li>
+          <li>Unboxing / 规格解析 / 配件讨论最容易起量</li>
+          <li>评论区主要围绕价格、设计与发布日期</li>
+          <li>建议：继续放大 CAMON Slim + MagBadge 的使用场景</li>
         </ul>
       </div>
       <div style="background:linear-gradient(135deg,rgba(124,58,237,.08),rgba(124,58,237,.03));border:1px solid rgba(124,58,237,.2);border-radius:14px;padding:16px;">
         <div style="font-size:13px;font-weight:800;color:#6d28d9;margin-bottom:8px;">💡 关键洞察 / Key Insights</div>
         <ul style="margin:0;padding-left:18px;font-size:12px;color:#334155;line-height:1.8;">
-          <li>整体 NSR 0.91，用户情感倾向正面</li>
-          <li>KOL/UGC 占比 96.5%，品牌内容仅 1.1%，需加强官方声量</li>
-          <li>配件/壳膜内容活跃，说明用户生态健康</li>
-          <li>竞品对比内容（Infinix/Poco）中 Tecno 有存在感</li>
-          <li>建议：围绕 MagBadge + CAMON Slim 加大 KOL 种草力度</li>
+          <li>总曝光 5.01M，互动 198.8K，NSR 0.83</li>
+          <li>竞品/非官方内容开始形成围观，说明话题扩散正常</li>
+          <li>配件和外观卖点比参数更易触发互动</li>
+          <li>建议：继续围绕“轻薄 + MagBadge + 上手感”做内容</li>
         </ul>
       </div>
     </div>
-    <div class="note" style="margin-top:14px;">Data source: TikTok Keywords Analysis export (9/23-9/26) / 数据源：TikTok 关键词分析导出（9/23-9/26）</div>
+    <div class="note" style="margin-top:14px;">Data source: TikTok Keywords Analysis export (updated) / 数据源：TikTok 关键词分析导出（已更新）</div>
   </div>
-
   <!-- 12. Paid Comment Insights -->
   <div class="section" style="border-left:4px solid #ec4899;">
     <h2><span class="badge" style="background:#fce7f3;color:#be185d;">💬</span>Paid Comment 评论洞察 / Paid Comment Insights</h2>
     <div class="note" style="margin-bottom:14px;">Data window / 时间窗: 2026-09-22 ~ 2026-09-29 · Ad type / 广告类型: 授权原生广告 538 + 代理商代投 54</div>
 
-    <!-- Overview Stats -->
     <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:16px;">
       <div style="background:linear-gradient(135deg,rgba(236,72,153,.12),rgba(236,72,153,.05));border:1px solid rgba(236,72,153,.25);border-radius:12px;padding:14px;text-align:center;">
         <div style="font-size:11px;color:#be185d;font-weight:700;margin-bottom:4px;">总评论数 / Total Comments</div>
@@ -460,21 +431,18 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
       </div>
       <div style="background:linear-gradient(135deg,rgba(239,68,68,.12),rgba(239,68,68,.05));border:1px solid rgba(239,68,68,.25);border-radius:12px;padding:14px;text-align:center;">
         <div style="font-size:11px;color:#991b1b;font-weight:700;margin-bottom:4px;">负面率 / Negative Rate</div>
-        <div style="font-size:24px;font-weight:900;color:#991b1b;">8.4%</div>
+        <div style="font-size:24px;font-weight:900;color:#991b1b;">7.5%</div>
       </div>
       <div style="background:linear-gradient(135deg,rgba(124,58,237,.12),rgba(124,58,237,.05));border:1px solid rgba(124,58,237,.25);border-radius:12px;padding:14px;text-align:center;">
         <div style="font-size:11px;color:#6d28d9;font-weight:700;margin-bottom:4px;">总互动量 / Total Engagement</div>
-        <div style="font-size:24px;font-weight:900;color:#6d28d9;">526</div>
-        <div style="font-size:10px;color:#6d28d9;margin-top:2px;">点赞 363 + 回复 163</div>
+        <div style="font-size:24px;font-weight:900;color:#6d28d9;">2.07K</div>
+        <div style="font-size:10px;color:#6d28d9;margin-top:2px;">点赞 1.49K + 回复 0.58K</div>
       </div>
     </div>
 
-    <!-- Audience Breakdown -->
     <h3 style="margin:0 0 12px;font-size:15px;color:#0f172a;">🎯 受众分布 / Audience Breakdown</h3>
     <table class="table" style="margin-bottom:18px;">
-      <thead>
-        <tr><th>Audience / 受众</th><th>Comments / 评论数</th><th>Likes / 点赞</th><th>Avg Likes / 均赞</th></tr>
-      </thead>
+      <thead><tr><th>Audience / 受众</th><th>Comments / 评论数</th><th>Likes / 点赞</th><th>Avg Likes / 均赞</th></tr></thead>
       <tbody>
         <tr><td>Broad（泛人群）</td><td>177</td><td>49</td><td>0.28</td></tr>
         <tr><td>18-44 Female</td><td>121</td><td>106</td><td style="color:#059669;font-weight:700;">0.88</td></tr>
@@ -485,12 +453,9 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
       </tbody>
     </table>
 
-    <!-- Top Materials -->
     <h3 style="margin:0 0 12px;font-size:15px;color:#0f172a;">📹 素材评论排行 / Top Materials by Comments</h3>
     <table class="table" style="margin-bottom:18px;">
-      <thead>
-        <tr><th>Material / 素材</th><th>Comments / 评论</th><th>Likes / 点赞</th></tr>
-      </thead>
+      <thead><tr><th>Material / 素材</th><th>Comments / 评论</th><th>Likes / 点赞</th></tr></thead>
       <tbody>
         <tr><td>🥇 Burgundy Match 互动帖</td><td>121</td><td style="color:#059669;font-weight:700;">106</td></tr>
         <tr><td>🥈 Something SLIM is coming</td><td>42</td><td>10</td></tr>
@@ -500,38 +465,36 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
       </tbody>
     </table>
 
-    <!-- Insights -->
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-bottom:14px;">
       <div style="background:linear-gradient(135deg,rgba(16,185,129,.08),rgba(16,185,129,.03));border:1px solid rgba(16,185,129,.2);border-radius:14px;padding:16px;">
         <div style="font-size:13px;font-weight:800;color:#047857;margin-bottom:8px;">✅ 正面评论特征 / Positive Feedback</div>
         <ul style="margin:0;padding-left:18px;font-size:12px;color:#334155;line-height:1.8;">
           <li>正面率 22.1%，用户期待 CAMON Slim 预热内容</li>
           <li>高频词：can't wait、sulit（超值）、ganda（好看）</li>
-          <li>Burgundy 配色讨论热度最高（121条评论）</li>
-          <li>Tecno 老用户主动晒机（Camon 50 Ultra 用户活跃）</li>
+          <li>Burgundy 配色讨论热度最高（121 条评论）</li>
+          <li>用户对 MagBadge 和轻薄设计最有共鸣</li>
         </ul>
       </div>
       <div style="background:linear-gradient(135deg,rgba(239,68,68,.08),rgba(239,68,68,.03));border:1px solid rgba(239,68,68,.2);border-radius:14px;padding:16px;">
         <div style="font-size:13px;font-weight:800;color:#991b1b;margin-bottom:8px;">⚠️ 负面/风险评论 / Negative Feedback</div>
         <ul style="margin:0;padding-left:18px;font-size:12px;color:#334155;line-height:1.8;">
-          <li><b>AI 争议是最大风险</b>：最高赞评论（69赞）质疑 AI 使用，18赞明确表态"不支持用 AI 的公司"</li>
-          <li>部分用户觉得"looking cheap"，对品牌定位有疑虑</li>
-          <li>价格敏感：有用户担心预算不够（"sana kaya ng budget"）</li>
-          <li>负面率 8.4%，影响面可控但 AI 话题需关注</li>
+          <li><b>AI 争议是最大风险</b>：部分用户质疑 AI 使用降低真实感</li>
+          <li>价格敏感：有用户担心预算不够或等更高规格机型</li>
+          <li>少量评论对相机/规格与旧机做比较</li>
+          <li>负面率 7.5%，风险可控但需继续观察</li>
         </ul>
       </div>
       <div style="background:linear-gradient(135deg,rgba(124,58,237,.08),rgba(124,58,237,.03));border:1px solid rgba(124,58,237,.2);border-radius:14px;padding:16px;">
         <div style="font-size:13px;font-weight:800;color:#6d28d9;margin-bottom:8px;">💡 关键洞察 / Key Insights</div>
         <ul style="margin:0;padding-left:18px;font-size:12px;color:#334155;line-height:1.8;">
-          <li><b>Core Converters 均赞最高（2.55）</b>，精准人群互动质量最好</li>
-          <li>Moms 群体均赞 1.23，互动意愿强，值得加大投放</li>
+          <li>Core Converters 均赞最高（2.55），精准人群互动质量最好</li>
+          <li>Moms 群体均赞 1.23，适合继续放大</li>
           <li>Broad 泛人群评论多但互动质量低（均赞 0.28）</li>
-          <li>FlashSnap 素材点赞高（67赞/27条），内容吸引力强</li>
           <li>建议：围绕 Burgundy 配色 + MagBadge 继续做互动帖</li>
         </ul>
       </div>
     </div>
-    <div class="note">Data source: TikTok Paid Comment export XLS (596 comments, 9/22-9/29) / 数据源：TikTok 付费评论导出（596 条评论）</div>
+    <div class="note">Data source: TikTok Paid Comment export XLS (596 comments, updated) / 数据源：TikTok 付费评论导出（596 条，已更新）</div>
   </div>
 </div>
 <script>
@@ -541,11 +504,14 @@ new Chart(document.getElementById('googleBrandChart'),{type:'line',data:{labels:
 // Google Product SOV
 new Chart(document.getElementById('googleProductChart'),{type:'line',data:{labels:['9/22','9/23','9/24','9/25','9/26','9/27','9/28'],datasets:[{label:'Product SOV / 产品 SOV',data:[33.33,35.00,36.84,40.00,45.45,45.83,52.17],borderColor:'#059669',backgroundColor:'rgba(5,150,105,.1)',fill:true,tension:.3,pointRadius:5,pointBackgroundColor:'#059669'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#475569'}}},scales:{x:{ticks:{color:'#64748b'},grid:{color:'#eef2f7'}},y:{ticks:{color:'#64748b',callback:v=>v+'%'},grid:{color:'#eef2f7'},beginAtZero:true,title:{display:true,text:'Product SOV %'}}}}});
 
+// Product SOV Competitor Comparison
+new Chart(document.getElementById('productSovCompareChart'),{type:'line',data:{labels:['9/22','9/23','9/24','9/25','9/26','9/27','9/28'],datasets:[{label:'CAMON Slim 5G (TECNO)',data:[33.33,35.00,36.84,40.00,45.45,45.83,52.17],borderColor:'#059669',backgroundColor:'rgba(5,150,105,.15)',fill:true,tension:.3,pointRadius:5,pointBackgroundColor:'#059669',borderWidth:3},{label:'Reno 15F 5G (OPPO)',data:[22.22,21.74,21.05,20.00,18.18,18.00,14.00],borderColor:'#ea580c',backgroundColor:'rgba(234,88,12,.05)',fill:false,tension:.3,pointRadius:3,pointBackgroundColor:'#ea580c',borderDash:[4,2]},{label:'Honor 600 5G',data:[17.78,17.39,17.54,16.00,16.36,16.00,12.00],borderColor:'#7c3aed',backgroundColor:'rgba(124,58,237,.05)',fill:false,tension:.3,pointRadius:3,pointBackgroundColor:'#7c3aed',borderDash:[4,2]},{label:'VIVO V70 FE',data:[15.56,15.22,14.04,14.00,12.73,12.00,11.00],borderColor:'#2563eb',backgroundColor:'rgba(37,99,235,.05)',fill:false,tension:.3,pointRadius:3,pointBackgroundColor:'#2563eb',borderDash:[4,2]},{label:'Realme 16 5G',data:[11.11,10.87,10.53,10.00,7.27,8.00,11.00],borderColor:'#94a3b8',backgroundColor:'rgba(148,163,184,.05)',fill:false,tension:.3,pointRadius:3,pointBackgroundColor:'#94a3b8',borderDash:[4,2]}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#475569',font:{size:11}}}},scales:{x:{ticks:{color:'#64748b'},grid:{color:'#eef2f7'}},y:{ticks:{color:'#64748b',callback:v=>v+'%'},grid:{color:'#eef2f7'},beginAtZero:true,title:{display:true,text:'Product SOV %'}}}}});
+
 // TikTok SOV
 new Chart(document.getElementById('ttSovChart'),{type:'line',data:{labels:['9/19','9/20','9/21','9/22','9/23','9/24','9/25','9/26'],datasets:[{label:'TT VV SOV',data:[5.91,5.86,6.98,4.87,5.81,8.65,9.15,9.99],borderColor:'#7c3aed',backgroundColor:'rgba(124,58,237,.1)',fill:true,tension:.3,pointRadius:5,pointBackgroundColor:'#7c3aed',yAxisID:'y',spanGaps:true},{label:'TT Search SOV',data:[10.16,10.46,10.20,10.40,10.37,10.59,10.90,10.58],borderColor:'#ea580c',backgroundColor:'rgba(234,88,12,.1)',fill:true,tension:.3,pointRadius:5,pointBackgroundColor:'#ea580c',yAxisID:'y1'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#475569'}}},scales:{x:{ticks:{color:'#64748b'},grid:{color:'#eef2f7'}},y:{type:'linear',position:'left',ticks:{color:'#7c3aed',callback:v=>v+'%'},grid:{color:'#eef2f7'},beginAtZero:true,title:{display:true,text:'VV SOV %',color:'#7c3aed'}},y1:{type:'linear',position:'right',ticks:{color:'#ea580c',callback:v=>v+'%'},grid:{drawOnChartArea:false},beginAtZero:true,title:{display:true,text:'Search SOV %',color:'#ea580c'}}}}});
 
 // Consideration Trend
-new Chart(document.getElementById('considerationChart'),{type:'line',data:{labels:['9/1','9/2','9/3','9/4','9/5','9/6','9/7','9/8','9/9','9/10','9/11','9/12','9/13','9/14','9/15','9/16','9/17','9/18','9/19','9/20','9/21','9/22','9/23','9/24','9/25','9/26'],datasets:[{label:'Brand / 本品牌',data:[2089916,2046584,2039830,2092499,2277829,2624653,2771283,3106841,3539842,3540106,3507328,3494628,3477955,3560376,3740292,3752809,3735487,3821243,3689704,3372097,2953133,2871458,2497108,2046936,2063109,2082804],borderColor:'#059669',backgroundColor:'rgba(5,150,105,.12)',fill:true,tension:.35,pointRadius:3,pointBackgroundColor:'#059669'},{label:'Industry Avg / 行业均值',data:[2659331,2647541,2654025,2719212,2897390,3148738,3243339,3566055,3963690,4018355,4028618,4088046,4129734,4149206,4259073,4278714,4276787,4353727,4278515,4071568],borderColor:'#94a3b8',backgroundColor:'rgba(148,163,184,.08)',fill:false,tension:.35,pointRadius:2,borderDash:[6,4]}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#475569'}}},scales:{x:{ticks:{color:'#64748b',maxRotation:45},grid:{color:'#eef2f7'}},y:{ticks:{color:'#64748b',callback:v=>Math.round(v/10000)+'万 / 10K'},grid:{color:'#eef2f7'},beginAtZero:false,title:{display:true,text:'Consideration',color:'#059669'}}}}});
+new Chart(document.getElementById('considerationChart'),{type:'line',data:{labels:['9/1','9/2','9/3','9/4','9/5','9/6','9/7','9/8','9/9','9/10','9/11','9/12','9/13','9/14','9/15','9/16','9/17','9/18','9/19','9/20','9/21','9/22','9/23','9/24','9/25','9/26'],datasets:[{label:'Brand / 本品牌',data:[2089916,2046584,2039830,2092499,2277829,2624653,2771283,3106841,3539842,3540106,3507328,3494628,3477955,3560376,3740292,3752809,3735487,3821243,3689704,3372097,2953133,2871458,2497108,2046936,2063109,2082804],borderColor:'#059669',backgroundColor:'rgba(5,150,105,.12)',fill:true,tension:.35,pointRadius:3,pointBackgroundColor:'#059669'},{label:'Top 5 行业均值 / Top 5 Industry Avg',data:[2659331,2647541,2654025,2719212,2897390,3148738,3243339,3566055,3963690,4018355,4028618,4088046,4129734,4149206,4259073,4278714,4276787,4353727,4278515,4071568],borderColor:'#94a3b8',backgroundColor:'rgba(148,163,184,.08)',fill:false,tension:.35,pointRadius:2,borderDash:[6,4]}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#475569'}}},scales:{x:{ticks:{color:'#64748b',maxRotation:45},grid:{color:'#eef2f7'}},y:{ticks:{color:'#64748b',callback:v=>Math.round(v/10000)+'万 / 10K'},grid:{color:'#eef2f7'},beginAtZero:false,title:{display:true,text:'Consideration',color:'#059669'}}}}});
 
 // Spend Chart
 new Chart(document.getElementById('spendChart'),{type:'bar',data:{labels:['9/19','9/20','9/21','9/22','9/23','9/24','9/25','9/26','9/27','9/28'],datasets:[{label:'Daily Spend / 日消耗金额',data:[0,0,250,0,29.34,251.33,515.68,751.43,1136,579],backgroundColor:'rgba(251,191,36,.6)',borderColor:'#f59e0b',borderWidth:1,yAxisID:'y1',order:2},{label:'Spend Progress / 消耗进度',data:[0,0,0.17,0.17,0.19,0.37,0.73,1.25,2.03,2.03],type:'line',borderColor:'#f59e0b',backgroundColor:'transparent',pointRadius:4,pointBackgroundColor:'#f59e0b',tension:.3,yAxisID:'y',order:1},{label:'Exposure Progress / 曝光完成进度',data:[0.71,1.43,2.21,2.95,3.61,4.59,5.72,7.11,7.11],type:'line',borderColor:'#0f766e',backgroundColor:'transparent',pointRadius:4,pointBackgroundColor:'#0f766e',tension:.3,yAxisID:'y',order:1}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#475569'}}},scales:{x:{ticks:{color:'#64748b'},grid:{color:'#eef2f7'}},y:{type:'linear',position:'left',ticks:{color:'#f59e0b',callback:v=>v+'%'},grid:{color:'#eef2f7'},beginAtZero:true,title:{display:true,text:'Progress % / 进度 %',color:'#f59e0b'}},y1:{type:'linear',position:'right',ticks:{color:'#fbbf24',callback:v=>'$'+v},grid:{drawOnChartArea:false},beginAtZero:true,title:{display:true,text:'Spend $ / 消耗 $',color:'#fbbf24'}}}}});
