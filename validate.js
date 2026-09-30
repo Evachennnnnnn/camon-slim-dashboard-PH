@@ -47,7 +47,8 @@ function validate(html) {
     ];
 
     for (const key of requiredKeys) {
-      if (!dContent.includes(key + ':')) {
+      // 兼容 JSON.stringify 格式（"key":）和手写格式（key:）
+      if (!dContent.includes(key + ':') && !dContent.includes('"' + key + '"')) {
         errors.push(`❌ D 对象缺少字段: ${key}`);
       }
     }

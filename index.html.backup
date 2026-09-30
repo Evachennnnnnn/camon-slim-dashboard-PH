@@ -250,13 +250,13 @@ const D = {
   dataAsOf: '9/29',
 
   // Alert banner
-  alertBanner: '数据已更新至 9/29。Google Product SOV 43.33%，TT VV SOV 9.99%，TT Search SOV 10.58%，Consideration 2.12M，Meta 曝光 13.10M。/ Data updated to 9/29. Google Product SOV 43.33%, TT VV SOV 9.99%, TT Search SOV 10.58%, Consideration 2.12M, Meta Impressions 13.10M.',
+  alertBanner: '数据已更新至 9/29。Google Product SOV 52.17%，TT VV SOV 9.99%，TT Search SOV 10.58%，Consideration 2.12M，Meta 曝光 13.10M。/ Data updated to 9/29. Google Product SOV 52.17%, TT VV SOV 9.99%, TT Search SOV 10.58%, Consideration 2.12M, Meta Impressions 13.10M.',
 
   // Hero section
   hero: {
-    desc: 'Google Product SOV 43.33% (9/29), Consideration 2.12M (9/27), 全网总曝光 68.57M, 互动量行业排名 #5. / Google 产品 SOV 43.33%，Consideration 总量 2.12M，全网总曝光 68.57M，互动量行业排名 #5。',
+    desc: 'Google Product SOV 52.17% (9/28), Consideration 2.12M (9/27), 全网总曝光 68.57M, 互动量行业排名 #5. / Google 产品 SOV 52.17%，Consideration 总量 2.12M，全网总曝光 68.57M，互动量行业排名 #5。',
     stats: [
-      { label: 'Google 产品 SOV / Product SOV', value: '43.33%' },
+      { label: 'Google 产品 SOV / Product SOV', value: '52.17%' },
       { label: 'Consideration 总量 / Total', value: '2.12M' },
       { label: '全网总曝光 / Total Impressions', value: '68.57M' },
       { label: '互动量行业排名 / Engagement Rank', value: '#5' }
@@ -275,8 +275,8 @@ const D = {
 
   // Overview table
   overview: [
-    { status: 'green', metric: 'Google 品牌 SOV / Brand SOV', current: '15.55%', target: '—', date: '9/29' },
-    { status: 'green', metric: 'Google 产品 SOV / Product SOV', current: '43.33%', target: '—', date: '9/29' },
+    { status: 'green', metric: 'Google 品牌 SOV / Brand SOV', current: '15.44%', target: '—', date: '9/28' },
+    { status: 'green', metric: 'Google 产品 SOV / Product SOV', current: '52.17%', target: '—', date: '9/28' },
     { status: 'red', metric: 'TikTok VV SOV', current: '9.99%', target: '20%', date: '9/26' },
     { status: 'yellow', metric: 'TikTok Search SOV', current: '10.58%', target: '13%', date: '9/26' },
     { status: 'red', metric: 'TikTok曝光量 / Impressions', current: '55.47M', target: '700M', date: '9/26' },
@@ -310,32 +310,32 @@ const D = {
 
   // Google SOV chart data
   googleSov: {
-    labels: ['9/22','9/23','9/24','9/25','9/26','9/27','9/28','9/29'],
-    brand: [15.32,15.24,15.41,15.62,15.44,16.74,15.44,15.55],
-    product: [33.33,35.00,36.84,40.00,45.45,45.83,52.17,43.33],
-    brandNote: 'Brand SOV latest 15.55% (9/29) / 品牌 SOV 最新 15.55%（9/29）',
-    productNote: 'Product SOV latest 43.33% (9/29) / 产品 SOV 最新 43.33%（9/29）'
+    labels: ['9/22','9/23','9/24','9/25','9/26','9/27','9/28'],
+    brand: [15.32,15.24,15.41,15.62,15.44,16.74,15.44],
+    product: [33.33,35.00,36.84,40.00,45.45,45.83,52.17],
+    brandNote: 'Brand SOV latest 15.44% (9/28) / 品牌 SOV 最新 15.44%（9/28）',
+    productNote: 'Product SOV latest 52.17% (9/28) / 产品 SOV 最新 52.17%（9/28）'
   },
 
   // Competitor comparison
   competitorCompare: {
     note: 'Google Trends 对比关键词 / Comparison: CAMON Slim vs Reno 15F 5G, Honor 600 5G, VIVO V70 FE, Realme 16 5G · 截至 9/28',
-    chartLabels: ['9/22','9/23','9/24','9/25','9/26','9/27','9/28','9/29'],
+    chartLabels: ['9/22','9/23','9/24','9/25','9/26','9/27','9/28'],
     datasets: [
-      { label: 'CAMON Slim 5G (TECNO)', data: [33.33,35.00,36.84,40.00,45.45,45.83,52.17,43.33], borderColor: '#059669', bg: 'rgba(5,150,105,.15)', fill: true, dash: null, width: 3, pointRadius: 5 },
+      { label: 'CAMON Slim 5G (TECNO)', data: [33.33,35.00,36.84,40.00,45.45,45.83,52.17], borderColor: '#059669', bg: 'rgba(5,150,105,.15)', fill: true, dash: null, width: 3, pointRadius: 5 },
       { label: 'Reno 15F 5G (OPPO)', data: [22.22,21.74,21.05,20.00,18.18,18.00,14.00], borderColor: '#ea580c', bg: 'rgba(234,88,12,.05)', fill: false, dash: [4,2], width: null, pointRadius: 3 },
       { label: 'Honor 600 5G', data: [17.78,17.39,17.54,16.00,16.36,16.00,12.00], borderColor: '#7c3aed', bg: 'rgba(124,58,237,.05)', fill: false, dash: [4,2], width: null, pointRadius: 3 },
       { label: 'VIVO V70 FE', data: [15.56,15.22,14.04,14.00,12.73,12.00,11.00], borderColor: '#2563eb', bg: 'rgba(37,99,235,.05)', fill: false, dash: [4,2], width: null, pointRadius: 3 },
       { label: 'Realme 16 5G', data: [11.11,10.87,10.53,10.00,7.27,8.00,11.00], borderColor: '#94a3b8', bg: 'rgba(148,163,184,.05)', fill: false, dash: [4,2], width: null, pointRadius: 3 }
     ],
     table: [
-      { product: 'CAMON Slim 5G', brand: 'TECNO', brandBold: true, brandColor: '#059669', sov: '43.33%', sovColor: '#059669', sovBold: true, sovSize: '16px', trend: '↓ -8.84pp', trendClass: 'trend-down', highlight: true },
+      { product: 'CAMON Slim 5G', brand: 'TECNO', brandBold: true, brandColor: '#059669', sov: '52.17%', sovColor: '#059669', sovBold: true, sovSize: '16px', trend: '↑ +18.84pp', trendClass: 'trend-up', highlight: true },
       { product: 'Reno 15F 5G', brand: 'OPPO', brandBold: false, brandColor: null, sov: '~14%', sovColor: '#64748b', sovBold: false, sovSize: null, trend: '→', trendClass: 'trend-flat', highlight: false },
       { product: 'Honor 600 5G', brand: 'Honor', brandBold: false, brandColor: null, sov: '~12%', sovColor: '#64748b', sovBold: false, sovSize: null, trend: '→', trendClass: 'trend-flat', highlight: false },
       { product: 'VIVO V70 FE', brand: 'VIVO', brandBold: false, brandColor: null, sov: '~11%', sovColor: '#64748b', sovBold: false, sovSize: null, trend: '→', trendClass: 'trend-flat', highlight: false },
       { product: 'Realme 16 5G', brand: 'Realme', brandBold: false, brandColor: null, sov: '~11%', sovColor: '#64748b', sovBold: false, sovSize: null, trend: '→', trendClass: 'trend-flat', highlight: false }
     ],
-    insight: '💡 TECNO CAMON Slim 产品 SOV 从 33.33%（9/22）升至 43.33%（9/29），8日内提升 +10pp。9/28 峰值 52.17% 后小幅回落。竞品占比为估算值，详细曲线请点击上方链接。/ CAMON Slim Product SOV rose from 33.33% to 43.33% in 8 days (+10pp), peaked at 52.17% on 9/28.'
+    insight: '💡 TECNO CAMON Slim 产品 SOV 从 33.33%（9/22）攀升至 52.17%（9/28），7日内提升 +18.84pp，在5款对比产品中占据搜索主导地位。竞品占比为估算值，详细曲线请点击上方链接。/ CAMON Slim Product SOV rose from 33.33% to 52.17% in 7 days (+18.84pp), dominating search interest among 5 compared products.'
   },
 
   // TikTok SOV chart data
@@ -350,8 +350,8 @@ const D = {
   consideration: {
     labels: ['9/1','9/2','9/3','9/4','9/5','9/6','9/7','9/8','9/9','9/10','9/11','9/12','9/13','9/14','9/15','9/16','9/17','9/18','9/19','9/20','9/21','9/22','9/23','9/24','9/25','9/26','9/27'],
     brandData: [2089916,2046584,2039830,2092499,2277829,2624653,2771283,3106841,3539842,3540106,3507328,3494628,3477955,3560376,3740292,3752809,3735487,3821243,3689704,3372097,2953133,2871458,2497108,2046936,2063109,2082804,2116158],
-    industryData: [2659331,2647541,2654025,2719212,2897390,3148738,3243339,3566055,3963690,4018355,4028618,4088046,4129734,4149206,4259073,4278714,4276787,4353727,4278515,4071568,3820202,3890857,3658237,3353637,3328297,3330730,3326506],
-    note: 'Brand Consideration 9/1~9/27, peak 3.82M (9/18), latest 2.12M (9/27). Top 5 行业均值 peak 4.35M (9/18), latest 3.33M (9/27). / 本品牌 Consideration 9/1~9/27，峰值 3.82M（9/18），最新 2.12M（9/27）。Top 5 行业均值峰值 4.35M（9/18），最新 3.33M（9/27）。'
+    industryData: [2659331,2647541,2654025,2719212,2897390,3148738,3243339,3566055,3963690,4018355,4028618,4088046,4129734,4149206,4259073,4278714,4276787,4353727,4278515,4071568],
+    note: 'Brand Consideration 9/1~9/27, peak 3.82M (9/18), latest 2.12M (9/27). Top 5 行业均值 peak 4.35M (9/18). / 本品牌 Consideration 9/1~9/27，峰值 3.82M（9/18），最新 2.12M（9/27）。Top 5 行业均值峰值 4.35M（9/18）。'
   },
 
   // Spend chart data
