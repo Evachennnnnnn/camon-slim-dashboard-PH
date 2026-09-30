@@ -246,19 +246,19 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
 // DATA CONFIGURATION / 数据配置
 // ============================================================
 const D = {
-  updatedDate: '2026-09-29',
-  dataAsOf: '9/28',
+  updatedDate: '2026-09-30',
+  dataAsOf: '9/29',
 
   // Alert banner
-  alertBanner: '数据已更新至 9/28。Google Product SOV 52.17%，TT VV SOV 9.99%，TT Search SOV 10.58%，Consideration 2.08M。/ Data updated to 9/28. Google Product SOV 52.17%, TT VV SOV 9.99%, TT Search SOV 10.58%, Consideration 2.08M.',
+  alertBanner: '数据已更新至 9/29。Google Product SOV 52.17%，TT VV SOV 9.99%，TT Search SOV 10.58%，Consideration 2.12M，Meta 曝光 13.10M。/ Data updated to 9/29. Google Product SOV 52.17%, TT VV SOV 9.99%, TT Search SOV 10.58%, Consideration 2.12M, Meta Impressions 13.10M.',
 
   // Hero section
   hero: {
-    desc: 'Google Product SOV 52.17% (9/28), Consideration 2.08M (9/26), 全网总曝光 64.47M, 互动量行业排名 #5. / Google 产品 SOV 52.17%，Consideration 总量 2.08M，全网总曝光 64.47M，互动量行业排名 #5。',
+    desc: 'Google Product SOV 52.17% (9/28), Consideration 2.12M (9/27), 全网总曝光 68.57M, 互动量行业排名 #5. / Google 产品 SOV 52.17%，Consideration 总量 2.12M，全网总曝光 68.57M，互动量行业排名 #5。',
     stats: [
       { label: 'Google 产品 SOV / Product SOV', value: '52.17%' },
-      { label: 'Consideration 总量 / Total', value: '2.08M' },
-      { label: '全网总曝光 / Total Impressions', value: '64.47M' },
+      { label: 'Consideration 总量 / Total', value: '2.12M' },
+      { label: '全网总曝光 / Total Impressions', value: '68.57M' },
       { label: '互动量行业排名 / Engagement Rank', value: '#5' }
     ]
   },
@@ -268,7 +268,7 @@ const D = {
     { label: 'TikTok Video View SOV', statusDot: 'status-yellow', value: '9.99%', trend: '↑', trendClass: 'trend-up', sub: 'Target / 目标 20% · As of / 截至 9/26', borderLeft: null, valueColor: null },
     { label: 'TikTok Search SOV', statusDot: 'status-yellow', value: '10.58%', trend: '↓', trendClass: 'trend-down', sub: 'Target / 目标 13% · As of / 截至 9/26', borderLeft: null, valueColor: null },
     { label: 'TikTok曝光量 / TikTok Impressions', statusDot: 'status-red', value: '55.47M', trend: null, trendClass: null, sub: 'Target / 目标 700M · Progress / 进度 7.92%', borderLeft: '#3b82f6', valueColor: '#3b82f6' },
-    { label: 'Meta曝光量 / Meta Impressions', statusDot: 'status-yellow', value: '8.99M', trend: null, trendClass: null, sub: 'As of / 截至 9/28', borderLeft: '#ef4444', valueColor: '#ef4444' },
+    { label: 'Meta曝光量 / Meta Impressions', statusDot: 'status-yellow', value: '13.10M', trend: '↑', trendClass: 'trend-up', sub: 'As of / 截至 9/29', borderLeft: '#ef4444', valueColor: '#ef4444' },
     { label: 'Google曝光量 / Google Impressions', statusDot: 'status-yellow', value: '0', trend: null, trendClass: null, sub: 'No data / 暂无数据', borderLeft: '#f59e0b', valueColor: '#f59e0b' },
     { label: '互动量 / Engagement', statusDot: 'status-yellow', value: '660K', trend: null, trendClass: null, sub: 'Industry share / 行业占比：6.03% · Rank / 排名 #5', borderLeft: '#ec4899', valueColor: '#ec4899' }
   ],
@@ -280,12 +280,12 @@ const D = {
     { status: 'red', metric: 'TikTok VV SOV', current: '9.99%', target: '20%', date: '9/26' },
     { status: 'yellow', metric: 'TikTok Search SOV', current: '10.58%', target: '13%', date: '9/26' },
     { status: 'red', metric: 'TikTok曝光量 / Impressions', current: '55.47M', target: '700M', date: '9/26' },
-    { status: 'yellow', metric: 'Meta曝光量 / Impressions', current: '8.99M', target: '—', date: '9/28' },
+    { status: 'yellow', metric: 'Meta曝光量 / Impressions', current: '13.10M', target: '—', date: '9/29' },
     { status: 'red', metric: 'Google曝光量 / Impressions', current: '0', target: '—', date: '—' },
-    { status: 'red', metric: '全网总曝光 / Total Impressions', current: '64.47M', target: '1000M+', date: '—' },
+    { status: 'red', metric: '全网总曝光 / Total Impressions', current: '68.57M', target: '1000M+', date: '9/29' },
     { status: 'yellow', metric: '互动量 / Engagement', current: '660K', target: '—', date: '9/21' },
     { status: 'red', metric: '互动率行业排名 / Engagement Rank', current: '#5', target: 'Top 3', date: '9/20' },
-    { status: 'red', metric: 'Consideration 总量 / Total', current: '2.08M', target: '7M', date: '9/26' },
+    { status: 'red', metric: 'Consideration 总量 / Total', current: '2.12M', target: '7M', date: '9/27' },
     { status: 'red', metric: '消耗进度 / Spend Progress', current: '2.03%', target: '—', date: '9/27' },
     { status: 'red', metric: '曝光完成进度 / Exposure Progress', current: '2.21%', target: '—', date: '9/21' }
   ],
@@ -348,18 +348,18 @@ const D = {
 
   // Consideration chart data
   consideration: {
-    labels: ['9/1','9/2','9/3','9/4','9/5','9/6','9/7','9/8','9/9','9/10','9/11','9/12','9/13','9/14','9/15','9/16','9/17','9/18','9/19','9/20','9/21','9/22','9/23','9/24','9/25','9/26'],
-    brandData: [2089916,2046584,2039830,2092499,2277829,2624653,2771283,3106841,3539842,3540106,3507328,3494628,3477955,3560376,3740292,3752809,3735487,3821243,3689704,3372097,2953133,2871458,2497108,2046936,2063109,2082804],
+    labels: ['9/1','9/2','9/3','9/4','9/5','9/6','9/7','9/8','9/9','9/10','9/11','9/12','9/13','9/14','9/15','9/16','9/17','9/18','9/19','9/20','9/21','9/22','9/23','9/24','9/25','9/26','9/27'],
+    brandData: [2089916,2046584,2039830,2092499,2277829,2624653,2771283,3106841,3539842,3540106,3507328,3494628,3477955,3560376,3740292,3752809,3735487,3821243,3689704,3372097,2953133,2871458,2497108,2046936,2063109,2082804,2116158],
     industryData: [2659331,2647541,2654025,2719212,2897390,3148738,3243339,3566055,3963690,4018355,4028618,4088046,4129734,4149206,4259073,4278714,4276787,4353727,4278515,4071568],
-    note: 'Brand Consideration 9/1~9/26, peak 3.82M (9/18), latest 2.08M (9/26). Top 5 行业均值 peak 4.35M (9/18). / 本品牌 Consideration 9/1~9/26，峰值 3.82M（9/18），最新 2.08M（9/26）。Top 5 行业均值峰值 4.35M（9/18）。'
+    note: 'Brand Consideration 9/1~9/27, peak 3.82M (9/18), latest 2.12M (9/27). Top 5 行业均值 peak 4.35M (9/18). / 本品牌 Consideration 9/1~9/27，峰值 3.82M（9/18），最新 2.12M（9/27）。Top 5 行业均值峰值 4.35M（9/18）。'
   },
 
   // Spend chart data
   spend: {
-    labels: ['9/19','9/20','9/21','9/22','9/23','9/24','9/25','9/26','9/27','9/28'],
-    dailySpend: [0,0,250,0,29.34,251.33,515.68,751.43,1136,579],
-    spendProgress: [0,0,0.17,0.17,0.19,0.37,0.73,1.25,2.03,2.03],
-    exposureProgress: [0.71,1.43,2.21,2.95,3.61,4.59,5.72,7.11,7.11]
+    labels: ['9/19','9/20','9/21','9/22','9/23','9/24','9/25','9/26','9/27','9/28','9/29'],
+    dailySpend: [0,0,250,0,29.34,251.33,515.68,751.43,1136,579,827.05],
+    spendProgress: [0,0,0.17,0.17,0.19,0.37,0.73,1.25,2.03,2.03,2.03],
+    exposureProgress: [0.71,1.43,2.21,2.95,3.61,4.59,5.72,7.11,7.11,7.11,7.11]
   },
 
   // Audience insights
