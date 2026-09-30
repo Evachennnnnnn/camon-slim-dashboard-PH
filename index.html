@@ -77,7 +77,11 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
   .note { font-size:10px; }
   .badge { font-size:10px; padding:3px 8px; }
   /* 竞品对比区移动端 */
-  .section-google > div[style*="grid-template-columns:1fr 1fr"] { grid-template-columns:1fr !important; }
+  .competitor-compare-grid { grid-template-columns:1fr !important; }
+  .competitor-compare .chart { height:220px; }
+  .competitor-compare .table { font-size:10px; white-space:nowrap; }
+  .competitor-compare .table th,
+  .competitor-compare .table td { padding:6px 4px; }
   /* 关键词/评论洞察卡片 */
   div[style*="grid-template-columns:repeat(auto-fit,minmax(280px"] { grid-template-columns:1fr !important; }
   div[style*="grid-template-columns:repeat(auto-fit,minmax(200px"] { grid-template-columns:1fr 1fr !important; }
@@ -182,14 +186,14 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
       </div>
     </div>
     <!-- Competitor Comparison / 竞品对比 -->
-    <div style="margin-top:18px;">
+    <div class="competitor-compare" style="margin-top:18px;">
       <h3 style="margin:0 0 12px;font-size:15px;color:#0f172a;">📊 产品 SOV 竞品对比 / Product SOV vs Competitors</h3>
       <div class="note" id="competitorCompareNote" style="margin-bottom:10px;"></div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+      <div class="competitor-compare-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
         <div>
           <div class="chart" style="height:280px;"><canvas id="productSovCompareChart"></canvas></div>
         </div>
-        <div>
+        <div style="overflow-x:auto;">
           <table class="table">
             <thead>
               <tr><th>Product / 产品</th><th>Brand / 品牌</th><th>SOV (9/28)</th><th>7日趋势</th></tr>
