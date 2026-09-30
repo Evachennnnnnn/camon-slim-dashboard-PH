@@ -145,7 +145,7 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
             <tbody id="competitorCompareTbody"></tbody>
           </table>
           <div style="margin-top:10px;text-align:center;">
-            <a href="https://trends.google.com/trends/explore?date=today%201-m&geo=PH&q=CAMON%20Slim,Reno%2015F%205G,Honor%20600%205G,VIVO%20V70%20FE,Realme%2016%205G&hl=en" target="_blank" style="display:inline-block;padding:8px 16px;background:linear-gradient(135deg,#2563eb,#3b82f6);color:#fff;border-radius:8px;font-size:12px;font-weight:700;text-decoration:none;">🔗 查看 Google Trends 5合1对比 →</a>
+            <a href="https://trends.google.com/trends/explore?date=today%201-m&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en" target="_blank" style="display:inline-block;padding:8px 16px;background:linear-gradient(135deg,#2563eb,#3b82f6);color:#fff;border-radius:8px;font-size:12px;font-weight:700;text-decoration:none;">🔗 查看 Google Trends 4合1对比 →</a>
           </div>
         </div>
       </div>
@@ -250,13 +250,13 @@ const D = {
   dataAsOf: '9/29',
 
   // Alert banner
-  alertBanner: '数据已更新至 9/29。Google Product SOV 43.33%，TT VV SOV 9.99%，TT Search SOV 10.58%，Consideration 2.12M，Meta 曝光 13.10M。/ Data updated to 9/29. Google Product SOV 43.33%, TT VV SOV 9.99%, TT Search SOV 10.58%, Consideration 2.12M, Meta Impressions 13.10M.',
+  alertBanner: '数据已更新至 9/29。Google Product SOV 12.77%，TT VV SOV 9.99%，TT Search SOV 10.58%，Consideration 2.12M，Meta 曝光 13.10M。/ Data updated to 9/29. Google Product SOV 12.77%, TT VV SOV 9.99%, TT Search SOV 10.58%, Consideration 2.12M, Meta Impressions 13.10M.',
 
   // Hero section
   hero: {
-    desc: 'Google Product SOV 43.33% (9/29), Consideration 2.12M (9/27), 全网总曝光 68.57M, 互动量行业排名 #5. / Google 产品 SOV 43.33%，Consideration 总量 2.12M，全网总曝光 68.57M，互动量行业排名 #5。',
+    desc: 'Google Product SOV 12.77% (9/29), Consideration 2.12M (9/27), 全网总曝光 68.57M, 互动量行业排名 #5. / Google 产品 SOV 12.77%，Consideration 总量 2.12M，全网总曝光 68.57M，互动量行业排名 #5。',
     stats: [
-      { label: 'Google 产品 SOV / Product SOV', value: '43.33%' },
+      { label: 'Google 产品 SOV / Product SOV', value: '12.77%' },
       { label: 'Consideration 总量 / Total', value: '2.12M' },
       { label: '全网总曝光 / Total Impressions', value: '68.57M' },
       { label: '互动量行业排名 / Engagement Rank', value: '#5' }
@@ -276,7 +276,7 @@ const D = {
   // Overview table
   overview: [
     { status: 'green', metric: 'Google 品牌 SOV / Brand SOV', current: '15.55%', target: '—', date: '9/29' },
-    { status: 'green', metric: 'Google 产品 SOV / Product SOV', current: '43.33%', target: '—', date: '9/29' },
+    { status: 'green', metric: 'Google 产品 SOV / Product SOV', current: '12.77%', target: '—', date: '9/29' },
     { status: 'red', metric: 'TikTok VV SOV', current: '9.99%', target: '20%', date: '9/26' },
     { status: 'yellow', metric: 'TikTok Search SOV', current: '10.58%', target: '13%', date: '9/26' },
     { status: 'red', metric: 'TikTok曝光量 / Impressions', current: '55.47M', target: '700M', date: '9/26' },
@@ -312,30 +312,28 @@ const D = {
   googleSov: {
     labels: ['9/22','9/23','9/24','9/25','9/26','9/27','9/28','9/29'],
     brand: [15.32,15.24,15.41,15.62,15.44,16.74,15.44,15.55],
-    product: [33.33,35.00,36.84,40.00,45.45,45.83,52.17,43.33],
+    product: [6.67,6.45,8.57,8.33,10.26,9.52,11.63,12.77],
     brandNote: 'Brand SOV latest 15.55% (9/29) / 品牌 SOV 最新 15.55%（9/29）',
-    productNote: 'Product SOV latest 43.33% (9/29) / 产品 SOV 最新 43.33%（9/29）'
+    productNote: 'Product SOV latest 12.77% (9/29) / 产品 SOV 最新 12.77%（9/29）'
   },
 
   // Competitor comparison
   competitorCompare: {
-    note: 'Google Trends 对比关键词 / Comparison: CAMON Slim vs Reno 15F 5G, Honor 600 5G, VIVO V70 FE, Realme 16 5G · 截至 9/28',
+    note: 'Google Trends 对比关键词 / Comparison: CAMON Slim 5G vs HONOR 600S, vivo V80 Lite, REDMI Note 17 Pro · 截至 9/29',
     chartLabels: ['9/22','9/23','9/24','9/25','9/26','9/27','9/28','9/29'],
     datasets: [
-      { label: 'CAMON Slim 5G (TECNO)', data: [33.33,35.00,36.84,40.00,45.45,45.83,52.17,43.33], borderColor: '#059669', bg: 'rgba(5,150,105,.15)', fill: true, dash: null, width: 3, pointRadius: 5 },
-      { label: 'Reno 15F 5G (OPPO)', data: [22.22,21.74,21.05,20.00,18.18,18.00,14.00], borderColor: '#ea580c', bg: 'rgba(234,88,12,.05)', fill: false, dash: [4,2], width: null, pointRadius: 3 },
-      { label: 'Honor 600 5G', data: [17.78,17.39,17.54,16.00,16.36,16.00,12.00], borderColor: '#7c3aed', bg: 'rgba(124,58,237,.05)', fill: false, dash: [4,2], width: null, pointRadius: 3 },
-      { label: 'VIVO V70 FE', data: [15.56,15.22,14.04,14.00,12.73,12.00,11.00], borderColor: '#2563eb', bg: 'rgba(37,99,235,.05)', fill: false, dash: [4,2], width: null, pointRadius: 3 },
-      { label: 'Realme 16 5G', data: [11.11,10.87,10.53,10.00,7.27,8.00,11.00], borderColor: '#94a3b8', bg: 'rgba(148,163,184,.05)', fill: false, dash: [4,2], width: null, pointRadius: 3 }
+      { label: 'CAMON Slim 5G (TECNO)', data: [6.67,6.45,8.57,8.33,10.26,9.52,11.63,12.77], borderColor: '#059669', bg: 'rgba(5,150,105,.15)', fill: true, dash: null, width: 3, pointRadius: 5 },
+      { label: 'HONOR 600S', data: [35.56,35.48,31.43,32.50,30.77,31.75,29.07,27.66], borderColor: '#7c3aed', bg: 'rgba(124,58,237,.05)', fill: false, dash: [4,2], width: null, pointRadius: 3 },
+      { label: 'vivo V80 Lite', data: [31.11,30.97,28.57,28.33,28.21,28.57,27.91,26.60], borderColor: '#2563eb', bg: 'rgba(37,99,235,.05)', fill: false, dash: [4,2], width: null, pointRadius: 3 },
+      { label: 'REDMI Note 17 Pro', data: [26.67,27.10,31.43,30.83,30.77,30.16,31.40,32.98], borderColor: '#ea580c', bg: 'rgba(234,88,12,.05)', fill: false, dash: [4,2], width: null, pointRadius: 3 }
     ],
     table: [
-      { product: 'CAMON Slim 5G', brand: 'TECNO', brandBold: true, brandColor: '#059669', sov: '43.33%', sovColor: '#059669', sovBold: true, sovSize: '16px', trend: '↓ -8.84pp', trendClass: 'trend-down', highlight: true },
-      { product: 'Reno 15F 5G', brand: 'OPPO', brandBold: false, brandColor: null, sov: '~14%', sovColor: '#64748b', sovBold: false, sovSize: null, trend: '→', trendClass: 'trend-flat', highlight: false },
-      { product: 'Honor 600 5G', brand: 'Honor', brandBold: false, brandColor: null, sov: '~12%', sovColor: '#64748b', sovBold: false, sovSize: null, trend: '→', trendClass: 'trend-flat', highlight: false },
-      { product: 'VIVO V70 FE', brand: 'VIVO', brandBold: false, brandColor: null, sov: '~11%', sovColor: '#64748b', sovBold: false, sovSize: null, trend: '→', trendClass: 'trend-flat', highlight: false },
-      { product: 'Realme 16 5G', brand: 'Realme', brandBold: false, brandColor: null, sov: '~11%', sovColor: '#64748b', sovBold: false, sovSize: null, trend: '→', trendClass: 'trend-flat', highlight: false }
+      { product: 'CAMON Slim 5G', brand: 'TECNO', brandBold: true, brandColor: '#059669', sov: '12.77%', sovColor: '#059669', sovBold: true, sovSize: '16px', trend: '↑ +6.10pp', trendClass: 'trend-up', highlight: true },
+      { product: 'REDMI Note 17 Pro', brand: 'Xiaomi', brandBold: false, brandColor: null, sov: '~33%', sovColor: '#64748b', sovBold: false, sovSize: null, trend: '→', trendClass: 'trend-flat', highlight: false },
+      { product: 'HONOR 600S', brand: 'Honor', brandBold: false, brandColor: null, sov: '~28%', sovColor: '#64748b', sovBold: false, sovSize: null, trend: '→', trendClass: 'trend-flat', highlight: false },
+      { product: 'vivo V80 Lite', brand: 'vivo', brandBold: false, brandColor: null, sov: '~27%', sovColor: '#64748b', sovBold: false, sovSize: null, trend: '→', trendClass: 'trend-flat', highlight: false }
     ],
-    insight: '💡 TECNO CAMON Slim 产品 SOV 从 33.33%（9/22）升至 43.33%（9/29），8日内提升 +10pp。9/28 峰值 52.17% 后小幅回落。竞品占比为估算值，详细曲线请点击上方链接。/ CAMON Slim Product SOV rose from 33.33% to 43.33% in 8 days (+10pp), peaked at 52.17% on 9/28.'
+    insight: '💡 竞品对比组合已更新：CAMON Slim 5G vs HONOR 600S / vivo V80 Lite / REDMI Note 17 Pro。CAMON Slim 5G 产品 SOV 从 6.67%（9/22）升至 12.77%（9/29），8日提升 +6.10pp，呈持续上升趋势。竞品占比为估算值，详细曲线请点击上方链接。/ Competitor set updated: CAMON Slim 5G vs HONOR 600S / vivo V80 Lite / REDMI Note 17 Pro. Product SOV rose from 6.67% to 12.77% in 8 days (+6.10pp), trending upward.'
   },
 
   // TikTok SOV chart data
