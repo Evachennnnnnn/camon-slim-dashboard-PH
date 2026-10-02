@@ -189,11 +189,10 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
     <div class="competitor-compare" style="margin-top:18px;">
       <h3 style="margin:0 0 12px;font-size:15px;color:#0f172a;">📊 产品 SOV 竞品对比 / Product SOV vs Competitors</h3>
       <div class="note" id="competitorCompareNote" style="margin-bottom:10px;"></div>
-      <div style="background:linear-gradient(135deg,#f0f4ff,#e8edf5);border-radius:16px;padding:32px 24px;text-align:center;border:1px solid #c7d2fe;">
-        <div style="font-size:15px;font-weight:700;color:#1e293b;margin-bottom:6px;"> Google Trends 竞品对比图表</div>
-        <div style="font-size:12px;color:#64748b;margin-bottom:20px;">CAMON Slim 5G vs HONOR 600S / vivo V80 Lite / REDMI Note 17 Pro<br/>相对搜索热度 · 菲律宾 · 近30天</div>
-        <a href="https://trends.google.com/trends/explore?date=today%201-m&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en" target="_blank" style="display:inline-block;padding:12px 28px;background:linear-gradient(135deg,#2563eb,#3b82f6);color:#fff;border-radius:10px;font-size:13px;font-weight:700;text-decoration:none;box-shadow:0 4px 14px rgba(37,99,235,.3);"> 打开 Google Trends 查看实时图表 →</a>
-        <div style="font-size:10px;color:#94a3b8;margin-top:12px;">竞品数据来自 Google Trends 相对搜索热度，非精确市场份额 / Competitor data from Google Trends relative search interest, not exact market share</div>
+      <div class="chart" style="height:320px;margin-bottom:16px;"><canvas id="competitorCompareChart"></canvas></div>
+      <div style="background:linear-gradient(135deg,#f0f4ff,#e8edf5);border-radius:16px;padding:24px;text-align:center;border:1px solid #c7d2fe;">
+        <a href="https://trends.google.com/trends/explore?date=today%201-m&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en" target="_blank" style="display:inline-block;padding:10px 24px;background:linear-gradient(135deg,#2563eb,#3b82f6);color:#fff;border-radius:8px;font-size:12px;font-weight:700;text-decoration:none;box-shadow:0 4px 14px rgba(37,99,235,.3);"> 打开 Google Trends 查看实时图表 →</a>
+        <div style="font-size:10px;color:#94a3b8;margin-top:10px;">竞品数据来自 Google Trends 相对搜索热度，非精确市场份额 / Competitor data from Google Trends relative search interest, not exact market share</div>
       </div>
       <div class="note" id="competitorCompareInsight"></div>
     </div>
@@ -671,6 +670,15 @@ function render() {
     fill: ds.fill, tension: .3, pointRadius: ds.pointRadius, pointBackgroundColor: ds.borderColor,
     borderWidth: ds.width || undefined, borderDash: ds.dash || undefined
   }))},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#475569',font:{size:11}}}},scales:{x:{ticks:{color:'#64748b'},grid:{color:'#eef2f7'}},y:{ticks:{color:'#64748b',callback:v=>v+'%'},grid:{color:'#eef2f7'},beginAtZero:true,title:{display:true,text:'Product SOV %'}}}}});
+
+  // Competitor Compare Chart
+  if (D.competitorCompare && D.competitorCompare.chartLabels) {
+    new Chart(document.getElementById('competitorCompareChart'),{type:'line',data:{labels:D.competitorCompare.chartLabels,datasets:D.competitorCompare.datasets.map(ds => ({
+      label: ds.label, data: ds.data, borderColor: ds.borderColor, backgroundColor: ds.bg,
+      fill: ds.fill, tension: .3, pointRadius: ds.pointRadius, pointBackgroundColor: ds.borderColor,
+      borderWidth: ds.width || undefined, borderDash: ds.dash || undefined
+    }))},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#475569',font:{size:11}}}},scales:{x:{ticks:{color:'#64748b'},grid:{color:'#eef2f7'}},y:{ticks:{color:'#64748b',callback:v=>v+'%'},grid:{color:'#eef2f7'},beginAtZero:true,title:{display:true,text:'Relative Search Interest %'}}}}});
+  }
 
   // TikTok SOV
   new Chart(document.getElementById('ttSovChart'),{type:'line',data:{labels:D.ttSov.labels,datasets:[{label:'TT VV SOV',data:D.ttSov.vvData,borderColor:'#7c3aed',backgroundColor:'rgba(124,58,237,.1)',fill:true,tension:.3,pointRadius:5,pointBackgroundColor:'#7c3aed',yAxisID:'y',spanGaps:true},{label:'TT Search SOV',data:D.ttSov.searchData,borderColor:'#ea580c',backgroundColor:'rgba(234,88,12,.1)',fill:true,tension:.3,pointRadius:5,pointBackgroundColor:'#ea580c',yAxisID:'y1'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#475569'}}},scales:{x:{ticks:{color:'#64748b'},grid:{color:'#eef2f7'}},y:{type:'linear',position:'left',ticks:{color:'#7c3aed',callback:v=>v+'%'},grid:{color:'#eef2f7'},beginAtZero:true,title:{display:true,text:'VV SOV %',color:'#7c3aed'}},y1:{type:'linear',position:'right',ticks:{color:'#ea580c',callback:v=>v+'%'},grid:{drawOnChartArea:false},beginAtZero:true,title:{display:true,text:'Search SOV %',color:'#ea580c'}}}}});
