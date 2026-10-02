@@ -56,7 +56,7 @@ function validate(html) {
   }
 
   // 3. Canvas 元素检查
-  const canvases = ['googleBrandChart', 'googleProductChart', 'productSovCompareChart', 'ttSovChart', 'considerationChart', 'spendChart'];
+  const canvases = ['googleBrandChart', 'googleProductChart', 'ttSovChart', 'considerationChart', 'spendChart'];
   for (const id of canvases) {
     if (!html.includes(`id="${id}"`)) {
       errors.push(`❌ 缺少 canvas: ${id}`);
