@@ -189,24 +189,11 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
     <div class="competitor-compare" style="margin-top:18px;">
       <h3 style="margin:0 0 12px;font-size:15px;color:#0f172a;">📊 产品 SOV 竞品对比 / Product SOV vs Competitors</h3>
       <div class="note" id="competitorCompareNote" style="margin-bottom:10px;"></div>
-      <div style="margin-bottom:12px;text-align:center;">
-        <a href="https://trends.google.com/trends/explore?date=today%201-m&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en" target="_blank" style="display:inline-block;padding:6px 14px;background:#f0f4ff;color:#2563eb;border-radius:6px;font-size:11px;font-weight:600;text-decoration:none;border:1px solid #2563eb;"> Google Trends 实时数据源 →</a>
-      </div>
-      <div class="competitor-compare-grid" style="display:grid;grid-template-columns:1fr;gap:16px;">
-        <div style="overflow-x:auto;">
-          <table class="table">
-            <thead>
-              <tr><th>Product / 产品</th><th>Brand / 品牌</th><th>SOV (10/1)</th><th>7日趋势</th></tr>
-            </thead>
-            <tbody id="competitorCompareTbody"></tbody>
-          </table>
-        </div>
-        <div style="background:linear-gradient(135deg,#f0f4ff,#e8edf5);border-radius:16px;padding:24px;text-align:center;border:1px solid #c7d2fe;">
-          <div style="font-size:14px;font-weight:700;color:#1e293b;margin-bottom:8px;">📊 Google Trends 竞品对比图表</div>
-          <div style="font-size:12px;color:#64748b;margin-bottom:16px;">CAMON Slim 5G vs HONOR 600S / vivo V80 Lite / REDMI Note 17 Pro<br/>相对搜索热度 · 菲律宾 · 近30天</div>
-          <a href="https://trends.google.com/trends/explore?date=today%201-m&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en" target="_blank" style="display:inline-block;padding:12px 28px;background:linear-gradient(135deg,#2563eb,#3b82f6);color:#fff;border-radius:10px;font-size:14px;font-weight:700;text-decoration:none;box-shadow:0 4px 14px rgba(37,99,235,.3);">🔗 打开 Google Trends 查看实时图表 →</a>
-          <div style="font-size:10px;color:#94a3b8;margin-top:10px;">竞品数据来自 Google Trends 相对搜索热度，非精确市场份额 / Competitor data from Google Trends relative search interest, not exact market share</div>
-        </div>
+      <div style="background:linear-gradient(135deg,#f0f4ff,#e8edf5);border-radius:16px;padding:32px 24px;text-align:center;border:1px solid #c7d2fe;">
+        <div style="font-size:15px;font-weight:700;color:#1e293b;margin-bottom:6px;"> Google Trends 竞品对比图表</div>
+        <div style="font-size:12px;color:#64748b;margin-bottom:20px;">CAMON Slim 5G vs HONOR 600S / vivo V80 Lite / REDMI Note 17 Pro<br/>相对搜索热度 · 菲律宾 · 近30天</div>
+        <a href="https://trends.google.com/trends/explore?date=today%201-m&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en" target="_blank" style="display:inline-block;padding:12px 28px;background:linear-gradient(135deg,#2563eb,#3b82f6);color:#fff;border-radius:10px;font-size:13px;font-weight:700;text-decoration:none;box-shadow:0 4px 14px rgba(37,99,235,.3);"> 打开 Google Trends 查看实时图表 →</a>
+        <div style="font-size:10px;color:#94a3b8;margin-top:12px;">竞品数据来自 Google Trends 相对搜索热度，非精确市场份额 / Competitor data from Google Trends relative search interest, not exact market share</div>
       </div>
       <div class="note" id="competitorCompareInsight"></div>
     </div>
@@ -586,15 +573,6 @@ function render() {
 
   // --- Competitor comparison ---
   document.getElementById('competitorCompareNote').textContent = D.competitorCompare.note;
-  document.getElementById('competitorCompareTbody').innerHTML = D.competitorCompare.table.map(r => {
-    const rowStyle = r.highlight ? ' style="background:rgba(5,150,105,.08);"' : '';
-    const brandStyle = r.brandColor ? 'color:' + r.brandColor + ';font-weight:700;' : '';
-    const brandTag = r.brandBold ? '<b>' + r.product + '</b>' : r.product;
-    const sovStyle = r.sovColor ? 'color:' + r.sovColor + ';' : '';
-    const sovWeight = r.sovBold ? 'font-weight:900;' : '';
-    const sovSize = r.sovSize ? 'font-size:' + r.sovSize + ';' : '';
-    return '<tr' + rowStyle + '><td>' + brandTag + '</td><td style="' + brandStyle + '">' + r.brand + '</td><td style="' + sovStyle + sovWeight + sovSize + '">' + r.sov + '</td><td><span class="trend-arrow ' + r.trendClass + '">' + r.trend + '</span></td></tr>';
-  }).join('');
   document.getElementById('competitorCompareInsight').textContent = D.competitorCompare.insight;
 
   // --- TikTok SOV note ---
