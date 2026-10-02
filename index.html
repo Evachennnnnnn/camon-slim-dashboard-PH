@@ -209,6 +209,7 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
         </div>
       </div>
       <div class="note" id="competitorCompareInsight"></div>
+      <div id="dailyTrendLinks" style="margin-top:12px;display:flex;flex-wrap:wrap;gap:6px;justify-content:center;"></div>
     </div>
   </div>
 
@@ -380,6 +381,18 @@ const D = {
   competitorCompare: {
     note: 'Google Trends 对比关键词 / Comparison: CAMON Slim 5G vs HONOR 600S, vivo V80 Lite, REDMI Note 17 Pro · 截至 10/1',
     trendLink: 'https://trends.google.com/trends/explore?date=today%201-m&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en',
+    dailyLinks: [
+      { date: '9/22', link: 'https://trends.google.com/trends/explore?date=2026-08-22%202026-09-22&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en' },
+      { date: '9/23', link: 'https://trends.google.com/trends/explore?date=2026-08-23%202026-09-23&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en' },
+      { date: '9/24', link: 'https://trends.google.com/trends/explore?date=2026-08-24%202026-09-24&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en' },
+      { date: '9/25', link: 'https://trends.google.com/trends/explore?date=2026-08-25%202026-09-25&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en' },
+      { date: '9/26', link: 'https://trends.google.com/trends/explore?date=2026-08-26%202026-09-26&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en' },
+      { date: '9/27', link: 'https://trends.google.com/trends/explore?date=2026-08-27%2026-09-27&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en' },
+      { date: '9/28', link: 'https://trends.google.com/trends/explore?date=2026-08-28%202026-09-28&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en' },
+      { date: '9/29', link: 'https://trends.google.com/trends/explore?date=today%201-m&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en' },
+      { date: '9/30', link: 'https://trends.google.com/trends/explore?date=today%201-m&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en' },
+      { date: '10/1', link: 'https://trends.google.com/trends/explore?date=today%201-m&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en' }
+    ],
     trendLink: 'https://trends.google.com/trends/explore?date=today%201-m&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en',
     trendLink: 'https://trends.google.com/trends/explore?date=today%201-m&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en',
     chartLabels: ['9/22','9/23','9/24','9/25','9/26','9/27','9/28','9/29','9/30','10/1'],
@@ -584,6 +597,14 @@ function render() {
     return '<tr' + rowStyle + '><td>' + brandTag + '</td><td style="' + brandStyle + '">' + r.brand + '</td><td style="' + sovStyle + sovWeight + sovSize + '">' + r.sov + '</td><td><span class="trend-arrow ' + r.trendClass + '">' + r.trend + '</span></td></tr>';
   }).join('');
   document.getElementById('competitorCompareInsight').textContent = D.competitorCompare.insight;
+
+  // Render daily trend links
+  const dailyLinksContainer = document.getElementById('dailyTrendLinks');
+  if (D.competitorCompare.dailyLinks && dailyLinksContainer) {
+    dailyLinksContainer.innerHTML = D.competitorCompare.dailyLinks.map(d => 
+      '<a href="' + d.link + '" target="_blank" style="display:inline-block;padding:4px 10px;background:#f0f4ff;color:#2563eb;border-radius:4px;font-size:10px;font-weight:600;text-decoration:none;border:1px solid #2563eb;cursor:pointer;">' + d.date + '</a>'
+    ).join('');
+  }
 
   // --- TikTok SOV note ---
   document.getElementById('ttSovNote').textContent = D.ttSov.note;
