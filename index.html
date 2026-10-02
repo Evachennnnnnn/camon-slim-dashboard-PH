@@ -189,6 +189,9 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
     <div class="competitor-compare" style="margin-top:18px;">
       <h3 style="margin:0 0 12px;font-size:15px;color:#0f172a;">📊 产品 SOV 竞品对比 / Product SOV vs Competitors</h3>
       <div class="note" id="competitorCompareNote" style="margin-bottom:10px;"></div>
+      <div style="margin-bottom:12px;text-align:center;">
+        <a href="https://trends.google.com/trends/explore?date=today%201-m&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en" target="_blank" style="display:inline-block;padding:6px 14px;background:#f0f4ff;color:#2563eb;border-radius:6px;font-size:11px;font-weight:600;text-decoration:none;border:1px solid #2563eb;"> Google Trends 实时数据源 →</a>
+      </div>
       <div class="competitor-compare-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
         <div>
           <div class="chart" style="height:280px;"><canvas id="productSovCompareChart"></canvas></div>
@@ -376,6 +379,9 @@ const D = {
   // Competitor comparison
   competitorCompare: {
     note: 'Google Trends 对比关键词 / Comparison: CAMON Slim 5G vs HONOR 600S, vivo V80 Lite, REDMI Note 17 Pro · 截至 10/1',
+    trendLink: 'https://trends.google.com/trends/explore?date=today%201-m&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en',
+    trendLink: 'https://trends.google.com/trends/explore?date=today%201-m&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en',
+    trendLink: 'https://trends.google.com/trends/explore?date=today%201-m&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en',
     chartLabels: ['9/22','9/23','9/24','9/25','9/26','9/27','9/28','9/29','9/30','10/1'],
     datasets: [
       { label: 'CAMON Slim 5G (TECNO)', data: [6.67,6.45,8.57,8.33,10.26,9.52,11.63,12.77,13.43,15.71], borderColor: '#059669', bg: 'rgba(5,150,105,.15)', fill: true, dash: null, width: 3, pointRadius: 5 },
