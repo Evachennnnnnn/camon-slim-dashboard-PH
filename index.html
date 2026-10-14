@@ -290,131 +290,66 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
 // DATA CONFIGURATION / 数据配置
 // ============================================================
 const D = {
-  updatedDate: '2026-10-10',
-  dataAsOf: '10/10',
+  updatedDate: '2026-10-14',
+  dataAsOf: '10/13',
 
   // Alert banner
-  alertBanner: '数据已更新至 10/10。Google Product SOV 16.30%，TT VV SOV 23.68%，TT Search SOV 10.21%，Consideration 2.74M，全网总曝光 384.75M，互动量 24.53M。/ Data updated to 10/10. Google Product SOV 16.30%, TT VV SOV 23.68%, TT Search SOV 10.21%, Consideration 2.74M, Total Impressions 384.75M, Engagement 24.53M.',
+  alertBanner: '数据已更新至 10/13。Google Product SOV 18.52%，TT VV SOV 20.08%，TT Search SOV 11.18%，Consideration 3.36M，全网总曝光 580.05M，互动量 30.70M。/ Data updated to 10/13. Google Product SOV 18.52%, TT VV SOV 20.08%, TT Search SOV 11.18%, Consideration 3.36M, Total Impressions 580.05M, Engagement 30.70M.',
 
   // Hero section
   hero: {
-    desc: 'Google Product SOV 16.30% (10/9), Consideration 2.74M (10/6), 全网总曝光 384.75M, 互动量 24.53M. / Google 产品 SOV 16.30%，Consideration 总量 2.74M，全网总曝光 384.75M，互动量 24.53M。',
+    desc: 'Google Product SOV 18.52% (10/13), Consideration 3.36M (10/11), 全网总曝光 580.05M, 互动量 30.70M. / Google 产品 SOV 18.52%，Consideration 总量 3.36M，全网总曝光 580.05M，互动量 30.70M。',
     stats: [
-      { label: 'Google 产品 SOV / Product SOV', value: '16.30%' },
-      { label: 'Consideration 总量 / Total', value: '2.74M' },
-      { label: '全网总曝光 / Total Impressions', value: '384.75M' },
-      { label: '互动量 / Engagement', value: '24.53M' }
+      { label: 'Google 产品 SOV / Product SOV', value: '18.52%' },
+      { label: 'Consideration 总量 / Total', value: '3.36M' },
+      { label: '全网总曝光 / Total Impressions', value: '580.05M' },
+      { label: '互动量 / Engagement', value: '30.70M' }
     ]
   },
 
   // KPI cards
   kpis: [
-    { label: 'TikTok Video View SOV', statusDot: 'status-green', value: '23.68%', trend: '↑', trendClass: 'trend-up', sub: 'Target / 目标 20% · As of / 截至 10/7', borderLeft: null, valueColor: null },
-    { label: 'TikTok Search SOV', statusDot: 'status-red', value: '10.21%', trend: '↓', trendClass: 'trend-down', sub: 'Target / 目标 13% · As of / 截至 10/7', borderLeft: null, valueColor: null },
-    { label: 'TikTok曝光量 / TikTok Impressions', statusDot: 'status-red', value: '279.32M', trend: '↑', trendClass: 'trend-up', sub: 'Target / 目标 700M · Progress / 进度 39.90%', borderLeft: '#3b82f6', valueColor: '#3b82f6' },
-    { label: 'Meta曝光量 / Meta Impressions', statusDot: 'status-green', value: '105.43M', trend: '↑', trendClass: 'trend-up', sub: 'As of / 截至 10/9', borderLeft: '#ef4444', valueColor: '#ef4444' },
-    { label: 'Google曝光量 / Google Impressions', statusDot: 'status-yellow', value: '0', trend: null, trendClass: null, sub: 'No data / 暂无数据', borderLeft: '#f59e0b', valueColor: '#f59e0b' },
-    { label: '互动量 / Engagement', statusDot: 'status-green', value: '24.53M', trend: '↑', trendClass: 'trend-up', sub: 'Industry share / 行业占比：10.15% · Rank / 排名 #3 · As of / 截至 10/7', borderLeft: '#ec4899', valueColor: '#ec4899' }
+    { label: 'TikTok Video View SOV', statusDot: 'status-green', value: '20.08%', trend: '↓', trendClass: 'trend-down', sub: 'Target / 目标 20% · As of / 截至 10/11', borderLeft: null, valueColor: null },
+    { label: 'TikTok Search SOV', statusDot: 'status-red', value: '11.18%', trend: '↑', trendClass: 'trend-up', sub: 'Target / 目标 13% · As of / 截至 10/11', borderLeft: null, valueColor: null },
+    { label: 'TikTok曝光量 / TikTok Impressions', statusDot: 'status-red', value: '377.22M', trend: '↑', trendClass: 'trend-up', sub: 'Target / 目标 700M · Progress / 进度 53.89%', borderLeft: '#3b82f6', valueColor: '#3b82f6' },
+    { label: 'Meta曝光量 / Meta Impressions', statusDot: 'status-green', value: '192.67M', trend: '↑', trendClass: 'trend-up', sub: 'As of / 截至 10/13', borderLeft: '#ef4444', valueColor: '#ef4444' },
+    { label: 'YouTube曝光量 / YouTube Impressions', statusDot: 'status-green', value: '10.16M', trend: '↑', trendClass: 'trend-up', sub: 'As of / 截至 10/13', borderLeft: '#f59e0b', valueColor: '#f59e0b' },
+    { label: '互动量 / Engagement', statusDot: 'status-green', value: '30.70M', trend: '↑', trendClass: 'trend-up', sub: 'Industry share / 行业占比：10.54% · Rank / 排名 #2 · As of / 截至 10/11', borderLeft: '#ec4899', valueColor: '#ec4899' }
   ],
 
   // Overview table
   overview: [
-    { status: 'green', metric: 'Google 品牌 SOV / Brand SOV', current: '15.44%', target: '—', date: '10/9' },
-    { status: 'green', metric: 'Google 产品 SOV / Product SOV', current: '16.30%', target: '—', date: '10/9' },
-    { status: 'green', metric: 'TikTok VV SOV', current: '23.68%', target: '20%', date: '10/7' },
-    { status: 'red', metric: 'TikTok Search SOV', current: '10.21%', target: '13%', date: '10/7' },
-    { status: 'red', metric: 'TikTok曝光量 / Impressions', current: '279.32M', target: '700M', date: '10/7' },
-    { status: 'green', metric: 'Meta曝光量 / Impressions', current: '105.43M', target: '—', date: '10/9' },
-    { status: 'red', metric: 'Google曝光量 / Impressions', current: '0', target: '—', date: '—' },
-    { status: 'red', metric: '全网总曝光 / Total Impressions', current: '384.75M', target: '1000M+', date: '10/9' },
-    { status: 'green', metric: '互动量 / Engagement', current: '24.53M', target: '—', date: '10/7' },
-    { status: 'green', metric: '互动率行业排名 / Engagement Rank', current: '#3', target: 'Top 3', date: '10/7' },
-    { status: 'green', metric: 'Consideration 总量 / Total', current: '2.74M', target: '7M', date: '10/6' },
-    { status: 'green', metric: '消耗进度 / Spend Progress', current: '36.55%', target: '—', date: '10/7' },
-    { status: 'red', metric: '曝光完成进度 / Exposure Progress', current: '39.90%', target: '—', date: '10/7' }
+    { status: 'green', metric: 'Google 品牌 SOV / Brand SOV', current: '15.59%', target: '—', date: '10/13' },
+    { status: 'green', metric: 'Google 产品 SOV / Product SOV', current: '18.52%', target: '—', date: '10/13' },
+    { status: 'green', metric: 'TikTok VV SOV', current: '20.08%', target: '20%', date: '10/11' },
+    { status: 'red', metric: 'TikTok Search SOV', current: '11.18%', target: '13%', date: '10/11' },
+    { status: 'red', metric: 'TikTok曝光量 / Impressions', current: '377.22M', target: '700M', date: '10/11' },
+    { status: 'green', metric: 'Meta曝光量 / Impressions', current: '192.67M', target: '—', date: '10/13' },
+    { status: 'green', metric: 'YouTube曝光量 / Impressions', current: '10.16M', target: '—', date: '10/13' },
+    { status: 'green', metric: '全网总曝光 / Total Impressions', current: '580.05M', target: '1000M+', date: '10/13' },
+    { status: 'green', metric: '互动量 / Engagement', current: '30.70M', target: '—', date: '10/11' },
+    { status: 'green', metric: '互动率行业排名 / Engagement Rank', current: '#2', target: 'Top 3', date: '10/11' },
+    { status: 'green', metric: 'Consideration 总量 / Total', current: '3.36M', target: '7M', date: '10/11' },
+    { status: 'green', metric: '消耗进度 / Spend Progress', current: '57.42%', target: '—', date: '10/13' },
+    { status: 'red', metric: '曝光完成进度 / Exposure Progress', current: '53.89%', target: '—', date: '10/11' }
   ],
 
   // Top videos leaderboard
   topVideos: [
-      {
-          "rank": "🥇",
-          "name": "EMOTIONAL VIDEO 1",
-          "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7690785425652288786",
-          "value": "14M",
-          "gold": true
-      },
-      {
-          "rank": "🥈",
-          "name": "TVC",
-          "url": "https://www.tiktok.com/tiktokstudio/content",
-          "value": "14M",
-          "gold": false
-      },
-      {
-          "rank": "🥉",
-          "name": "Magbadget Function Video",
-          "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7689291481479171335",
-          "value": "8.9M",
-          "gold": false
-      },
-      {
-          "rank": "🏅",
-          "name": "Teaser-HQ ID Video",
-          "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7690841062276893959",
-          "value": "6.8M",
-          "gold": false
-      },
-      {
-          "rank": "🏅",
-          "name": "MAGBADGE - NOW AVAILABLE",
-          "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7690912538053168402",
-          "value": "3.6M",
-          "gold": false
-      }
+      {"rank":"🥇","name":"TVC","url":"https://www.tiktok.com/tiktokstudio/content","value":"22.6M","gold":true},
+      {"rank":"🥈","name":"EMOTIONAL VIDEO 1","url":"https://www.tiktok.com/@tecnomobilephilippines/video/7690785425652288786","value":"16.7M","gold":false},
+      {"rank":"🥉","name":"MEDIA REMIX","url":"https://www.tiktok.com/@tecnomobilephilippines/video/7693547747227618578","value":"12.1M","gold":false},
+      {"rank":"🏅","name":"MagBadge Functions","url":"https://www.tiktok.com/@tecnomobilephilippines/video/7689291481479171335","value":"11.8M","gold":false},
+      {"rank":"🏅","name":"Teaser-HQ ID Video","url":"https://www.tiktok.com/@tecnomobilephilippines/video/7690841062276893959","value":"8.8M","gold":false}
   ],
 
   // KOL videos leaderboard
   kolVideos: [
-      {
-          "rank": "🥇",
-          "name": "Pending / 待更新",
-          "url": null,
-          "value": "—",
-          "gold": true,
-          "pending": true
-      },
-      {
-          "rank": "🥈",
-          "name": "Pending / 待更新",
-          "url": null,
-          "value": "—",
-          "gold": false,
-          "pending": true
-      },
-      {
-          "rank": "🥉",
-          "name": "Pending / 待更新",
-          "url": null,
-          "value": "—",
-          "gold": false,
-          "pending": true
-      },
-      {
-          "rank": "🏅",
-          "name": "Pending / 待更新",
-          "url": null,
-          "value": "—",
-          "gold": false,
-          "pending": true
-      },
-      {
-          "rank": "🏅",
-          "name": "Pending / 待更新",
-          "url": null,
-          "value": "—",
-          "gold": false,
-          "pending": true
-      }
+      {"rank":"🥇","name":"Ychan Laurenz","url":"https://www.tiktok.com/@ychanlaurenz/video/7691273501931506962","value":"7.6M","gold":true},
+      {"rank":"🥈","name":"Luis Angeles","url":"https://www.tiktok.com/@luismdvl/video/7689376091009600789","value":"5.8M","gold":false},
+      {"rank":"🥉","name":"Poknat","url":"https://www.tiktok.com/@its_poknat/video/7691254152625753365","value":"5.5M","gold":false},
+      {"rank":"🏅","name":"wisecell","url":"https://www.tiktok.com/@wisecell/video/7689865246311304456","value":"4.5M","gold":false},
+      {"rank":"🏅","name":"Luis Angeles 2","url":"https://www.tiktok.com/@luismdvl/video/7689331066498239764","value":"3.9M","gold":false}
   ],
 
   // Google SOV chart data
