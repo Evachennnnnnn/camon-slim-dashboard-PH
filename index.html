@@ -290,48 +290,48 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
 // DATA CONFIGURATION / 数据配置
 // ============================================================
 const D = {
-  updatedDate: '2026-10-13',
-  dataAsOf: '10/12',
+  updatedDate: '2026-10-10',
+  dataAsOf: '10/10',
 
   // Alert banner
-  alertBanner: '数据已更新至 10/12。Google Product SOV 17.12%，TT VV SOV 22.47%，TT Search SOV 10.94%，Consideration 3.32M，全网总曝光 596.70M，互动量 24.53M。/ Data updated to 10/12. Google Product SOV 17.12%, TT VV SOV 22.47%, TT Search SOV 10.94%, Consideration 3.32M, Total Impressions 596.70M, Engagement 24.53M.',
+  alertBanner: '数据已更新至 10/10。Google Product SOV 16.30%，TT VV SOV 23.68%，TT Search SOV 10.21%，Consideration 2.74M，全网总曝光 384.75M，互动量 24.53M。/ Data updated to 10/10. Google Product SOV 16.30%, TT VV SOV 23.68%, TT Search SOV 10.21%, Consideration 2.74M, Total Impressions 384.75M, Engagement 24.53M.',
 
   // Hero section
   hero: {
-    desc: 'Google Product SOV 17.12% (10/12), Consideration 3.32M (10/10), 全网总曝光 596.70M, 互动量 24.53M. / Google 产品 SOV 17.12%，Consideration 总量 3.32M，全网总曝光 596.70M，互动量 24.53M。',
+    desc: 'Google Product SOV 16.30% (10/9), Consideration 2.74M (10/6), 全网总曝光 384.75M, 互动量 24.53M. / Google 产品 SOV 16.30%，Consideration 总量 2.74M，全网总曝光 384.75M，互动量 24.53M。',
     stats: [
-      { label: 'Google 产品 SOV / Product SOV', value: '17.12%' },
-      { label: 'Consideration 总量 / Total', value: '3.32M' },
-      { label: '全网总曝光 / Total Impressions', value: '596.70M' },
+      { label: 'Google 产品 SOV / Product SOV', value: '16.30%' },
+      { label: 'Consideration 总量 / Total', value: '2.74M' },
+      { label: '全网总曝光 / Total Impressions', value: '384.75M' },
       { label: '互动量 / Engagement', value: '24.53M' }
     ]
   },
 
   // KPI cards
   kpis: [
-    { label: 'TikTok Video View SOV', statusDot: 'status-green', value: '22.47%', trend: '↓', trendClass: 'trend-down', sub: 'Target / 目标 20% · As of / 截至 10/10', borderLeft: null, valueColor: null },
-    { label: 'TikTok Search SOV', statusDot: 'status-red', value: '10.94%', trend: '↑', trendClass: 'trend-up', sub: 'Target / 目标 13% · As of / 截至 10/10', borderLeft: null, valueColor: null },
-    { label: 'TikTok曝光量 / TikTok Impressions', statusDot: 'status-red', value: '420.51M', trend: '↑', trendClass: 'trend-up', sub: 'Target / 目标 700M · Progress / 进度 60.07%', borderLeft: '#3b82f6', valueColor: '#3b82f6' },
-    { label: 'Meta曝光量 / Meta Impressions', statusDot: 'status-green', value: '167.38M', trend: '↑', trendClass: 'trend-up', sub: 'As of / 截至 10/12', borderLeft: '#ef4444', valueColor: '#ef4444' },
-    { label: 'YouTube曝光量 / YouTube Impressions', statusDot: 'status-green', value: '8.81M', trend: '↑', trendClass: 'trend-up', sub: 'As of / 截至 10/12', borderLeft: '#f59e0b', valueColor: '#f59e0b' },
-    { label: '互动量 / Engagement', statusDot: 'status-green', value: '24.53M', trend: '↑', trendClass: 'trend-up', sub: 'Industry share / 行业占比：11.53% · Rank / 排名 #2 · As of / 截至 10/10', borderLeft: '#ec4899', valueColor: '#ec4899' }
+    { label: 'TikTok Video View SOV', statusDot: 'status-green', value: '23.68%', trend: '↑', trendClass: 'trend-up', sub: 'Target / 目标 20% · As of / 截至 10/7', borderLeft: null, valueColor: null },
+    { label: 'TikTok Search SOV', statusDot: 'status-red', value: '10.21%', trend: '↓', trendClass: 'trend-down', sub: 'Target / 目标 13% · As of / 截至 10/7', borderLeft: null, valueColor: null },
+    { label: 'TikTok曝光量 / TikTok Impressions', statusDot: 'status-red', value: '279.32M', trend: '↑', trendClass: 'trend-up', sub: 'Target / 目标 700M · Progress / 进度 39.90%', borderLeft: '#3b82f6', valueColor: '#3b82f6' },
+    { label: 'Meta曝光量 / Meta Impressions', statusDot: 'status-green', value: '105.43M', trend: '↑', trendClass: 'trend-up', sub: 'As of / 截至 10/9', borderLeft: '#ef4444', valueColor: '#ef4444' },
+    { label: 'Google曝光量 / Google Impressions', statusDot: 'status-yellow', value: '0', trend: null, trendClass: null, sub: 'No data / 暂无数据', borderLeft: '#f59e0b', valueColor: '#f59e0b' },
+    { label: '互动量 / Engagement', statusDot: 'status-green', value: '24.53M', trend: '↑', trendClass: 'trend-up', sub: 'Industry share / 行业占比：10.15% · Rank / 排名 #3 · As of / 截至 10/7', borderLeft: '#ec4899', valueColor: '#ec4899' }
   ],
 
   // Overview table
   overview: [
-    { status: 'green', metric: 'Google 品牌 SOV / Brand SOV', current: '15.91%', target: '—', date: '10/12' },
-    { status: 'green', metric: 'Google 产品 SOV / Product SOV', current: '17.12%', target: '—', date: '10/12' },
-    { status: 'green', metric: 'TikTok VV SOV', current: '22.47%', target: '20%', date: '10/10' },
-    { status: 'red', metric: 'TikTok Search SOV', current: '10.94%', target: '13%', date: '10/10' },
-    { status: 'red', metric: 'TikTok曝光量 / Impressions', current: '420.51M', target: '700M', date: '10/10' },
-    { status: 'green', metric: 'Meta曝光量 / Impressions', current: '167.38M', target: '—', date: '10/12' },
-    { status: 'green', metric: 'YouTube曝光量 / Impressions', current: '8.81M', target: '—', date: '10/12' },
-    { status: 'green', metric: '全网总曝光 / Total Impressions', current: '596.70M', target: '1000M+', date: '10/12' },
-    { status: 'green', metric: '互动量 / Engagement', current: '24.53M', target: '—', date: '10/10' },
-    { status: 'green', metric: '互动率行业排名 / Engagement Rank', current: '#2', target: 'Top 3', date: '10/10' },
-    { status: 'green', metric: 'Consideration 总量 / Total', current: '3.32M', target: '7M', date: '10/10' },
-    { status: 'green', metric: '消耗进度 / Spend Progress', current: '51.35%', target: '—', date: '10/10' },
-    { status: 'green', metric: '曝光完成进度 / Exposure Progress', current: '60.07%', target: '—', date: '10/10' }
+    { status: 'green', metric: 'Google 品牌 SOV / Brand SOV', current: '15.44%', target: '—', date: '10/9' },
+    { status: 'green', metric: 'Google 产品 SOV / Product SOV', current: '16.30%', target: '—', date: '10/9' },
+    { status: 'green', metric: 'TikTok VV SOV', current: '23.68%', target: '20%', date: '10/7' },
+    { status: 'red', metric: 'TikTok Search SOV', current: '10.21%', target: '13%', date: '10/7' },
+    { status: 'red', metric: 'TikTok曝光量 / Impressions', current: '279.32M', target: '700M', date: '10/7' },
+    { status: 'green', metric: 'Meta曝光量 / Impressions', current: '105.43M', target: '—', date: '10/9' },
+    { status: 'red', metric: 'Google曝光量 / Impressions', current: '0', target: '—', date: '—' },
+    { status: 'red', metric: '全网总曝光 / Total Impressions', current: '384.75M', target: '1000M+', date: '10/9' },
+    { status: 'green', metric: '互动量 / Engagement', current: '24.53M', target: '—', date: '10/7' },
+    { status: 'green', metric: '互动率行业排名 / Engagement Rank', current: '#3', target: 'Top 3', date: '10/7' },
+    { status: 'green', metric: 'Consideration 总量 / Total', current: '2.74M', target: '7M', date: '10/6' },
+    { status: 'green', metric: '消耗进度 / Spend Progress', current: '36.55%', target: '—', date: '10/7' },
+    { status: 'red', metric: '曝光完成进度 / Exposure Progress', current: '39.90%', target: '—', date: '10/7' }
   ],
 
   // Top videos leaderboard
@@ -377,64 +377,69 @@ const D = {
   kolVideos: [
       {
           "rank": "🥇",
-          "name": "Ychan Laurenz",
-          "url": "https://www.tiktok.com/@ychanlaurenz/video/7691273501931506962",
-          "value": "7.6M",
-          "gold": true
+          "name": "Pending / 待更新",
+          "url": null,
+          "value": "—",
+          "gold": true,
+          "pending": true
       },
       {
           "rank": "🥈",
-          "name": "Luis Angeles",
-          "url": "https://www.tiktok.com/@luismdvl/video/7689376091009600789",
-          "value": "5.8M",
-          "gold": false
+          "name": "Pending / 待更新",
+          "url": null,
+          "value": "—",
+          "gold": false,
+          "pending": true
       },
       {
           "rank": "🥉",
-          "name": "Poknat",
-          "url": "https://www.tiktok.com/@its_poknat/video/7691254152625753365",
-          "value": "5.5M",
-          "gold": false
+          "name": "Pending / 待更新",
+          "url": null,
+          "value": "—",
+          "gold": false,
+          "pending": true
       },
       {
           "rank": "🏅",
-          "name": "wisecell",
-          "url": "https://www.tiktok.com/@wisecell/video/7689865246311304456",
-          "value": "4.5M",
-          "gold": false
+          "name": "Pending / 待更新",
+          "url": null,
+          "value": "—",
+          "gold": false,
+          "pending": true
       },
       {
           "rank": "🏅",
-          "name": "Luis Angeles 2",
-          "url": "https://www.tiktok.com/@luismdvl/video/7689331066498239764",
-          "value": "3.9M",
-          "gold": false
+          "name": "Pending / 待更新",
+          "url": null,
+          "value": "—",
+          "gold": false,
+          "pending": true
       }
   ],
 
   // Google SOV chart data
   googleSov: {
-    labels: ["9/22","9/23","9/24","9/25","9/26","9/27","9/28","9/29","9/30","10/1","10/2","10/3","10/4","10/5","10/6","10/7","10/8","10/9","10/10","10/11","10/12"],
-    brand: [15.32,15.24,15.41,15.62,15.44,16.74,15.44,15.55,15.36,15.33,15.44,15.65,15.13,15.47,15.59,15.53,15.59,15.44,15.73,15.73,15.91],
-    product: [6.67,6.45,8.57,8.33,10.26,9.52,11.63,12.77,13.43,15.71,16.67,18.06,18.07,16.39,18.18,17.39,16.84,16.30,17.71,17.65,17.12],
-    brandNote: 'Brand SOV latest 15.91% (10/12) / 品牌 SOV 最新 15.91%（10/12）',
-    productNote: 'Product SOV latest 17.12% (10/12) / 产品 SOV 最新 17.12%（10/12）'
+    labels: ["9/22","9/23","9/24","9/25","9/26","9/27","9/28","9/29","9/30","10/1","10/2","10/3","10/4","10/5","10/6","10/7","10/8","10/9"],
+    brand: [15.32,15.24,15.41,15.62,15.44,16.74,15.44,15.55,15.36,15.33,15.44,15.65,15.13,15.47,15.59,15.53,15.59,15.44],
+    product: [6.67,6.45,8.57,8.33,10.26,9.52,11.63,12.77,13.43,15.71,16.67,18.06,18.07,16.39,18.18,17.39,16.84,16.30],
+    brandNote: 'Brand SOV latest 15.44% (10/9) / 品牌 SOV 最新 15.44%（10/9）',
+    productNote: 'Product SOV latest 16.30% (10/9) / 产品 SOV 最新 16.30%（10/9）'
   },
 
   // Competitor comparison
   competitorCompare: {
-    note: 'Google Trends 对比关键词 / Comparison: CAMON Slim 5G vs HONOR 600S, vivo V80 Lite, REDMI Note 17 Pro · 截至 10/12',
+    note: 'Google Trends 对比关键词 / Comparison: CAMON Slim 5G vs HONOR 600S, vivo V80 Lite, REDMI Note 17 Pro · 截至 10/9',
     trendLink: 'https://trends.google.com/trends/explore?date=today%201-m&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en',
     dailyLinks: [],
-    chartLabels: ["9/22","9/23","9/24","9/25","9/26","9/27","9/28","9/29","9/30","10/1","10/2","10/3","10/4","10/5","10/6","10/7","10/8","10/9","10/10","10/11","10/12"],
+    chartLabels: ["9/22","9/23","9/24","9/25","9/26","9/27","9/28","9/29","9/30","10/1","10/2","10/3","10/4","10/5","10/6","10/7","10/8","10/9"],
     datasets: [
-      { label: 'CAMON Slim 5G (TECNO)', data: [6.67,6.45,8.57,8.33,10.26,9.52,11.63,12.77,13.43,15.71,16.67,18.06,18.07,16.39,18.18,17.39,16.84,16.30,17.71,17.65,17.12], borderColor: '#059669', bg: 'rgba(5,150,105,.15)', fill: true, dash: null, width: 3, pointRadius: 5 },
+      { label: 'CAMON Slim 5G (TECNO)', data: [6.67,6.45,8.57,8.33,10.26,9.52,11.63,12.77,13.43,15.71,16.67,18.06,18.07,16.39,18.18,17.39,16.84,16.30], borderColor: '#059669', bg: 'rgba(5,150,105,.15)', fill: true, dash: null, width: 3, pointRadius: 5 },
       { label: 'HONOR 600S', data: [], borderColor: '#7c3aed', bg: 'rgba(124,58,237,.05)', fill: false, dash: [4,2], width: null, pointRadius: 3 },
       { label: 'vivo V80 Lite', data: [], borderColor: '#2563eb', bg: 'rgba(37,99,235,.05)', fill: false, dash: [4,2], width: null, pointRadius: 3 },
       { label: 'REDMI Note 17 Pro', data: [], borderColor: '#ea580c', bg: 'rgba(234,88,12,.05)', fill: false, dash: [4,2], width: null, pointRadius: 3 }
     ],
     table: [
-      { product: 'CAMON Slim 5G', brand: 'TECNO', brandBold: true, brandColor: '#059669', sov: '17.12%', sovColor: '#059669', sovBold: true, sovSize: '16px', trend: '↓', trendClass: 'trend-down', highlight: true },
+      { product: 'CAMON Slim 5G', brand: 'TECNO', brandBold: true, brandColor: '#059669', sov: '16.30%', sovColor: '#059669', sovBold: true, sovSize: '16px', trend: '↑', trendClass: 'trend-up', highlight: true },
       { product: 'REDMI Note 17 Pro', brand: 'Xiaomi', brandBold: false, brandColor: null, sov: '~33%', sovColor: '#64748b', sovBold: false, sovSize: null, trend: '→', trendClass: 'trend-flat', highlight: false },
       { product: 'HONOR 600S', brand: 'Honor', brandBold: false, brandColor: null, sov: '~27%', sovColor: '#64748b', sovBold: false, sovSize: null, trend: '↓', trendClass: 'trend-down', highlight: false },
       { product: 'vivo V80 Lite', brand: 'vivo', brandBold: false, brandColor: null, sov: '~26%', sovColor: '#64748b', sovBold: false, sovSize: null, trend: '↓', trendClass: 'trend-down', highlight: false }
@@ -444,18 +449,18 @@ const D = {
 
   // TikTok SOV chart data
   ttSov: {
-    labels: ["9/19","9/20","9/21","9/22","9/23","9/24","9/25","9/26","9/27","9/28","9/29","9/30","10/1","10/2","10/3","10/4","10/5","10/6","10/7","10/8","10/9","10/10"],
-    vvData: [5.91,5.86,6.98,4.87,5.81,8.65,9.15,9.99,10.77,12.48,14.6,17.66,19.75,29.57,20.59,18.46,23.26,21.64,23.68,24.84,25.57,22.47],
-    searchData: [10.16,10.46,10.2,10.4,10.37,10.59,10.9,10.58,10.41,10.39,10.24,10.94,12.01,12.16,11.29,11.24,10.85,10.46,10.21,10.59,10.93,10.94],
-    note: 'VV SOV latest 22.47% (10/10); Search SOV latest 10.94% (10/10) / VV SOV 最新 22.47%（10/10）；Search SOV 最新 10.94%（10/10）'
+    labels: ["9/19","9/20","9/21","9/22","9/23","9/24","9/25","9/26","9/27","9/28","9/29","9/30","10/1","10/2","10/3","10/4","10/5","10/6","10/7"],
+    vvData: [5.91,5.86,6.98,4.87,5.81,8.65,9.15,9.99,10.77,12.48,14.6,17.66,19.75,29.57,20.59,18.46,23.26,21.64,23.68],
+    searchData: [10.16,10.46,10.2,10.4,10.37,10.59,10.9,10.58,10.41,10.39,10.24,10.94,12.01,12.16,11.29,11.24,10.85,10.46,10.21],
+    note: 'VV SOV latest 23.68% (10/7); Search SOV latest 10.21% (10/7) / VV SOV 最新 23.68%（10/7）；Search SOV 最新 10.21%（10/7）'
   },
 
   // Consideration chart data
   consideration: {
-    labels: ["9/1","9/2","9/3","9/4","9/5","9/6","9/7","9/8","9/9","9/10","9/11","9/12","9/13","9/14","9/15","9/16","9/17","9/18","9/19","9/20","9/21","9/22","9/23","9/24","9/25","9/26","9/27","9/28","9/29","9/30","10/1","10/2","10/3","10/4","10/5","10/6","10/7","10/8","10/9","10/10"],
-    brandData: [2089916,2046584,2039830,2092499,2277829,2624653,2771283,3106841,3539842,3540106,3507328,3494628,3477955,3560376,3740292,3752809,3735487,3821243,3689704,3372097,2953133,2871458,2497108,2046936,2063109,2082804,2116158,2218912,2180228,2121159,2179502,2387021,2381585,2491980,2575028,2737695,2867008,3003358,3155097,3321226],
-    industryData: [2659331,2647541,2654025,2719212,2897390,3148738,3243339,3566055,3963690,4018355,4028618,4088046,4129734,4149206,4259073,4278714,4276787,4353727,4278515,4071568,3820202,3890857,3658237,3353637,3328297,3330730,3326506,3313913,3267573,3197379,3152750,3174641,3109538,3092077,3041789,3094704,3022517,3069004,3122313,3227735],
-    note: 'Brand Consideration latest 3.32M (10/10). / 本品牌 Consideration 最新 3.32M（10/10）。'
+    labels: ["9/1","9/2","9/3","9/4","9/5","9/6","9/7","9/8","9/9","9/10","9/11","9/12","9/13","9/14","9/15","9/16","9/17","9/18","9/19","9/20","9/21","9/22","9/23","9/24","9/25","9/26","9/27","9/28","9/29","9/30","10/1","10/2","10/3","10/4","10/5","10/6"],
+    brandData: [2089916,2046584,2039830,2092499,2277829,2624653,2771283,3106841,3539842,3540106,3507328,3494628,3477955,3560376,3740292,3752809,3735487,3821243,3689704,3372097,2953133,2871458,2497108,2046936,2063109,2082804,2116158,2218912,2180228,2121159,2179502,2387021,2381585,2491980,2575028,2737695],
+    industryData: [2659331,2647541,2654025,2719212,2897390,3148738,3243339,3566055,3963690,4018355,4028618,4088046,4129734,4149206,4259073,4278714,4276787,4353727,4278515,4071568,3820202,3890857,3658237,3353637,3328297,3330730,3326506,3313913,3267573,3197379,3152750,3174641,3109538,3092077,3041789,3094704],
+    note: 'Brand Consideration latest 2.74M (10/6). / 本品牌 Consideration 最新 2.74M（10/6）。'
   },
 
   // Spend chart data
