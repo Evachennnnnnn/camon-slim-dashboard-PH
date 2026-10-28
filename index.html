@@ -290,592 +290,1473 @@ body::before { content:""; position:fixed; inset:0; pointer-events:none; backgro
 // DATA CONFIGURATION / 数据配置
 // ============================================================
 const D = {
-  updatedDate: '2026-10-23',
-  dataAsOf: '10/22',
-
-  // Alert banner
-  alertBanner: '数据已更新至 10/22。Google Product SOV 19.86%，TT VV SOV 16.75%，TT Search SOV 10.84%，Consideration 2.92M，全网总曝光 730.00M，互动量 38.19M。/ Data updated to 10/22. Google Product SOV 19.86%, TT VV SOV 16.75%, TT Search SOV 10.84%, Consideration 2.92M, Total Impressions 730.00M, Engagement 38.19M.',
-
-  // Hero section
+  updatedDate: '2026-10-28',
+  dataAsOf: '10/27',
+  alertBanner: '数据更新至 10/27（Google/Meta 各自更新至最新有值日期）。Google Product SOV 20.13%（10/27），TT VV SOV 13.15%（10/23），TT Search SOV 10.37%（10/22），Consideration 2.42M（10/25），全网总曝光 826.12M（TT 10/23 + Meta 10/27），TT互动 44.25M（10/23）。 / Dashboard refreshed; each metric uses its latest available date.',
   hero: {
-    desc: 'Google Product SOV 19.86% (10/22), Consideration 2.92M (10/21), 全网总曝光 730.00M, 互动量 38.19M. / Google 产品 SOV 19.86%，Consideration 总量 2.92M，全网总曝光 730.00M，互动量 38.19M。',
-    stats: [
-      { label: 'Google 产品 SOV / Product SOV', value: '19.86%' },
-      { label: 'Consideration 总量 / Total', value: '2.92M' },
-      { label: '全网总曝光 / Total Impressions', value: '730.00M' },
-      { label: '互动量 / Engagement', value: '38.19M' }
+    "desc": "Google Product SOV 20.13% (10/27), Consideration 2.42M (10/25), Total impressions 826.12M (TT 10/23; Meta 10/27), TikTok engagement 44.25M (10/23). / Google 产品 SOV、Consideration、总曝光及互动分别按最新有效日期展示。",
+    "stats": [
+      {
+        "label": "Google 产品 SOV / Product SOV",
+        "value": "20.13%"
+      },
+      {
+        "label": "Consideration 总量 / Total",
+        "value": "2.42M"
+      },
+      {
+        "label": "全网总曝光 / Total Impressions",
+        "value": "826.12M"
+      },
+      {
+        "label": "互动量 / Engagement",
+        "value": "44.25M"
+      }
     ]
   },
-
-  // KPI cards
   kpis: [
-    { label: 'TikTok Video View SOV', statusDot: 'status-red', value: '16.75%', trend: '↑', trendClass: 'trend-up', sub: 'Target / 目标 20% · As of / 截至 10/18', borderLeft: null, valueColor: null },
-    { label: 'TikTok Search SOV', statusDot: 'status-red', value: '10.84%', trend: '↑', trendClass: 'trend-up', sub: 'Target / 目标 13% · As of / 截至 10/19', borderLeft: null, valueColor: null },
-    { label: 'TikTok曝光量 / TikTok Impressions', statusDot: 'status-red', value: '458.94M', trend: '↑', trendClass: 'trend-up', sub: 'Target / 目标 700M · Progress / 进度 65.56%', borderLeft: '#3b82f6', valueColor: '#3b82f6' },
-    { label: 'Meta曝光量 / Meta Impressions', statusDot: 'status-green', value: '271.06M', trend: '↑', trendClass: 'trend-up', sub: 'As of / 截至 10/22', borderLeft: '#ef4444', valueColor: '#ef4444' },
-    { label: 'YouTube曝光量 / YouTube Impressions', statusDot: 'status-green', value: '10.16M', trend: '↑', trendClass: 'trend-up', sub: 'As of / 截至 10/13', borderLeft: '#f59e0b', valueColor: '#f59e0b' },
-    { label: '互动量 / Engagement', statusDot: 'status-green', value: '38.19M', trend: '↑', trendClass: 'trend-up', sub: 'Industry share / 行业占比：10.55% · Rank / 排名 #3 · As of / 截至 10/18', borderLeft: '#ec4899', valueColor: '#ec4899' }
+    {
+      "label": "TikTok Video View SOV",
+      "statusDot": "status-red",
+      "value": "13.15%",
+      "trend": "↑",
+      "trendClass": "trend-up",
+      "sub": "Target / 目标 20% · As of / 截至 10/23",
+      "borderLeft": null,
+      "valueColor": null
+    },
+    {
+      "label": "TikTok Search SOV",
+      "statusDot": "status-red",
+      "value": "10.37%",
+      "trend": "↑",
+      "trendClass": "trend-up",
+      "sub": "Target / 目标 13% · As of / 截至 10/22",
+      "borderLeft": null,
+      "valueColor": null
+    },
+    {
+      "label": "TikTok曝光量 / TikTok Impressions",
+      "statusDot": "status-red",
+      "value": "523.65M",
+      "trend": "↑",
+      "trendClass": "trend-up",
+      "sub": "Target / 目标 700M · Progress / 进度 74.81% · As of / 截至 10/23",
+      "borderLeft": "#3b82f6",
+      "valueColor": "#3b82f6"
+    },
+    {
+      "label": "Meta曝光量 / Meta Impressions",
+      "statusDot": "status-green",
+      "value": "292.31M",
+      "trend": "↑",
+      "trendClass": "trend-up",
+      "sub": "As of / 截至 10/27",
+      "borderLeft": "#ef4444",
+      "valueColor": "#ef4444"
+    },
+    {
+      "label": "YouTube曝光量 / YouTube Impressions",
+      "statusDot": "status-green",
+      "value": "10.16M",
+      "trend": "↑",
+      "trendClass": "trend-up",
+      "sub": "As of / 截至 10/13",
+      "borderLeft": "#f59e0b",
+      "valueColor": "#f59e0b"
+    },
+    {
+      "label": "互动量 / Engagement",
+      "statusDot": "status-green",
+      "value": "44.25M",
+      "trend": "↑",
+      "trendClass": "trend-up",
+      "sub": "Industry share / 行业占比：10.42% · Rank / 排名 #4 · As of / 截至 10/23",
+      "borderLeft": "#ec4899",
+      "valueColor": "#ec4899"
+    }
   ],
-
-  // Overview table
   overview: [
-    { status: 'green', metric: 'Google 品牌 SOV / Brand SOV', current: '16.26%', target: '—', date: '10/22' },
-    { status: 'red', metric: 'Google 产品 SOV / Product SOV', current: '19.86%', target: '—', date: '10/22' },
-    { status: 'red', metric: 'TikTok VV SOV', current: '16.75%', target: '20%', date: '10/18' },
-    { status: 'red', metric: 'TikTok Search SOV', current: '10.84%', target: '13%', date: '10/19' },
-    { status: 'red', metric: 'TikTok曝光量 / Impressions', current: '458.94M', target: '700M', date: '10/18' },
-    { status: 'green', metric: 'Meta曝光量 / Impressions', current: '271.06M', target: '—', date: '10/22' },
-    { status: 'green', metric: 'YouTube曝光量 / Impressions', current: '10.16M', target: '—', date: '10/13' },
-    { status: 'green', metric: '全网总曝光 / Total Impressions', current: '730.00M', target: '1000M+', date: '10/22' },
-    { status: 'green', metric: '互动量 / Engagement', current: '38.19M', target: '—', date: '10/18' },
-    { status: 'green', metric: '互动率行业排名 / Engagement Rank', current: '#3', target: 'Top 3', date: '10/18' },
-    { status: 'red', metric: 'Consideration 总量 / Total', current: '2.92M', target: '7M', date: '10/21' },
-    { status: 'red', metric: '消耗进度 / Spend Progress', current: '62.10%', target: '—', date: '10/20' },
-    { status: 'red', metric: '曝光完成进度 / Exposure Progress', current: '65.56%', target: '—', date: '10/18' }
+    {
+      "status": "green",
+      "metric": "Google 品牌 SOV / Brand SOV",
+      "current": "16.18%",
+      "target": "—",
+      "date": "10/27"
+    },
+    {
+      "status": "red",
+      "metric": "Google 产品 SOV / Product SOV",
+      "current": "20.13%",
+      "target": "—",
+      "date": "10/27"
+    },
+    {
+      "status": "red",
+      "metric": "TikTok VV SOV",
+      "current": "13.15%",
+      "target": "20%",
+      "date": "10/23"
+    },
+    {
+      "status": "red",
+      "metric": "TikTok Search SOV",
+      "current": "10.37%",
+      "target": "13%",
+      "date": "10/22"
+    },
+    {
+      "status": "red",
+      "metric": "TikTok曝光量 / Impressions",
+      "current": "523.65M",
+      "target": "700M",
+      "date": "10/23"
+    },
+    {
+      "status": "green",
+      "metric": "Meta曝光量 / Impressions",
+      "current": "292.31M",
+      "target": "—",
+      "date": "10/27"
+    },
+    {
+      "status": "green",
+      "metric": "YouTube曝光量 / Impressions",
+      "current": "10.16M",
+      "target": "—",
+      "date": "10/13"
+    },
+    {
+      "status": "green",
+      "metric": "全网总曝光 / Total Impressions",
+      "current": "826.12M",
+      "target": "1000M+",
+      "date": "TT 10/23 / Meta 10/27"
+    },
+    {
+      "status": "green",
+      "metric": "互动量 / Engagement",
+      "current": "44.25M",
+      "target": "—",
+      "date": "10/23"
+    },
+    {
+      "status": "green",
+      "metric": "互动率行业排名 / Engagement Rank",
+      "current": "#4",
+      "target": "Top 3",
+      "date": "10/23"
+    },
+    {
+      "status": "red",
+      "metric": "Consideration 总量 / Total",
+      "current": "2.42M",
+      "target": "7M",
+      "date": "10/25"
+    },
+    {
+      "status": "red",
+      "metric": "消耗进度 / Spend Progress",
+      "current": "67.75%",
+      "target": "—",
+      "date": "10/25"
+    },
+    {
+      "status": "red",
+      "metric": "曝光完成进度 / Exposure Progress",
+      "current": "74.81%",
+      "target": "—",
+      "date": "10/23"
+    }
   ],
-
-  // Top videos leaderboard
   topVideos: [
-      {"rank":"🥇","name":"TVC","url":"https://www.tiktok.com/tiktokstudio/content","value":"22.6M","gold":true},
-      {"rank":"🥈","name":"EMOTIONAL VIDEO 1","url":"https://www.tiktok.com/@tecnomobilephilippines/video/7690785425652288786","value":"18.7M","gold":false},
-      {"rank":"🥉","name":"MEDIA REMIX","url":"https://www.tiktok.com/@tecnomobilephilippines/video/7693547747227618578","value":"12.7M","gold":false},
-      {"rank":"🏅","name":"MagBadge Functions","url":"https://www.tiktok.com/@tecnomobilephilippines/video/7689291481479171335","value":"11.8M","gold":false},
-      {"rank":"🏅","name":"Teaser-HQ ID Video","url":"https://www.tiktok.com/@tecnomobilephilippines/video/7690841062276893959","value":"8.8M","gold":false}
+    {
+      "rank": "🥇",
+      "name": "TVC",
+      "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7690786084199861512",
+      "value": "22.6M",
+      "gold": true
+    },
+    {
+      "rank": "🥈",
+      "name": "EMOTIONAL VIDEO 1",
+      "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7690785425652288786",
+      "value": "18.7M",
+      "gold": false
+    },
+    {
+      "rank": "🥉",
+      "name": "MEDIA REMIX",
+      "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7693547747227618578",
+      "value": "12.7M",
+      "gold": false
+    },
+    {
+      "rank": "🏅",
+      "name": "MagBadge Functions",
+      "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7689291481479171335",
+      "value": "11.8M",
+      "gold": false
+    },
+    {
+      "rank": "🏅",
+      "name": "Teaser-HQ ID Video",
+      "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7690841062276893959",
+      "value": "8.8M",
+      "gold": false
+    }
   ],
-
-  // KOL videos leaderboard
   kolVideos: [
-      {"rank":"🥇","name":"Ychan Laurenz","url":"https://www.tiktok.com/@ychanlaurenz/video/7691273501931506962","value":"8.2M","gold":true},
-      {"rank":"🥈","name":"Luis Angeles","url":"https://www.tiktok.com/@luismdvl/video/7689376091009600789","value":"5.9M","gold":false},
-      {"rank":"🥉","name":"TechBroll","url":"https://www.tiktok.com/@techbroll/video/7690896023220178197","value":"5.8M","gold":false},
-      {"rank":"🏅","name":"Poknat","url":"https://www.tiktok.com/@its_poknat/video/7691254152625753365","value":"5.7M","gold":false},
-      {"rank":"🏅","name":"eyjay.jimenez","url":"https://www.tiktok.com/@eyjay.jimenez/video/7691569735699320071","value":"4.6M","gold":false}
+    {
+      "rank": "🥇",
+      "name": "Ychan Laurenz",
+      "url": "https://www.tiktok.com/@ychanlaurenz/video/7691273501931506962",
+      "value": "8.4M",
+      "gold": true
+    },
+    {
+      "rank": "🥈",
+      "name": "TechBroll",
+      "url": "https://www.tiktok.com/@techbroll/video/7690896023220178197",
+      "value": "6.5M",
+      "gold": false
+    },
+    {
+      "rank": "🥉",
+      "name": "Luis Angeles",
+      "url": "https://www.tiktok.com/@luismdvl/video/7689376091009600789",
+      "value": "5.9M",
+      "gold": false
+    },
+    {
+      "rank": "🏅",
+      "name": "Poknat",
+      "url": "https://www.tiktok.com/@its_poknat/video/7691254152625753365",
+      "value": "5.7M",
+      "gold": false
+    },
+    {
+      "rank": "🏅",
+      "name": "PAT TOP PICKS",
+      "url": "https://www.tiktok.com/@patttpescador/video/7689053310694788372",
+      "value": "4.9M",
+      "gold": false
+    }
   ],
-
-  // Google SOV chart data
   googleSov: {
-    labels: ["9/22","9/23","9/24","9/25","9/26","9/27","9/28","9/29","9/30","10/1","10/2","10/3","10/4","10/5","10/6","10/7","10/8","10/9","10/10","10/11","10/12","10/13","10/14","10/15","10/16","10/17","10/18","10/19","10/20","10/21","10/22"],
-    brand: [15.32,15.24,15.41,15.62,15.44,16.74,15.44,15.55,15.36,15.33,15.44,15.65,15.13,15.47,15.59,15.53,15.59,15.44,15.73,15.73,15.91,15.59,15.65,15.44,15.69,15.69,15.81,15.94,16.00,16.22,16.26],
-    product: [6.67,6.45,8.57,8.33,10.26,9.52,11.63,12.77,13.43,15.71,16.67,18.06,18.07,16.39,18.18,17.39,16.84,16.30,17.71,17.65,17.12,18.52,18.35,20.51,19.83,20.29,21.13,20.42,21.52,20.81,19.86],
-    brandNote: 'Brand SOV latest 16.26% (10/22) / 品牌 SOV 最新 16.26%（10/22）',
-    productNote: 'Product SOV latest 19.86% (10/22) / 产品 SOV 最新 19.86%（10/22）'
+    "labels": [
+      "9/22",
+      "9/23",
+      "9/24",
+      "9/25",
+      "9/26",
+      "9/27",
+      "9/28",
+      "9/29",
+      "9/30",
+      "10/1",
+      "10/2",
+      "10/3",
+      "10/4",
+      "10/5",
+      "10/6",
+      "10/7",
+      "10/8",
+      "10/9",
+      "10/10",
+      "10/11",
+      "10/12",
+      "10/13",
+      "10/14",
+      "10/15",
+      "10/16",
+      "10/17",
+      "10/18",
+      "10/19",
+      "10/20",
+      "10/21",
+      "10/22",
+      "10/23",
+      "10/24",
+      "10/25",
+      "10/26",
+      "10/27"
+    ],
+    "brand": [
+      15.32,
+      15.24,
+      15.41,
+      15.62,
+      15.44,
+      16.74,
+      15.44,
+      15.55,
+      15.36,
+      15.33,
+      15.44,
+      15.65,
+      15.13,
+      15.47,
+      15.59,
+      15.53,
+      15.59,
+      15.44,
+      15.73,
+      15.73,
+      15.91,
+      15.59,
+      15.65,
+      15.44,
+      15.69,
+      15.69,
+      15.81,
+      15.94,
+      16,
+      16.22,
+      16.26,
+      16.41,
+      16.19,
+      16.24,
+      16.13,
+      16.18
+    ],
+    "product": [
+      6.67,
+      6.45,
+      8.57,
+      8.33,
+      10.26,
+      9.52,
+      11.63,
+      12.77,
+      13.43,
+      15.71,
+      16.67,
+      18.06,
+      18.07,
+      16.39,
+      18.18,
+      17.39,
+      16.84,
+      16.3,
+      17.71,
+      17.65,
+      17.12,
+      18.52,
+      18.35,
+      20.51,
+      19.83,
+      20.29,
+      21.13,
+      20.42,
+      21.52,
+      20.81,
+      19.86,
+      21.21,
+      20.57,
+      19.15,
+      20,
+      20.13
+    ],
+    "brandNote": "Brand SOV latest 16.18% (10/27) / 品牌 SOV 最新 16.18%（10/27）",
+    "productNote": "Product SOV latest 20.13% (10/27) / 产品 SOV 最新 20.13%（10/27）"
   },
-
-  // Competitor comparison
   competitorCompare: {
-    note: 'Google Trends 对比关键词 / Comparison: CAMON Slim 5G vs HONOR 600S, vivo V80 Lite, REDMI Note 17 Pro · 截至 10/22',
-    trendLink: 'https://trends.google.com/trends/explore?date=today%201-m&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en',
-    dailyLinks: [],
-    chartLabels: ["9/22","9/23","9/24","9/25","9/26","9/27","9/28","9/29","9/30","10/1","10/2","10/3","10/4","10/5","10/6","10/7","10/8","10/9","10/10","10/11","10/12","10/13","10/14","10/15","10/16","10/17","10/18","10/19","10/20","10/21","10/22"],
-    datasets: [
-      { label: 'CAMON Slim 5G (TECNO)', data: [6.67,6.45,8.57,8.33,10.26,9.52,11.63,12.77,13.43,15.71,16.67,18.06,18.07,16.39,18.18,17.39,16.84,16.30,17.71,17.65,17.12,18.52,18.35,20.51,19.83,20.29,21.13,20.42,21.52,20.81,19.86], borderColor: '#059669', bg: 'rgba(5,150,105,.15)', fill: true, dash: null, width: 3, pointRadius: 5 },
-      { label: 'HONOR 600S', data: [], borderColor: '#7c3aed', bg: 'rgba(124,58,237,.05)', fill: false, dash: [4,2], width: null, pointRadius: 3 },
-      { label: 'vivo V80 Lite', data: [], borderColor: '#2563eb', bg: 'rgba(37,99,235,.05)', fill: false, dash: [4,2], width: null, pointRadius: 3 },
-      { label: 'REDMI Note 17 Pro', data: [], borderColor: '#ea580c', bg: 'rgba(234,88,12,.05)', fill: false, dash: [4,2], width: null, pointRadius: 3 }
+    "note": "Google Trends 对比关键词 / Comparison: CAMON Slim 5G vs HONOR 600S, vivo V80 Lite, REDMI Note 17 Pro · 截至 10/27",
+    "trendLink": "https://trends.google.com/trends/explore?date=today%201-m&geo=PH&q=CAMON%20Slim%205G,HONOR%20600S,vivo%20V80%20Lite,REDMI%20Note%2017%20Pro&hl=en",
+    "dailyLinks": [],
+    "chartLabels": [
+      "9/22",
+      "9/23",
+      "9/24",
+      "9/25",
+      "9/26",
+      "9/27",
+      "9/28",
+      "9/29",
+      "9/30",
+      "10/1",
+      "10/2",
+      "10/3",
+      "10/4",
+      "10/5",
+      "10/6",
+      "10/7",
+      "10/8",
+      "10/9",
+      "10/10",
+      "10/11",
+      "10/12",
+      "10/13",
+      "10/14",
+      "10/15",
+      "10/16",
+      "10/17",
+      "10/18",
+      "10/19",
+      "10/20",
+      "10/21",
+      "10/22",
+      "10/23",
+      "10/24",
+      "10/25",
+      "10/26"
     ],
-    table: [
-      { product: 'CAMON Slim 5G', brand: 'TECNO', brandBold: true, brandColor: '#059669', sov: '19.86%', sovColor: '#059669', sovBold: true, sovSize: '16px', trend: '↓', trendClass: 'trend-down', highlight: true },
-      { product: 'REDMI Note 17 Pro', brand: 'Xiaomi', brandBold: false, brandColor: null, sov: '~34%', sovColor: '#64748b', sovBold: false, sovSize: null, trend: '→', trendClass: 'trend-flat', highlight: false },
-      { product: 'HONOR 600S', brand: 'Honor', brandBold: false, brandColor: null, sov: '~28%', sovColor: '#64748b', sovBold: false, sovSize: null, trend: '↓', trendClass: 'trend-down', highlight: false },
-      { product: 'vivo V80 Lite', brand: 'vivo', brandBold: false, brandColor: null, sov: '~27%', sovColor: '#64748b', sovBold: false, sovSize: null, trend: '↓', trendClass: 'trend-down', highlight: false }
+    "datasets": [
+      {
+        "label": "CAMON Slim 5G (TECNO)",
+        "data": [
+          6.67,
+          6.45,
+          8.57,
+          8.33,
+          10.26,
+          9.52,
+          11.63,
+          12.77,
+          13.43,
+          15.71,
+          16.67,
+          18.06,
+          18.07,
+          16.39,
+          18.18,
+          17.39,
+          16.84,
+          16.3,
+          17.71,
+          17.65,
+          17.12,
+          18.52,
+          18.35,
+          20.51,
+          19.83,
+          20.29,
+          21.13,
+          20.42,
+          21.52,
+          20.81,
+          19.86,
+          21.21,
+          20.57,
+          19.15,
+          20
+        ],
+        "borderColor": "#059669",
+        "bg": "rgba(5,150,105,.15)",
+        "fill": true,
+        "dash": null,
+        "width": 3,
+        "pointRadius": 5
+      },
+      {
+        "label": "HONOR 600S",
+        "data": [],
+        "borderColor": "#7c3aed",
+        "bg": "rgba(124,58,237,.05)",
+        "fill": false,
+        "dash": [
+          4,
+          2
+        ],
+        "width": null,
+        "pointRadius": 3
+      },
+      {
+        "label": "vivo V80 Lite",
+        "data": [],
+        "borderColor": "#2563eb",
+        "bg": "rgba(37,99,235,.05)",
+        "fill": false,
+        "dash": [
+          4,
+          2
+        ],
+        "width": null,
+        "pointRadius": 3
+      },
+      {
+        "label": "REDMI Note 17 Pro",
+        "data": [],
+        "borderColor": "#ea580c",
+        "bg": "rgba(234,88,12,.05)",
+        "fill": false,
+        "dash": [
+          4,
+          2
+        ],
+        "width": null,
+        "pointRadius": 3
+      }
     ],
-    insight: '💡 竞品对比组合：CAMON Slim 5G vs HONOR 600S / vivo V80 Lite / REDMI Note 17 Pro。CAMON Slim 5G 产品 SOV 最新 19.86%（10/22）。竞品数据来自 Google Trends 相对搜索热度，反映搜索声量占比。/ Competitor set: CAMON Slim 5G vs HONOR 600S / vivo V80 Lite / REDMI Note 17 Pro. Product SOV latest 19.86% (10/22). Competitor data from Google Trends relative search interest.'
+    "table": [
+      {
+        "product": "CAMON Slim 5G",
+        "brand": "TECNO",
+        "brandBold": true,
+        "brandColor": "#059669",
+        "sov": "20.13%",
+        "sovColor": "#059669",
+        "sovBold": true,
+        "sovSize": "16px",
+        "trend": "↓",
+        "trendClass": "trend-down",
+        "highlight": true
+      },
+      {
+        "product": "REDMI Note 17 Pro",
+        "brand": "Xiaomi",
+        "brandBold": false,
+        "brandColor": null,
+        "sov": "~34%",
+        "sovColor": "#64748b",
+        "sovBold": false,
+        "sovSize": null,
+        "trend": "→",
+        "trendClass": "trend-flat",
+        "highlight": false
+      },
+      {
+        "product": "HONOR 600S",
+        "brand": "Honor",
+        "brandBold": false,
+        "brandColor": null,
+        "sov": "~28%",
+        "sovColor": "#64748b",
+        "sovBold": false,
+        "sovSize": null,
+        "trend": "↓",
+        "trendClass": "trend-down",
+        "highlight": false
+      },
+      {
+        "product": "vivo V80 Lite",
+        "brand": "vivo",
+        "brandBold": false,
+        "brandColor": null,
+        "sov": "~27%",
+        "sovColor": "#64748b",
+        "sovBold": false,
+        "sovSize": null,
+        "trend": "↓",
+        "trendClass": "trend-down",
+        "highlight": false
+      }
+    ],
+    "insight": "💡 竞品对比组合：CAMON Slim 5G vs HONOR 600S / vivo V80 Lite / REDMI Note 17 Pro。CAMON Slim 5G 产品 SOV 最新 20.13%（10/27）。竞品表中其他品牌为既有估算值，未在本轮更新。/ Competitor set unchanged; other brand values remain prior estimates."
   },
-
-  // TikTok SOV chart data
   ttSov: {
-    labels: ["9/19","9/20","9/21","9/22","9/23","9/24","9/25","9/26","9/27","9/28","9/29","9/30","10/1","10/2","10/3","10/4","10/5","10/6","10/7","10/8","10/9","10/10","10/11","10/12","10/13","10/14","10/15","10/16","10/17","10/18","10/19"],
-    vvData: [5.91,5.86,6.98,4.87,5.81,8.65,9.15,9.99,10.77,12.48,14.60,17.66,19.75,29.57,20.59,18.46,23.26,21.64,23.68,24.84,25.57,22.47,20.08,15.43,13.47,13.47,10.36,13.06,13.46,16.75,16.75],
-    searchData: [10.16,10.46,10.20,10.40,10.37,10.59,10.90,10.58,10.41,10.39,10.24,10.94,12.01,12.16,11.29,11.24,10.85,10.46,10.21,10.59,10.93,10.94,11.18,10.59,10.73,10.81,10.79,10.93,10.70,10.60,10.84],
-    note: 'VV SOV latest 16.75% (10/18); Search SOV latest 10.84% (10/19) / VV SOV 最新 16.75%（10/18）；Search SOV 最新 10.84%（10/19）'
+    "labels": [
+      "9/19",
+      "9/20",
+      "9/21",
+      "9/22",
+      "9/23",
+      "9/24",
+      "9/25",
+      "9/26",
+      "9/27",
+      "9/28",
+      "9/29",
+      "9/30",
+      "10/1",
+      "10/2",
+      "10/3",
+      "10/4",
+      "10/5",
+      "10/6",
+      "10/7",
+      "10/8",
+      "10/9",
+      "10/10",
+      "10/11",
+      "10/12",
+      "10/13",
+      "10/14",
+      "10/15",
+      "10/16",
+      "10/17",
+      "10/18",
+      "10/19",
+      "10/20",
+      "10/21",
+      "10/22",
+      "10/23"
+    ],
+    "vvData": [
+      5.91,
+      5.86,
+      6.98,
+      4.87,
+      5.81,
+      8.65,
+      9.15,
+      9.99,
+      10.77,
+      12.48,
+      14.6,
+      17.66,
+      19.75,
+      29.57,
+      20.59,
+      18.46,
+      23.26,
+      21.64,
+      23.68,
+      24.84,
+      25.57,
+      22.47,
+      20.08,
+      15.43,
+      13.47,
+      13.47,
+      10.36,
+      13.06,
+      13.46,
+      16.75,
+      18.66,
+      17.48,
+      15.34,
+      14.83,
+      13.15
+    ],
+    "searchData": [
+      null,
+      10.46,
+      10.2,
+      10.4,
+      10.37,
+      10.59,
+      10.9,
+      10.58,
+      10.41,
+      10.39,
+      10.24,
+      10.94,
+      12.01,
+      12.16,
+      11.29,
+      11.24,
+      10.85,
+      10.46,
+      10.21,
+      10.59,
+      10.93,
+      10.94,
+      11.18,
+      10.59,
+      10.73,
+      10.81,
+      10.79,
+      10.93,
+      10.7,
+      10.6,
+      10.84,
+      10.57,
+      10.18,
+      10.37,
+      null
+    ],
+    "note": "VV SOV latest 13.15% (10/23); Search SOV latest 10.37% (10/22) / VV SOV 最新 13.15%（10/23）；Search SOV 最新 10.37%（10/22）"
   },
-
-  // Consideration chart data
   consideration: {
-    labels: ["9/1","9/2","9/3","9/4","9/5","9/6","9/7","9/8","9/9","9/10","9/11","9/12","9/13","9/14","9/15","9/16","9/17","9/18","9/19","9/20","9/21","9/22","9/23","9/24","9/25","9/26","9/27","9/28","9/29","9/30","10/1","10/2","10/3","10/4","10/5","10/6","10/7","10/8","10/9","10/10","10/11","10/12","10/13","10/14","10/15","10/16","10/17","10/18","10/19","10/20","10/21"],
-    brandData: [2089916,2046584,2039830,2092499,2277829,2624653,2771283,3106841,3539842,3540106,3507328,3494628,3477955,3560376,3740292,3752809,3735487,3821243,3689704,3372097,2953133,2871458,2497108,2046936,2063109,2082804,2116158,2218912,2180228,2121159,2179502,2387021,2381585,2491980,2575028,2737695,2867008,3003358,3155097,3321226,3361884,3346555,3289155,3317353,3239496,3174386,3012676,3021191,3007439,3007794,2919942],
-    industryData: [2659331,2647541,2654025,2719212,2897390,3148738,3243339,3566055,3963690,4018355,4028618,4088046,4129734,4149206,4259073,4278714,4276787,4353727,4278515,4071568,3820202,3890857,3658237,3353637,3328297,3330730,3326506,3313913,3267573,3197379,3152750,3174641,3109538,3092077,3041789,3094704,3022517,3069004,3122313,3227735,3231415,3191094,3148878,3127893,3096330,3079115,3051496,3039335,2999887,2998208,2951682],
-    note: 'Brand Consideration latest 2.92M (10/21). / 本品牌 Consideration 最新 2.92M（10/21）。'
+    "labels": [
+      "9/1",
+      "9/2",
+      "9/3",
+      "9/4",
+      "9/5",
+      "9/6",
+      "9/7",
+      "9/8",
+      "9/9",
+      "9/10",
+      "9/11",
+      "9/12",
+      "9/13",
+      "9/14",
+      "9/15",
+      "9/16",
+      "9/17",
+      "9/18",
+      "9/19",
+      "9/20",
+      "9/21",
+      "9/22",
+      "9/23",
+      "9/24",
+      "9/25",
+      "9/26",
+      "9/27",
+      "9/28",
+      "9/29",
+      "9/30",
+      "10/1",
+      "10/2",
+      "10/3",
+      "10/4",
+      "10/5",
+      "10/6",
+      "10/7",
+      "10/8",
+      "10/9",
+      "10/10",
+      "10/11",
+      "10/12",
+      "10/13",
+      "10/14",
+      "10/15",
+      "10/16",
+      "10/17",
+      "10/18",
+      "10/19",
+      "10/20",
+      "10/21",
+      "10/22",
+      "10/23",
+      "10/24",
+      "10/25"
+    ],
+    "brandData": [
+      2089916,
+      2046584,
+      2039830,
+      2092499,
+      2277829,
+      2624653,
+      2771283,
+      3106841,
+      3539842,
+      3540106,
+      3507328,
+      3494628,
+      3477955,
+      3560376,
+      3740292,
+      3752809,
+      3735487,
+      3821243,
+      3689704,
+      3372097,
+      2953133,
+      2871458,
+      2497108,
+      2046936,
+      2063109,
+      2082804,
+      2116158,
+      2218912,
+      2180228,
+      2121159,
+      2179502,
+      2387021,
+      2381585,
+      2491980,
+      2575028,
+      2737695,
+      2867008,
+      3003358,
+      3155097,
+      3321226,
+      3361884,
+      3346555,
+      3289155,
+      3317353,
+      3239496,
+      3174386,
+      3012676,
+      3021191,
+      3007439,
+      3007794,
+      2919942,
+      2766628,
+      2691355,
+      2571891,
+      2422521
+    ],
+    "industryData": [
+      2659331,
+      2647541,
+      2654025,
+      2719212,
+      2897390,
+      3148738,
+      3243339,
+      3566055,
+      3963690,
+      4018355,
+      4028618,
+      4088046,
+      4129734,
+      4149206,
+      4259073,
+      4278714,
+      4276787,
+      4353727,
+      4278515,
+      4071568,
+      3820202,
+      3890857,
+      3658237,
+      3353637,
+      3328297,
+      3330730,
+      3326506,
+      3313913,
+      3267573,
+      3197379,
+      3152750,
+      3174641,
+      3109538,
+      3092077,
+      3041789,
+      3094704,
+      3022517,
+      3069004,
+      3122313,
+      3227735,
+      3231415,
+      3191094,
+      3148878,
+      3127893,
+      3096330,
+      3079115,
+      3051496,
+      3039335,
+      2999887,
+      2998208,
+      2951682,
+      2871631,
+      2812121,
+      2799153,
+      2733703
+    ],
+    "note": "Brand Consideration latest 2.42M (10/25). / 本品牌 Consideration 最新 2.42M（10/25）。"
   },
-
-  // Spend chart data
   spend: {
-    labels: ["9/19","9/20","9/21","9/22","9/23","9/24","9/25","9/26","9/27","9/28","9/29","9/30","10/1","10/2","10/3","10/4","10/5","10/6","10/7","10/8","10/9","10/10","10/11","10/12","10/13","10/14","10/15","10/16","10/17","10/18","10/19","10/20","10/21","10/22"],
-    dailySpend: [0,0,250,0,67.43,388.14,770.95,1132.44,1616.93,2064.44,3423.80,5444.64,7593.25,34171.11,7193.97,7952.68,8067.02,8828.88,11168.89,11962.13,10919.69,16260.53,12127.56,8302.61,7979.59,7772.51,7667.93,2503.35,3449.88,3303.47,2968.19,4088.85,1533.93,1251.64],
-    spendProgress: [0,0,0.14,0.14,0.18,0.40,0.85,1.55,2.55,3.81,6.07,9.73,14.36,24.89,28.50,32.37,36.30,40.37,45.30,50.33,55.00,62.10,62.10,62.10,62.10,62.10,62.10,62.10,62.10,62.10,62.10,62.10,62.10,62.10],
-    exposureProgress: [0.71,1.43,2.21,2.95,3.61,4.59,5.72,7.11,8.85,10.79,12.99,15.77,18.29,22.93,26.15,29.61,32.94,36.24,39.90,43.58,47.24,50.96,53.89,55.78,57.37,58.98,60.44,61.82,63.51,65.56,65.56,65.56,65.56,65.56]
+    "labels": [
+      "9/19",
+      "9/20",
+      "9/21",
+      "9/22",
+      "9/23",
+      "9/24",
+      "9/25",
+      "9/26",
+      "9/27",
+      "9/28",
+      "9/29",
+      "9/30",
+      "10/1",
+      "10/2",
+      "10/3",
+      "10/4",
+      "10/5",
+      "10/6",
+      "10/7",
+      "10/8",
+      "10/9",
+      "10/10",
+      "10/11",
+      "10/12",
+      "10/13",
+      "10/14",
+      "10/15",
+      "10/16",
+      "10/17",
+      "10/18",
+      "10/19",
+      "10/20",
+      "10/21",
+      "10/22",
+      "10/23",
+      "10/24",
+      "10/25"
+    ],
+    "dailySpend": [
+      0,
+      0,
+      250,
+      0,
+      29.34,
+      251.33,
+      515.68,
+      751.43,
+      1136,
+      1485.44,
+      2596.75,
+      4264.78,
+      3125.62,
+      31459.84,
+      3049.34,
+      3589.95,
+      3953.99,
+      4488.59,
+      6389.7,
+      6860.17,
+      7275.76,
+      7514.64,
+      6641.34,
+      3144.25,
+      1993.88,
+      1834.13,
+      1759.77,
+      1847.99,
+      2296.56,
+      2024.26,
+      1676.55,
+      2220.25,
+      2247.29,
+      2096.36,
+      2123.32,
+      2051.61,
+      1881.59
+    ],
+    "spendProgress": [
+      0,
+      0,
+      0.14,
+      0.14,
+      0.15,
+      0.29,
+      0.57,
+      0.98,
+      1.59,
+      2.4,
+      3.81,
+      6.12,
+      7.82,
+      24.89,
+      26.55,
+      28.5,
+      30.64,
+      33.08,
+      36.55,
+      40.27,
+      44.22,
+      48.3,
+      51.9,
+      53.61,
+      54.69,
+      55.69,
+      56.64,
+      57.64,
+      58.89,
+      59.99,
+      60.9,
+      62.1,
+      63.32,
+      64.46,
+      65.61,
+      66.73,
+      67.75
+    ],
+    "exposureProgress": [
+      0.71,
+      1.43,
+      2.21,
+      2.95,
+      3.61,
+      4.59,
+      5.72,
+      7.11,
+      8.85,
+      10.79,
+      12.99,
+      15.77,
+      18.29,
+      22.93,
+      26.15,
+      29.61,
+      32.94,
+      36.24,
+      39.9,
+      43.58,
+      47.24,
+      50.96,
+      53.89,
+      55.78,
+      57.37,
+      58.98,
+      60.44,
+      61.82,
+      63.51,
+      65.56,
+      67.58,
+      69.62,
+      71.48,
+      73.26,
+      74.81,
+      null,
+      null
+    ]
   },
-
   audience: {
-      "platformMetrics": [
-          {
-              "label": "TikTok CPM",
-              "value": "$0.52",
-              "color": "#6d28d9",
-              "bg": "rgba(124,58,237,.12)",
-              "border": "rgba(124,58,237,.25)"
-          },
-          {
-              "label": "TikTok CPE",
-              "value": "$0.059",
-              "color": "#6d28d9",
-              "bg": "rgba(124,58,237,.12)",
-              "border": "rgba(124,58,237,.25)"
-          },
-          {
-              "label": "FB&IG CPM",
-              "value": "$0.36",
-              "color": "#1d4ed8",
-              "bg": "rgba(59,130,246,.12)",
-              "border": "rgba(59,130,246,.25)"
-          },
-          {
-              "label": "FB&IG CPE",
-              "value": "$0.005",
-              "color": "#1d4ed8",
-              "bg": "rgba(59,130,246,.12)",
-              "border": "rgba(59,130,246,.25)"
-          }
-      ],
-      "ttAudience": [
-          {
-              "name": "Core Converters / 核心转化层",
-              "cost": "5,127.93",
-              "cpm": "0.27",
-              "cpe": "0.08",
-              "vtr": "95.1%",
-              "vtrHighlight": false
-          },
-          {
-              "name": "Competitors / 竞品人群",
-              "cost": "3,142.02",
-              "cpm": "0.24",
-              "cpe": "0.07",
-              "vtr": "94.9%",
-              "vtrHighlight": false
-          },
-          {
-              "name": "Tecno Fans & RMKT / 粉丝与再营销",
-              "cost": "3,141.34",
-              "cpm": "0.21",
-              "cpe": "0.06",
-              "vtr": "94.3%",
-              "vtrHighlight": false
-          },
-          {
-              "name": "Beauty & Lifestyle / 爱美女性",
-              "cost": "2,523.44",
-              "cpm": "0.26",
-              "cpe": "0.08",
-              "vtr": "94.6%",
-              "vtrHighlight": false
-          },
-          {
-              "name": "Moms / 妈妈群体",
-              "cost": "2,287.90",
-              "cpm": "0.25",
-              "cpe": "0.07",
-              "vtr": "94.3%",
-              "vtrHighlight": false
-          },
-          {
-              "name": "High-income Women / 高收入女性",
-              "cost": "2,229.21",
-              "cpm": "0.26",
-              "cpe": "0.08",
-              "vtr": "94.2%",
-              "vtrHighlight": false
-          },
-          {
-              "name": "Competitor KWs",
-              "cost": "994.31",
-              "cpm": "8.55",
-              "cpe": "0.23",
-              "vtr": "84.5%",
-              "vtrHighlight": true
-          }
-      ],
-      "fbigAudience": [
-          {
-              "name": "Core Converters / 核心转化层",
-              "cost": "1,614.00",
-              "cpm": "0.18",
-              "cpe": "0.004",
-              "vtr": "4.9%",
-              "vtrHighlight": false
-          },
-          {
-              "name": "Beauty & Lifestyle / 爱美女性",
-              "cost": "1,156.95",
-              "cpm": "0.17",
-              "cpe": "0.004",
-              "vtr": "4.6%",
-              "vtrHighlight": false
-          },
-          {
-              "name": "High-income Women / 高收入女性",
-              "cost": "854.25",
-              "cpm": "0.17",
-              "cpe": "0.003",
-              "vtr": "6.7%",
-              "vtrHighlight": true
-          },
-          {
-              "name": "Competitor Switchers / 竞品截流",
-              "cost": "802.06",
-              "cpm": "0.16",
-              "cpe": "0.003",
-              "vtr": "5.8%",
-              "vtrHighlight": true
-          },
-          {
-              "name": "Moms / 妈妈群体",
-              "cost": "783.68",
-              "cpm": "0.17",
-              "cpe": "0.003",
-              "vtr": "5.1%",
-              "vtrHighlight": false
-          },
-          {
-              "name": "TECNO Fans / 粉丝与老用户",
-              "cost": "716.53",
-              "cpm": "0.18",
-              "cpe": "0.003",
-              "vtr": "6.7%",
-              "vtrHighlight": true
-          }
-      ]
+    "platformMetrics": [
+      {
+        "label": "TikTok CPM",
+        "value": "$0.52",
+        "color": "#6d28d9",
+        "bg": "rgba(124,58,237,.12)",
+        "border": "rgba(124,58,237,.25)"
+      },
+      {
+        "label": "TikTok CPE",
+        "value": "$0.059",
+        "color": "#6d28d9",
+        "bg": "rgba(124,58,237,.12)",
+        "border": "rgba(124,58,237,.25)"
+      },
+      {
+        "label": "FB&IG CPM",
+        "value": "$0.36",
+        "color": "#1d4ed8",
+        "bg": "rgba(59,130,246,.12)",
+        "border": "rgba(59,130,246,.25)"
+      },
+      {
+        "label": "FB&IG CPE",
+        "value": "$0.005",
+        "color": "#1d4ed8",
+        "bg": "rgba(59,130,246,.12)",
+        "border": "rgba(59,130,246,.25)"
+      }
+    ],
+    "ttAudience": [
+      {
+        "name": "Core Converters / 核心转化层",
+        "cost": "5,127.93",
+        "cpm": "0.27",
+        "cpe": "0.08",
+        "vtr": "95.1%",
+        "vtrHighlight": false
+      },
+      {
+        "name": "Competitors / 竞品人群",
+        "cost": "3,142.02",
+        "cpm": "0.24",
+        "cpe": "0.07",
+        "vtr": "94.9%",
+        "vtrHighlight": false
+      },
+      {
+        "name": "Tecno Fans & RMKT / 粉丝与再营销",
+        "cost": "3,141.34",
+        "cpm": "0.21",
+        "cpe": "0.06",
+        "vtr": "94.3%",
+        "vtrHighlight": false
+      },
+      {
+        "name": "Beauty & Lifestyle / 爱美女性",
+        "cost": "2,523.44",
+        "cpm": "0.26",
+        "cpe": "0.08",
+        "vtr": "94.6%",
+        "vtrHighlight": false
+      },
+      {
+        "name": "Moms / 妈妈群体",
+        "cost": "2,287.90",
+        "cpm": "0.25",
+        "cpe": "0.07",
+        "vtr": "94.3%",
+        "vtrHighlight": false
+      },
+      {
+        "name": "High-income Women / 高收入女性",
+        "cost": "2,229.21",
+        "cpm": "0.26",
+        "cpe": "0.08",
+        "vtr": "94.2%",
+        "vtrHighlight": false
+      },
+      {
+        "name": "Competitor KWs",
+        "cost": "994.31",
+        "cpm": "8.55",
+        "cpe": "0.23",
+        "vtr": "84.5%",
+        "vtrHighlight": true
+      }
+    ],
+    "fbigAudience": [
+      {
+        "name": "Core Converters / 核心转化层",
+        "cost": "1,614.00",
+        "cpm": "0.18",
+        "cpe": "0.004",
+        "vtr": "4.9%",
+        "vtrHighlight": false
+      },
+      {
+        "name": "Beauty & Lifestyle / 爱美女性",
+        "cost": "1,156.95",
+        "cpm": "0.17",
+        "cpe": "0.004",
+        "vtr": "4.6%",
+        "vtrHighlight": false
+      },
+      {
+        "name": "High-income Women / 高收入女性",
+        "cost": "854.25",
+        "cpm": "0.17",
+        "cpe": "0.003",
+        "vtr": "6.7%",
+        "vtrHighlight": true
+      },
+      {
+        "name": "Competitor Switchers / 竞品截流",
+        "cost": "802.06",
+        "cpm": "0.16",
+        "cpe": "0.003",
+        "vtr": "5.8%",
+        "vtrHighlight": true
+      },
+      {
+        "name": "Moms / 妈妈群体",
+        "cost": "783.68",
+        "cpm": "0.17",
+        "cpe": "0.003",
+        "vtr": "5.1%",
+        "vtrHighlight": false
+      },
+      {
+        "name": "TECNO Fans / 粉丝与老用户",
+        "cost": "716.53",
+        "cpm": "0.18",
+        "cpe": "0.003",
+        "vtr": "6.7%",
+        "vtrHighlight": true
+      }
+    ]
   },
-
-  // Keywords analysis
   keywords: {
-      "window": "Data window / 时间窗: 2026-09-24 ~ 2026-10-04 · Brand / 品牌: Tecno · Source: TikTok Keyword Analysis",
-      "stats": [
-          {
-              "label": "总视频数 / Total Videos",
-              "value": "115",
-              "color": "#6d28d9",
-              "bg": "rgba(124,58,237,.12)",
-              "border": "rgba(124,58,237,.25)"
-          },
-          {
-              "label": "总曝光 / Total Impressions",
-              "value": "60.0M",
-              "color": "#1d4ed8",
-              "bg": "rgba(59,130,246,.12)",
-              "border": "rgba(59,130,246,.25)"
-          },
-          {
-              "label": "总互动 / Total Engagement",
-              "value": "5.86M",
-              "color": "#be185d",
-              "bg": "rgba(236,72,153,.12)",
-              "border": "rgba(236,72,153,.25)"
-          },
-          {
-              "label": "平均情感值 / Avg NSR",
-              "value": "0.85",
-              "color": "#047857",
-              "bg": "rgba(16,185,129,.12)",
-              "border": "rgba(16,185,129,.25)"
-          }
-      ],
-      "breakdown": [
-          {
-              "label": "官方视频 / Official",
-              "value": "18",
-              "color": "#1d4ed8",
-              "bg": "rgba(37,99,235,.1)",
-              "border": "rgba(37,99,235,.2)"
-          },
-          {
-              "label": "KOL/UGC 视频",
-              "value": "97",
-              "color": "#6d28d9",
-              "bg": "rgba(124,58,237,.1)",
-              "border": "rgba(124,58,237,.2)"
-          },
-          {
-              "label": "PayLater 相关",
-              "value": "4",
-              "color": "#c2410c",
-              "bg": "rgba(234,88,12,.1)",
-              "border": "rgba(234,88,12,.2)"
-          }
-      ],
-      "topVideos": [
-          {
-              "rank": "🥇",
-              "name": "Slim enough for every day (TVC HQ)",
-              "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7690786084199861512",
-              "value": "11.06M",
-              "extra": "互动 2.38M · NSR 0.77",
-              "gold": true
-          },
-          {
-              "rank": "🥈",
-              "name": "Biglang ulan? EMOTIONAL VIDEO 1",
-              "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7690785425652288786",
-              "value": "10.52M",
-              "extra": "互动 1.97M · NSR 0.90",
-              "gold": false
-          },
-          {
-              "rank": "🥉",
-              "name": "HQ ID Video Teaser",
-              "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7690841062276893959",
-              "value": "4.18M",
-              "extra": "互动 61.8K · NSR 0.62",
-              "gold": false
-          },
-          {
-              "rank": "🏅",
-              "name": "Fast action FlashSnap",
-              "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7689312958182083848",
-              "value": "3.37M",
-              "extra": "互动 73.0K · NSR 0.82",
-              "gold": false
-          },
-          {
-              "rank": "🏅",
-              "name": "Something lighter is almost here",
-              "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7688993031059557640",
-              "value": "3.34M",
-              "extra": "互动 52.2K · NSR 1.00",
-              "gold": false
-          },
-          {
-              "rank": "🏅",
-              "name": "Aqua Mode diving in",
-              "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7689289780709952775",
-              "value": "3.21M",
-              "extra": "互动 139.7K · NSR 0.62",
-              "gold": false
-          },
-          {
-              "rank": "🏅",
-              "name": "Slimmer surprise runway",
-              "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7690530225792273672",
-              "value": "2.94M",
-              "extra": "互动 48.5K · NSR 0.86",
-              "gold": false
-          },
-          {
-              "rank": "🏅",
-              "name": "Slim hitting the runway",
-              "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7690510858115403060",
-              "value": "2.90M",
-              "extra": "互动 40.2K · NSR 0.57",
-              "gold": false
-          },
-          {
-              "rank": "🏅",
-              "name": "MagBadge NOW AVAILABLE",
-              "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7690912538053168402",
-              "value": "2.23M",
-              "extra": "互动 46.5K · NSR 0.83",
-              "gold": false
-          },
-          {
-              "rank": "🏅",
-              "name": "POV mama mo (KOL Ychan)",
-              "url": "https://www.tiktok.com/@ychanlaurenz/video/7691273501931506962",
-              "value": "1.47M",
-              "extra": "互动 192.7K · NSR 0.95",
-              "gold": false
-          }
-      ],
-      "insights": [
-          {
-              "title": "✅ 官方内容表现 / Official Content",
-              "titleColor": "#047857",
-              "bg": "rgba(16,185,129,.08)",
-              "border": "rgba(16,185,129,.2)",
-              "items": [
-                  "官方 18 条视频贡献 85.6% 曝光",
-                  "TVC HQ (11.06M) 和 Emotional Video 1 (10.52M) 双核驱动",
-                  "MagBadge 相关视频 NSR 普遍 > 0.8",
-                  "叙事重点：轻薄设计 + MagBadge 配件 + 防水场景"
-              ]
-          },
-          {
-              "title": "🔥 Creator / UGC 表现 / Creator & UGC",
-              "titleColor": "#c2410c",
-              "bg": "rgba(234,88,12,.08)",
-              "border": "rgba(234,88,12,.2)",
-              "items": [
-                  "KOL/UGC 97 条视频形成扩散网络",
-                  "门店账号表现亮眼：Fairview (621K)、North Edsa (328K)、Bicutan (333K)",
-                  "KOL Ychan Laurenz 单条 1.47M 曝光 + 192.7K 互动，NSR 0.95",
-                  "Unboxing / 规格解析 / 配件讨论最容易起量"
-              ]
-          },
-          {
-              "title": "💡 关键洞察 / Key Insights",
-              "titleColor": "#6d28d9",
-              "bg": "rgba(124,58,237,.08)",
-              "border": "rgba(124,58,237,.2)",
-              "items": [
-                  "总曝光 60.0M，互动 5.86M，NSR 0.85",
-                  "Launch 后视频密度显著增加（10/1-10/5）",
-                  "门店账号 + KOL 形成 O2O 扩散网络",
-                  "建议：继续围绕\"轻薄 + MagBadge + 防水\"做内容"
-              ]
-          }
-      ]
+    "window": "Data window / 时间窗: 2026-09-24 ~ 2026-10-04 · Brand / 品牌: Tecno · Source: TikTok Keyword Analysis",
+    "stats": [
+      {
+        "label": "总视频数 / Total Videos",
+        "value": "115",
+        "color": "#6d28d9",
+        "bg": "rgba(124,58,237,.12)",
+        "border": "rgba(124,58,237,.25)"
+      },
+      {
+        "label": "总曝光 / Total Impressions",
+        "value": "60.0M",
+        "color": "#1d4ed8",
+        "bg": "rgba(59,130,246,.12)",
+        "border": "rgba(59,130,246,.25)"
+      },
+      {
+        "label": "总互动 / Total Engagement",
+        "value": "5.86M",
+        "color": "#be185d",
+        "bg": "rgba(236,72,153,.12)",
+        "border": "rgba(236,72,153,.25)"
+      },
+      {
+        "label": "平均情感值 / Avg NSR",
+        "value": "0.85",
+        "color": "#047857",
+        "bg": "rgba(16,185,129,.12)",
+        "border": "rgba(16,185,129,.25)"
+      }
+    ],
+    "breakdown": [
+      {
+        "label": "官方视频 / Official",
+        "value": "18",
+        "color": "#1d4ed8",
+        "bg": "rgba(37,99,235,.1)",
+        "border": "rgba(37,99,235,.2)"
+      },
+      {
+        "label": "KOL/UGC 视频",
+        "value": "97",
+        "color": "#6d28d9",
+        "bg": "rgba(124,58,237,.1)",
+        "border": "rgba(124,58,237,.2)"
+      },
+      {
+        "label": "PayLater 相关",
+        "value": "4",
+        "color": "#c2410c",
+        "bg": "rgba(234,88,12,.1)",
+        "border": "rgba(234,88,12,.2)"
+      }
+    ],
+    "topVideos": [
+      {
+        "rank": "🥇",
+        "name": "Slim enough for every day (TVC HQ)",
+        "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7690786084199861512",
+        "value": "11.06M",
+        "extra": "互动 2.38M · NSR 0.77",
+        "gold": true
+      },
+      {
+        "rank": "🥈",
+        "name": "Biglang ulan? EMOTIONAL VIDEO 1",
+        "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7690785425652288786",
+        "value": "10.52M",
+        "extra": "互动 1.97M · NSR 0.90",
+        "gold": false
+      },
+      {
+        "rank": "🥉",
+        "name": "HQ ID Video Teaser",
+        "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7690841062276893959",
+        "value": "4.18M",
+        "extra": "互动 61.8K · NSR 0.62",
+        "gold": false
+      },
+      {
+        "rank": "🏅",
+        "name": "Fast action FlashSnap",
+        "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7689312958182083848",
+        "value": "3.37M",
+        "extra": "互动 73.0K · NSR 0.82",
+        "gold": false
+      },
+      {
+        "rank": "🏅",
+        "name": "Something lighter is almost here",
+        "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7688993031059557640",
+        "value": "3.34M",
+        "extra": "互动 52.2K · NSR 1.00",
+        "gold": false
+      },
+      {
+        "rank": "🏅",
+        "name": "Aqua Mode diving in",
+        "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7689289780709952775",
+        "value": "3.21M",
+        "extra": "互动 139.7K · NSR 0.62",
+        "gold": false
+      },
+      {
+        "rank": "🏅",
+        "name": "Slimmer surprise runway",
+        "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7690530225792273672",
+        "value": "2.94M",
+        "extra": "互动 48.5K · NSR 0.86",
+        "gold": false
+      },
+      {
+        "rank": "🏅",
+        "name": "Slim hitting the runway",
+        "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7690510858115403060",
+        "value": "2.90M",
+        "extra": "互动 40.2K · NSR 0.57",
+        "gold": false
+      },
+      {
+        "rank": "🏅",
+        "name": "MagBadge NOW AVAILABLE",
+        "url": "https://www.tiktok.com/@tecnomobilephilippines/video/7690912538053168402",
+        "value": "2.23M",
+        "extra": "互动 46.5K · NSR 0.83",
+        "gold": false
+      },
+      {
+        "rank": "🏅",
+        "name": "POV mama mo (KOL Ychan)",
+        "url": "https://www.tiktok.com/@ychanlaurenz/video/7691273501931506962",
+        "value": "1.47M",
+        "extra": "互动 192.7K · NSR 0.95",
+        "gold": false
+      }
+    ],
+    "insights": [
+      {
+        "title": "✅ 官方内容表现 / Official Content",
+        "titleColor": "#047857",
+        "bg": "rgba(16,185,129,.08)",
+        "border": "rgba(16,185,129,.2)",
+        "items": [
+          "官方 18 条视频贡献 85.6% 曝光",
+          "TVC HQ (11.06M) 和 Emotional Video 1 (10.52M) 双核驱动",
+          "MagBadge 相关视频 NSR 普遍 > 0.8",
+          "叙事重点：轻薄设计 + MagBadge 配件 + 防水场景"
+        ]
+      },
+      {
+        "title": "🔥 Creator / UGC 表现 / Creator & UGC",
+        "titleColor": "#c2410c",
+        "bg": "rgba(234,88,12,.08)",
+        "border": "rgba(234,88,12,.2)",
+        "items": [
+          "KOL/UGC 97 条视频形成扩散网络",
+          "门店账号表现亮眼：Fairview (621K)、North Edsa (328K)、Bicutan (333K)",
+          "KOL Ychan Laurenz 单条 1.47M 曝光 + 192.7K 互动，NSR 0.95",
+          "Unboxing / 规格解析 / 配件讨论最容易起量"
+        ]
+      },
+      {
+        "title": "💡 关键洞察 / Key Insights",
+        "titleColor": "#6d28d9",
+        "bg": "rgba(124,58,237,.08)",
+        "border": "rgba(124,58,237,.2)",
+        "items": [
+          "总曝光 60.0M，互动 5.86M，NSR 0.85",
+          "Launch 后视频密度显著增加（10/1-10/5）",
+          "门店账号 + KOL 形成 O2O 扩散网络",
+          "建议：继续围绕\"轻薄 + MagBadge + 防水\"做内容"
+        ]
+      }
+    ]
   },
-
-  // Paid comment insights
   paidComments: {
-      "window": "Data window / 时间窗: 2026-09-24 ~ 2026-10-04 · Ad type / 广告类型: 授权原生广告 / 代理商代投",
-      "stats": [
-          {
-              "label": "总评论数 / Total Comments",
-              "value": "1,909",
-              "color": "#be185d",
-              "bg": "rgba(236,72,153,.12)",
-              "border": "rgba(236,72,153,.25)",
-              "extra": null
-          },
-          {
-              "label": "正面率 / Positive Rate",
-              "value": "24.5%",
-              "color": "#047857",
-              "bg": "rgba(16,185,129,.12)",
-              "border": "rgba(16,185,129,.25)",
-              "extra": null
-          },
-          {
-              "label": "负面率 / Negative Rate",
-              "value": "8.2%",
-              "color": "#991b1b",
-              "bg": "rgba(239,68,68,.12)",
-              "border": "rgba(239,68,68,.25)",
-              "extra": null
-          },
-          {
-              "label": "总互动量 / Total Engagement",
-              "value": "6.8K",
-              "color": "#6d28d9",
-              "bg": "rgba(124,58,237,.12)",
-              "border": "rgba(124,58,237,.25)",
-              "extra": "点赞 4.9K + 回复 1.9K"
-          }
-      ],
-      "audienceTable": [
-          {
-              "name": "Moms / 妈妈群体",
-              "comments": "520",
-              "likes": "410",
-              "avgLikes": "0.79",
-              "avgHighlight": true
-          },
-          {
-              "name": "RMKT_Tecno Fans & RMKT",
-              "comments": "380",
-              "likes": "320",
-              "avgLikes": "0.84",
-              "avgHighlight": true
-          },
-          {
-              "name": "Broad（泛人群）",
-              "comments": "280",
-              "likes": "90",
-              "avgLikes": "0.32",
-              "avgHighlight": false
-          },
-          {
-              "name": "Beauty & Lifestyle / 爱美女性",
-              "comments": "250",
-              "likes": "180",
-              "avgLikes": "0.72",
-              "avgHighlight": true
-          },
-          {
-              "name": "High-income Women / 高收入女性",
-              "comments": "180",
-              "likes": "120",
-              "avgLikes": "0.67",
-              "avgHighlight": false
-          },
-          {
-              "name": "Core Converters / 核心转化层",
-              "comments": "120",
-              "likes": "280",
-              "avgLikes": "2.33",
-              "avgHighlight": true
-          }
-      ],
-      "materialsTable": [
-          {
-              "material": "🥇 EMOTIONAL VIDEO 1 (雨中场景)",
-              "comments": "420",
-              "likes": "380",
-              "likesHighlight": true
-          },
-          {
-              "material": "🥈 HQ TVC w Localized KV",
-              "comments": "380",
-              "likes": "320",
-              "likesHighlight": false
-          },
-          {
-              "material": "🥉 Brand Buzz Videos Sample",
-              "comments": "210",
-              "likes": "80",
-              "likesHighlight": false
-          },
-          {
-              "material": "4. CAMON SLIM ONE PIC",
-              "comments": "150",
-              "likes": "40",
-              "likesHighlight": false
-          },
-          {
-              "material": "5. KOL - Ychan Laurenz",
-              "comments": "130",
-              "likes": "190",
-              "likesHighlight": true
-          }
-      ],
-      "insights": [
-          {
-              "title": "✅ 正面评论特征 / Positive Feedback",
-              "titleColor": "#047857",
-              "bg": "rgba(16,185,129,.08)",
-              "border": "rgba(16,185,129,.2)",
-              "items": [
-                  "正面率 24.5%，较上期继续提升",
-                  "高频词：waterproof、slim、ganda、sulit",
-                  "EMOTIONAL VIDEO 1 雨中场景引发大量共鸣",
-                  "Moms 群体互动最活跃，对防水/耐用性评价正面"
-              ]
-          },
-          {
-              "title": "⚠️ 负面/风险评论 / Negative Feedback",
-              "titleColor": "#991b1b",
-              "bg": "rgba(239,68,68,.08)",
-              "border": "rgba(239,68,68,.2)",
-              "items": [
-                  "<b>MediaTek 7300 芯片是最大槽点</b>：多条高赞评论吐槽芯片老旧",
-                  "价格敏感：27K 定价被对比 Samsung/Realme",
-                  "AI 争议持续：\"I will not support the companies that uses AI\" 获 148 赞",
-                  "负面率 8.2%，需关注芯片和价格话题"
-              ]
-          },
-          {
-              "title": "💡 关键洞察 / Key Insights",
-              "titleColor": "#6d28d9",
-              "bg": "rgba(124,58,237,.08)",
-              "border": "rgba(124,58,237,.2)",
-              "items": [
-                  "Core Converters 均赞最高（2.33），精准人群互动质量最好",
-                  "Moms 群体评论量最大（520 条），是核心互动人群",
-                  "Broad 泛人群评论多但互动质量低（均赞 0.32）",
-                  "建议：围绕防水场景 + Moms 群体继续做互动帖，芯片话题需准备 Q&A"
-              ]
-          }
-      ]
+    "window": "Data window / 时间窗: Comment sample through 2026-10-24 · Sheet LkTOlT is a sampled/exported comment list, not a complete sentiment census.",
+    "stats": [
+      {
+        "label": "总评论数 / Total Comments",
+        "value": "1,909",
+        "color": "#be185d",
+        "bg": "rgba(236,72,153,.12)",
+        "border": "rgba(236,72,153,.25)",
+        "extra": null
+      },
+      {
+        "label": "正面率 / Positive Rate",
+        "value": "24.5%",
+        "color": "#047857",
+        "bg": "rgba(16,185,129,.12)",
+        "border": "rgba(16,185,129,.25)",
+        "extra": null
+      },
+      {
+        "label": "负面率 / Negative Rate",
+        "value": "8.2%",
+        "color": "#991b1b",
+        "bg": "rgba(239,68,68,.12)",
+        "border": "rgba(239,68,68,.25)",
+        "extra": null
+      },
+      {
+        "label": "总互动量 / Total Engagement",
+        "value": "6.8K",
+        "color": "#6d28d9",
+        "bg": "rgba(124,58,237,.12)",
+        "border": "rgba(124,58,237,.25)",
+        "extra": "点赞 4.9K + 回复 1.9K"
+      }
+    ],
+    "audienceTable": [
+      {
+        "name": "Moms / 妈妈群体",
+        "comments": "520",
+        "likes": "410",
+        "avgLikes": "0.79",
+        "avgHighlight": true
+      },
+      {
+        "name": "RMKT_Tecno Fans & RMKT",
+        "comments": "380",
+        "likes": "320",
+        "avgLikes": "0.84",
+        "avgHighlight": true
+      },
+      {
+        "name": "Broad（泛人群）",
+        "comments": "280",
+        "likes": "90",
+        "avgLikes": "0.32",
+        "avgHighlight": false
+      },
+      {
+        "name": "Beauty & Lifestyle / 爱美女性",
+        "comments": "250",
+        "likes": "180",
+        "avgLikes": "0.72",
+        "avgHighlight": true
+      },
+      {
+        "name": "High-income Women / 高收入女性",
+        "comments": "180",
+        "likes": "120",
+        "avgLikes": "0.67",
+        "avgHighlight": false
+      },
+      {
+        "name": "Core Converters / 核心转化层",
+        "comments": "120",
+        "likes": "280",
+        "avgLikes": "2.33",
+        "avgHighlight": true
+      }
+    ],
+    "materialsTable": [
+      {
+        "material": "🥇 EMOTIONAL VIDEO 1 (雨中场景)",
+        "comments": "420",
+        "likes": "380",
+        "likesHighlight": true
+      },
+      {
+        "material": "🥈 HQ TVC w Localized KV",
+        "comments": "380",
+        "likes": "320",
+        "likesHighlight": false
+      },
+      {
+        "material": "🥉 Brand Buzz Videos Sample",
+        "comments": "210",
+        "likes": "80",
+        "likesHighlight": false
+      },
+      {
+        "material": "4. CAMON SLIM ONE PIC",
+        "comments": "150",
+        "likes": "40",
+        "likesHighlight": false
+      },
+      {
+        "material": "5. KOL - Ychan Laurenz",
+        "comments": "130",
+        "likes": "190",
+        "likesHighlight": true
+      }
+    ],
+    "insights": [
+      {
+        "title": "✅ 正面评论特征 / Positive Feedback",
+        "titleColor": "#047857",
+        "bg": "rgba(16,185,129,.08)",
+        "border": "rgba(16,185,129,.2)",
+        "items": [
+          "正面率 24.5%，较上期继续提升",
+          "高频词：waterproof、slim、ganda、sulit",
+          "EMOTIONAL VIDEO 1 雨中场景引发大量共鸣",
+          "Moms 群体互动最活跃，对防水/耐用性评价正面"
+        ]
+      },
+      {
+        "title": "⚠️ 负面/风险评论 / Negative Feedback",
+        "titleColor": "#991b1b",
+        "bg": "rgba(239,68,68,.08)",
+        "border": "rgba(239,68,68,.2)",
+        "items": [
+          "<b>MediaTek 7300 芯片是最大槽点</b>：多条高赞评论吐槽芯片老旧",
+          "价格敏感：27K 定价被对比 Samsung/Realme",
+          "AI 争议持续：\"I will not support the companies that uses AI\" 获 148 赞",
+          "负面率 8.2%，需关注芯片和价格话题"
+        ]
+      },
+      {
+        "title": "💡 关键洞察 / Key Insights",
+        "titleColor": "#6d28d9",
+        "bg": "rgba(124,58,237,.08)",
+        "border": "rgba(124,58,237,.2)",
+        "items": [
+          "Core Converters 均赞最高（2.33），精准人群互动质量最好",
+          "Moms 群体评论量最大（520 条），是核心互动人群",
+          "Broad 泛人群评论多但互动质量低（均赞 0.32）",
+          "Paid-comments sheet contains sampled comments through 10/24; counts and sentiment-rate KPIs remain unchanged pending a full-period complete export."
+        ]
+      }
+    ]
   }
 };
 // ============================================================
